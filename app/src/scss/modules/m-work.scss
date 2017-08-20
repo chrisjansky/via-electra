@@ -1,4 +1,6 @@
 .m-work {
+  @include pad(top);
+
   &__title {
     @include a-caps;
 

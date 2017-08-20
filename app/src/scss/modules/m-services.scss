@@ -3,6 +3,8 @@
 
   &__wrap {
     @include a-wrap;
+    /* Avoid peeking for Smoothscroll */
+    padding-bottom: .125em;
   }
 
   &__title {

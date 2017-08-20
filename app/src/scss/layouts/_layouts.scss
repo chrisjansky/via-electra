@@ -1,10 +1,24 @@
-@mixin a-wrap($padded: false) {
+@mixin pad($direction: both) {
+  @if $direction == horizontal {
+    @include padding(null 5em);
+  }
+  @else if $direction == vertical {
+    @include padding(5em null);
+  }
+  @else if ($direction == top or $direction == bottom) {
+    padding-#{$direction}: 5em;
+  }
+  @else {
+    padding: 5em;
+  } 
+}
+
+@mixin a-wrap($direction: both) {
   margin-left: auto;
   margin-right: auto;
 
   @include reset-children;
-
-  padding: 5em;
+  @include pad($direction);
 }
 
 .l-wrap {
