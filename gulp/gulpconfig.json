@@ -1,0 +1,54 @@
+{
+  "path": "./gulp/gulpconfig.json",
+  "dev": {
+    "root": "app/",
+
+    "pagesFormat": ".html",
+    "pagesPartial": "src/html",
+    "pagesRoot": "app/src/html",
+    "pagesGlob": "app/src/html/**/*.html",
+    "pagesFilter": "**/[^_]*.html",
+
+    "templatesRoot": "app/src/pug/",
+    "templatesGlob": "app/src/pug/**/*.pug",
+
+    "jsonGlobal": "app/src/pug/_data/global.json",
+
+    "stylesRoot": "app/src/scss/",
+    "stylesBase": "app/src/scss/*.scss",
+    "stylesGlob": "app/src/scss/**/*.scss",
+
+    "tempRoot": "app/src/temp/",
+
+    "svgSourceGlob": "app/src/static/svg/_source/*.svg",
+    "svgBuildGlob": "app/src/static/svg/*.svg",
+    "svgBuild": "app/src/static/svg/",
+
+    "jsGlob": "app/src/js/**/*.js",
+    "jsBundle": "app/src/js/app.js"
+  },
+  "dist": {
+    "root": "dist/"
+  },
+  "move": [
+    "app/*.html",
+    "app/src/static/img/**/*",
+    "app/src/static/temp/*",
+    "app/src/static/svg/*.svg"
+  ],
+  "assets": {
+    "dev": [
+      "node_modules/normalize.css/normalize.css",
+
+      "app/src/temp/style.css",
+
+      "node_modules/headroom.js/dist/headroom.js",
+
+      "app/src/temp/bundle.js"
+    ],
+    "dist": [
+      "dist/src/css/style-min.css",
+      "dist/src/js/site-min.js"
+    ]
+  }
+}

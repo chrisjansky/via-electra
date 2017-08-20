@@ -1,0 +1,53 @@
+{
+  "name": "via-electra",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "svg": "gulp svg",
+    "build": "gulp build",
+    "guide": "gulp guide",
+    "test": "gulp test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "beepbeep": "^1.2.0",
+    "browser-sync": "^2.18.2",
+    "browserify": "^13.3.0",
+    "del": "^2.2.2",
+    "emitty": "^1.3.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-data": "^1.2.1",
+    "gulp-faker": "^1.0.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-uglify": "^2.0.0",
+    "gulp-usemin": "^0.3.26",
+    "hygienist-middleware": "^0.1.3",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.8.0"
+  },
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "headroom.js": "^0.9.3",
+    "normalize.css": "^7.0.0",
+    "smoothscroll-polyfill": "^0.3.5"
+  }
+}
