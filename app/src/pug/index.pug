@@ -6,7 +6,7 @@ block template-body
   .m-split--full
     .m-split__image(style="background-image: url('src/static/img/img-1.jpg')")
     .m-split__content
-      h1.m-split__title Projekce, realizace a servis elektrosystému budov a domů
+      h1.m-split__title(data-grep) Projekce, realizace a servis elektrosystému budov a domů
 
       nav.c-anchors
         a.c-anchors__arrow(href="javascript:")
@@ -18,7 +18,7 @@ block template-body
 
   .m-hilite
     .m-hilite__wrap
-      h2.m-hilite__title Jsme profesionálové v oboru automatizace a elektro s více než dvacetiletými zkušenostmi.
+      h2.m-hilite__title(data-grep) Jsme profesionálové v oboru automatizace a elektro s více než dvacetiletými zkušenostmi.
       ul.m-facts
         -
           var facts = [
@@ -42,7 +42,7 @@ block template-body
         each instance in facts
           li.m-facts__item
             strong.m-facts__digit= instance.digit
-            span.m-facts__label= instance.label
+            span.m-facts__label(data-grep)= instance.label
 
   .m-services
     .m-services__wrap
@@ -114,7 +114,7 @@ block template-body
     .m-blurb__wrap
       h3.m-blurb__title O nás
 
-      strong.m-blurb__text Působíme v největších městech České republiky i Slovenska a do roku 2020 se chceme stát dodavatelem číslo 1 na obou trzích.
+      strong.m-blurb__text(data-grep) Působíme v největších městech České republiky i Slovenska a do roku 2020 se chceme stát dodavatelem číslo 1 na obou trzích.
 
       .c-partners
         h4.c-partners__title Partneři
@@ -139,7 +139,7 @@ block template-body
   .m-reach
     .m-reach__wrap
       h3.m-reach__title Kontakt
-      p.m-reach__text Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
+      p.m-reach__text(data-grep) Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
 
       .m-reach__person
         img.m-reach__thumbnail(src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
@@ -158,7 +158,7 @@ block template-body
     .m-pins__content
       .m-pins__wrap
         h4.m-pins__strong Navštivte nás
-        p.m-pins__text Působíme na českém i slovenském trhu
+        p.m-pins__text(data-grep) Působíme na českém i slovenském trhu
 
         a.m-pins__button(href="javascript:") Naše pobočky
 
