@@ -12,9 +12,28 @@ block template-body
         a.c-anchors__arrow(href="javascript:")
           include ../static/svg/arrow-down.svg
         ul.c-anchors__list
-          each instance in ["Služby", "Reference", "O nás", "Kontakt"]
+          -
+            var anchors = [
+              {
+                "name": "Služby",
+                "href": "#services"
+              },
+              {
+                "name": "Reference",
+                "href": "#work"
+              },
+              {
+                "name": "O nás",
+                "href": "#about"
+              },
+              {
+                "name": "Kontakt",
+                "href": "#contact"
+              }
+            ]
+          each instance in anchors
             li.c-anchors__item
-              a.c-anchors__link(href="javascript:")= instance
+              a.c-anchors__link(href=instance.href)= instance.name
 
   .m-hilite
     .m-hilite__wrap
@@ -44,7 +63,7 @@ block template-body
             strong.m-facts__digit= instance.digit
             span.m-facts__label(data-grep)= instance.label
 
-  .m-services
+  #services.m-services
     .m-services__wrap
       h3.m-services__title Naše specializace
 
@@ -77,7 +96,7 @@ block template-body
             p.m-services__text= instance.text
             a.m-services__button(href="javascript:")= instance.button
 
-  .m-work
+  #work.m-work
     h3.m-work__title Vybrané reference
 
     -
@@ -110,7 +129,7 @@ block template-body
               span.m-work__arrow
                 include ../static/svg/arrow-right.svg
 
-  .m-blurb
+  #about.m-blurb
     .m-blurb__wrap
       h3.m-blurb__title O nás
 
@@ -136,7 +155,7 @@ block template-body
 
         a.m-hiring__button(href="javascript:") Kariéra
 
-  .m-reach
+  #contact.m-reach
     .m-reach__wrap
       h3.m-reach__title Kontakt
       p.m-reach__text(data-grep) Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
