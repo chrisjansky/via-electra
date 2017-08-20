@@ -1,0 +1,59 @@
+.m-reach {
+  text-align: center;
+
+  &__wrap {
+    @include a-wrap;
+  }
+
+  &__title {
+    @include a-caps;
+  }
+
+  &__text {
+    @include a-head--2(false);
+
+    max-width: 25em;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+  }
+
+  &__person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2em;
+  }
+
+  &__thumbnail {
+    width: 8em;
+    
+    margin-right: 3em;
+    border-radius: 50%;
+  }
+
+  &__details {
+    text-align: left;
+  }
+
+  &__name {
+    @include a-head--3;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: .5em;
+    margin-bottom: 0;
+
+    font-size: 1.5em;
+  }
+
+  &__button {
+    @include button--outline;
+
+    margin-top: 2em;
+  }
+}

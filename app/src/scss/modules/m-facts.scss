@@ -1,0 +1,28 @@
+.m-facts {
+  list-style-type: none;
+  padding-left: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    flex-basis: 10em;
+  }
+
+  &__digit {
+    font-size: 5em;
+    font-weight: $font__sans--light;
+    line-height: 1;
+  }
+
+  &__label {
+    display: block;
+
+    font-size: 1.25em;
+    line-height: $leading--s;
+
+    opacity: .7;
+
+    margin-top: 1em;
+  }
+}

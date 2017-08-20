@@ -1,0 +1,15 @@
+.c-partners {
+  &__title {
+    @include a-caps--small;
+
+    margin-bottom: 4em;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+
+    display: flex;
+    justify-content: space-around;
+  }
+}

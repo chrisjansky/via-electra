@@ -1,0 +1,44 @@
+.m-services {
+  text-align: center;
+
+  &__wrap {
+    @include a-wrap;
+  }
+
+  &__title {
+    @include a-caps;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    flex: 1 10em;
+
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  &__image {
+    border-radius: 50%;
+  }
+
+  &__name {
+    @include a-head--3;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-size: 1.125em;
+
+    color: $c-grey--300;
+  }
+
+  &__button {
+    @include button--outline;
+    
+    margin-top: 1em;
+  }
+}

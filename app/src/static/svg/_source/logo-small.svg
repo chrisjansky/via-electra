@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#85CC3D" offset="0%"></stop>
+            <stop stop-color="#1F995C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo/Small" transform="translate(0.000000, -5.000000)">
+            <g id="Group" transform="translate(0.000000, 6.000000)">
+                <polyline id="Stroke-3" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="25.2335526 5.08223684 17.2335526 5.08223684 10.2335526 12.0822368 1.23355263 7.08223684 8.23355263 0.0822368421 13.2335526 3.08223684"></polyline>
+                <polyline id="Stroke-5" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="16.9736842 23.4703947 23.9736842 19.4703947 23.9736842 9.47039474 11.9736842 15.4703947 11.9736842 24.4703947 1.97368421 18.4703947 1.97368421 13.4703947"></polyline>
+                <path d="M2,15 C0.895333333,15 0,14.1046667 0,13 C0,11.8953333 0.895333333,11 2,11 C3.10466667,11 4,11.8953333 4,13 C4,14.1046667 3.10466667,15 2,15 Z" id="Fill-7" fill="#1F995C"></path>
+                <path d="M15,3 C15,4.10466667 14.1046667,5 13,5 C11.8953333,5 11,4.10466667 11,3 C11,1.89533333 11.8953333,1 13,1 C14.1046667,1 15,1.89533333 15,3" id="Fill-9" fill="#49AE4F"></path>
+                <path d="M19,23 C19,24.1046667 18.1046667,25 17,25 C15.8953333,25 15,24.1046667 15,23 C15,21.8953333 15.8953333,21 17,21 C18.1046667,21 19,21.8953333 19,23" id="Fill-1" fill="#70C143"></path>
+            </g>
+        </g>
+    </g>
+</svg>

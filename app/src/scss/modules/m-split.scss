@@ -1,0 +1,30 @@
+.m-split {
+  &--full {
+    display: flex;
+
+    height: 100vh;
+  }
+
+  &__image {
+    flex: 1 50%;
+    order: 1;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    flex: 1 50%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 2em 3em;
+
+    h1 {
+      @include a-head--1;
+    }
+  }
+}

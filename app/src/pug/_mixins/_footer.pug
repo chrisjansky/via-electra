@@ -1,0 +1,42 @@
+mixin footer
+  footer.m-footer
+    .m-footer__wrap
+      .m-footer__flex
+        .m-footer__card
+          a.m-footer__logo.c-logo--white(href="index.html")
+            include ../../static/svg/logo-main.svg
+            strong.c-logo__text via electra
+
+          ul.m-footer__contact
+            li Purkyňova 648/125 
+            li 612 00 Brno
+            li: a(href="javascript:") info@via-electra.eu
+            li: a(href="javascript:") +420 733 666 106
+
+          ul.m-footer__contextual
+            li: a(href="javascript:") Zaměstnanci
+            li: a(href="javascript:") Pobočky
+
+        -
+          var sitemap = [
+            {
+              "title": "Služby",
+              "pages": ["Projektování", "Realizace", "Engineering"]
+            },
+            {
+              "title": "Vybrané reference",
+              "pages": ["Optika Richter", "Rodinný dům Kociánka", "Polyfunkční dům Bratislavská"]
+            },
+            {
+              "title": "O nás",
+              "pages": ["Představení", "Náš tým", "Kariéra"]
+            }
+          ]
+        each group in sitemap
+          .m-footer__group
+            strong.m-footer__section= group.title
+            ul.m-footer__list
+              each page in group.pages
+                li.m-footer__item: a.m-footer__link(href="javascript:")= page
+
+      small.m-footer__copyright © 2017 via electra s.r.o.

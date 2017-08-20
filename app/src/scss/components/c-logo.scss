@@ -1,0 +1,25 @@
+[class^="c-logo--"],
+[class*=" c-logo--"] {
+  display: inline-block;
+
+  font-size: 1.5em;
+
+  svg {
+    vertical-align: middle;
+
+    margin-right: .5em;
+  }
+}
+
+.c-logo {
+  &--black {
+    @include a-link--black;
+  }
+  &--white {
+    @include a-link--white;
+  }
+
+  &__text {
+    font-weight: $font__sans--bold;
+  }
+}

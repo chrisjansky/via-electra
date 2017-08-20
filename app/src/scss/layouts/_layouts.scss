@@ -1,0 +1,12 @@
+@mixin a-wrap($padded: false) {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include reset-children;
+
+  padding: 5em;
+}
+
+.l-wrap {
+  @include a-wrap;
+}

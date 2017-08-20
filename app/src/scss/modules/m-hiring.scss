@@ -1,0 +1,38 @@
+.m-hiring {
+  display: flex;
+
+  min-height: 70vmin;
+
+  &__image {
+    flex-grow: .625;
+    flex-basis: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    flex-grow: .375;
+    flex-basis: 0;
+  }
+
+  &__wrap {
+    padding: 4em;
+  }
+
+  &__strong {
+    font-weight: $font__sans--regular;
+    color: $c-link;
+  }
+
+  &__text {
+    font-size: 1.5em;
+
+    margin-bottom: 3em;
+  }
+
+  &__button {
+    @include button--outline;
+  }
+}

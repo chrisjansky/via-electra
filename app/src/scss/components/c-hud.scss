@@ -1,0 +1,27 @@
+.c-hud {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 50%;
+  box-sizing: border-box;
+
+  padding: 2em 3em;
+
+  background-color: white;
+
+  &__toggle {
+    @include reset-button;
+
+    background-color: transparent;
+    border: 0;
+    padding: 1em;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

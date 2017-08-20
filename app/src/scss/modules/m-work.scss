@@ -1,0 +1,47 @@
+.m-work {
+  &__title {
+    @include a-caps;
+
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+
+    min-height: 70vmin;
+  }
+
+  &__image {
+    flex-grow: .625;
+    flex-basis: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .m-work__item:nth-child(2) & {
+      order: 1;
+    }
+  }
+
+  &__content {
+    flex-grow: .375;
+    flex-basis: 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 4em;
+  }
+
+  &__cat {
+    font-weight: $font__sans--regular;
+  }
+
+  &__name {
+    @include a-head--2;
+
+    color: black;
+    margin-top: .25em;
+  }
+}

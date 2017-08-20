@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="25px" viewBox="0 0 64 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient id="green-gradient" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#85CC3D" offset="0%"></stop>
+            <stop stop-color="#008040" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none">
+        <g transform="translate(-884.000000, -3552.000000)">
+            <g transform="translate(885.000000, 3552.000000)">
+                <polyline stroke="#008040" transform="translate(50.020815, 12.020815) rotate(-45.000000) translate(-50.020815, -12.020815) " points="58.5208153 3.52081528 58.5208153 20.5208153 41.5208153 20.5208153"></polyline>
+                <path d="M61,12 L0,12" id="Line-2" stroke="url(#green-gradient)" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

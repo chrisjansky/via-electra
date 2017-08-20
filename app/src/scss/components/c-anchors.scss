@@ -1,0 +1,24 @@
+.c-anchors {
+  &__arrow {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__list {
+    display: inline-block;
+
+    padding-left: 0;
+    margin-left: 1em;
+  }
+
+  &__item {
+    display: inline-block;
+
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  &__link {
+    @include a-link--black;
+  }
+}

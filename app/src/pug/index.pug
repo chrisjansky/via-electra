@@ -1,0 +1,165 @@
+extends _templates/_site
+
+block template-body
+  +hud
+
+  .m-split--full
+    .m-split__image(style="background-image: url('src/static/img/img-1.jpg')")
+    .m-split__content
+      h1.m-split__title Projekce, realizace a servis elektrosystému budov a domů
+
+      nav.c-anchors
+        a.c-anchors__arrow(href="javascript:")
+          include ../static/svg/arrow-down.svg
+        ul.c-anchors__list
+          each instance in ["Služby", "Reference", "O nás", "Kontakt"]
+            li.c-anchors__item
+              a.c-anchors__link(href="javascript:")= instance
+
+  .m-hilite
+    .m-hilite__wrap
+      h2.m-hilite__title Jsme profesionálové v oboru automatizace a elektro s více než dvacetiletými zkušenostmi.
+      ul.m-facts
+        -
+          var facts = [
+            {
+              "digit": "7",
+              "label": "odborníků v našem týmu"
+            },
+            {
+              "digit": "20+",
+              "label": "let působení v oboru"
+            },
+            {
+              "digit": "3D",
+              "label": "řešení celého projektu"
+            },
+            {
+              "digit": "4",
+              "label": "české a slovenské pobočky"
+            }
+          ]
+        each instance in facts
+          li.m-facts__item
+            strong.m-facts__digit= instance.digit
+            span.m-facts__label= instance.label
+
+  .m-services
+    .m-services__wrap
+      h3.m-services__title Naše specializace
+
+      .m-services__list
+        -
+          var services = [
+            {
+              "image": "service-1.jpg",
+              "name": "Projektování",
+              "text": "Příprava kompletní projekční dokumentace elektro systému budovy.",
+              "button": "Více o projektování"
+            },
+            {
+              "image": "service-2.jpg",
+              "name": "Realizace",
+              "text": "BIM je potřeba vnímat především jako proces a při přechodu na BIM je tedy zásadní si uvědomit.",
+              "button": "Více o realizaci"
+            },
+            {
+              "image": "service-3.jpg",
+              "name": "Engineering",
+              "text": "Od konzultace a výběru dodavatelů až po technický i autorský dozor pro elektronickou část stavby.",
+              "button": "Více o engineeringu"
+            }
+          ]
+        each instance in services
+          .m-services__item
+            img.m-services__image(src="src/static/img/" + instance.image, alt=instance.name)
+            h4.m-services__name= instance.name
+            p.m-services__text= instance.text
+            a.m-services__button(href="javascript:")= instance.button
+
+  .m-work
+    h3.m-work__title Vybrané reference
+
+    -
+      var works = [
+        {
+          "name": "Optika Richter",
+          "category": "Projektování",
+          "image": "work-1.jpg"
+        },
+        {
+          "name": "Rodinný dům Kociánka",
+          "category": "Realizace",
+          "image": "work-2.jpg"
+        },
+        {
+          "name": "Polyfunkční dům Bratislavská",
+          "category": "Engineering",
+          "image": "work-3.jpg"
+        }
+      ]
+
+    .m-work__list
+      each instance in works
+        .m-work__item
+          a.m-work__image(style="background-image: url('src/static/img/" + instance.image + "')", href="javascript:")
+          .m-work__content
+            a.m-work__link(href="javascript:")
+              strong.m-work__cat= instance.category
+              h4.m-work__name= instance.name
+              span.m-work__arrow
+                include ../static/svg/arrow-right.svg
+
+  .m-blurb
+    .m-blurb__wrap
+      h3.m-blurb__title O nás
+
+      strong.m-blurb__text Působíme v největších městech České republiky i Slovenska a do roku 2020 se chceme stát dodavatelem číslo 1 na obou trzích.
+
+      .c-partners
+        h4.c-partners__title Partneři
+        ul.c-partners__list
+          li.c-partners__item: include ../static/svg/partner-abb.svg
+          li.c-partners__item: include ../static/svg/partner-cisco.svg
+          li.c-partners__item: include ../static/svg/partner-viasound.svg
+          li.c-partners__item: include ../static/svg/partner-jablotron.svg
+          li.c-partners__item: include ../static/svg/partner-eissound.svg
+
+      a.m-blurb__button(href="javascript:") Poznejte nás blíže
+
+  .m-hiring
+    .m-hiring__image(style="background-image: url('src/static/img/img-2.jpg')")
+    .m-hiring__content
+      .m-hiring__wrap
+        h4.m-hiring__strong Pracujte u nás
+        p.m-hiring__text Čas od času rozšiřujeme náš tým. Možná hledáme právě Vás.
+
+        a.m-hiring__button(href="javascript:") Kariéra
+
+  .m-reach
+    .m-reach__wrap
+      h3.m-reach__title Kontakt
+      p.m-reach__text Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
+
+      .m-reach__person
+        img.m-reach__thumbnail(src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
+        .m-reach__details
+          strong.m-reach__name Jaroslav Veselý
+          ul.m-reach__list
+            li.m-reach__item
+              a.m-reach__link(href="javascript:") jaroslav.vesely@via-electra.eu
+            li.m-reach__item
+              a.m-reach__link(href="javascript:") +420 733 666 106
+
+      a.m-reach__button(href="javascript:") Kontakt na všechny zaměstnance
+
+  .m-pins
+    .m-pins__image(style="background-image: url('src/static/img/img-offices.jpg')")
+    .m-pins__content
+      .m-pins__wrap
+        h4.m-pins__strong Navštivte nás
+        p.m-pins__text Působíme na českém i slovenském trhu
+
+        a.m-pins__button(href="javascript:") Naše pobočky
+
+  +footer

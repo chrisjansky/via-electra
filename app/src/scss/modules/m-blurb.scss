@@ -1,0 +1,35 @@
+.m-blurb {
+  text-align: center;
+  background-color: $c-grey--900;
+
+  &__wrap {
+    @include a-wrap;
+  }
+
+  &__title {
+    @include a-caps;
+  }
+
+  &__text {
+    display: block;
+
+    @include a-head--2(false);
+
+    max-width: 25em;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+  }
+
+  &__button {
+    @include button--outline;
+
+    margin-top: 2em;
+
+    &:before {
+      /* Oops */
+      background-color: $c-grey--900;
+    }
+  }
+}
