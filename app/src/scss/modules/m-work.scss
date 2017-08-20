@@ -3,6 +3,7 @@
 
   &__title {
     @include a-caps;
+    margin-top: 0;
 
     text-align: center;
   }
