@@ -1,0 +1,89 @@
+@mixin a-head--1 {
+  font-size: 3.25em;
+  font-weight: $font__sans--light;
+  line-height: $leading--s;
+}
+
+@mixin a-head--2($bold: true) {
+  font-size: 2.5em;
+  line-height: $leading--s;
+
+  @if $bold == true {
+    font-weight: $font__sans--regular;
+  } @else {
+    font-weight: $font__sans--light;
+  }
+}
+
+@mixin a-head--3 {
+  font-weight: $font__sans--bold;
+  font-size: 2em;
+  line-height: $leading--s;
+}
+
+@mixin a-caps {
+  font-weight: $font__sans--regular;
+  font-size: 1.125em;
+
+  text-transform: uppercase;
+  letter-spacing: .25em;
+
+  margin-top: 4em;
+  margin-bottom: 4em;
+
+  color: $c-grey--500;
+}
+
+@mixin a-caps--small {
+  font-weight: $font__sans--regular;
+  font-size: .75em;
+
+  text-transform: uppercase;
+  letter-spacing: .25em;
+
+  color: $c-grey--700;
+}
+
+@mixin a-link--black {
+  &:link,
+  &:visited {
+    color: black;
+  }
+  &:hover,
+  &:active {
+    color: $c-grey--300;
+  }
+}
+
+@mixin a-link--white {
+  &:link,
+  &:visited {
+    color: white;
+  }
+  &:hover,
+  &:active {
+    color: rgba(white, .625);
+  }
+}
+
+@mixin a-link--dark {
+  &:link,
+  &:visited {
+    color: $c-grey--500;
+  }
+  &:hover,
+  &:active {
+    color: $c-grey--700;
+  }
+}
+
+@mixin a-link--inverse {
+  &:link,
+  &:visited {
+    color: $c-hover;
+  }
+  &:hover,
+  &:active {
+    color: $c-link;
+  }
+}

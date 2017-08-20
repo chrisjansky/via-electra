@@ -1,0 +1,63 @@
+/*----- Helper mixins ----- */
+
+@mixin reset-children {
+  & > :first-child {
+    margin-top: 0;
+  }
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin pseudo-center {
+  &:before {
+    content: "";
+    width: 0;
+    height: 100%;
+
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+@mixin reset-button {
+  cursor: pointer;
+  appearance: none;
+
+  font-family: inherit;
+}
+
+@mixin button--outline {
+  position: relative;
+  z-index: 5;
+
+  display: inline-block;
+
+  font-size: 1.125em;
+
+  background-image: linear-gradient(-45deg, $c-color--130, $c-color--170);
+  border-radius: $radius--b;
+  
+  padding: .625em 1.75em .75em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: $stroke--b;
+    bottom: $stroke--b;
+    left: $stroke--b;
+    right: $stroke--b;
+    z-index: -1;
+
+    background-color: white;
+    border-radius: $radius--s;
+  }
+}

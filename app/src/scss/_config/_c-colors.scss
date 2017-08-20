@@ -1,0 +1,17 @@
+$c-color--170: hsb(090, 070, 080);
+$c-color--150: hsb(150, 090, 060);
+$c-color--130: hsb(150, 100, 050);
+
+$c-grey--900:  hsb(215, 001, 098);
+$c-grey--700:  hsb(215, 004, 070);
+$c-grey--500:  hsb(215, 004, 055);
+$c-grey--300:  hsb(215, 006, 035);
+$c-grey--100:  hsb(215, 014, 010);
+
+$c-link:    $c-color--150;
+$c-visited: $c-link;
+$c-hover:   $c-color--170;
+$c-active:  $c-hover;
+
+$c-select__bg:   black;
+$c-select__text: white;
