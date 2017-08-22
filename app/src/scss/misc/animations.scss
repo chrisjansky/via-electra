@@ -1,0 +1,17 @@
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes dim {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba(black, .925);
+  }
+}

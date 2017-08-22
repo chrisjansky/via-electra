@@ -13,6 +13,21 @@ $duration--s: .125s;
 $duration--b: .25s;
 $duration--l: .5s;
 
+/* Timing functions */
+$easeOutCubic:   cubic-bezier(0.215, 0.610, 0.355, 1.000);
+$easeOutQuart:   cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$easeOutQuint:   cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$easeOutSine:    cubic-bezier(0.390, 0.575, 0.565, 1.000);
+$easeOutExpo:    cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$easeOutCirc:    cubic-bezier(0.075, 0.820, 0.165, 1.000);
+
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+$easeInOutQuart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+$easeInOutQuint: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+$easeInOutSine:  cubic-bezier(0.445, 0.050, 0.550, 0.950);
+$easeInOutExpo:  cubic-bezier(1.000, 0.000, 0.000, 1.000);
+$easeInOutCirc:  cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
 /* Breakpoints */
 $bp__phablet: 460px;
 $bp__tablet:  760px;

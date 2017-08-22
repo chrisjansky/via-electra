@@ -1,0 +1,32 @@
+mixin menu
+  nav.c-menu
+    .c-menu__content
+      button.c-menu__close(type="button", data-toggle="menu")
+        include ../../static/svg/icon-close.svg
+
+      ul.c-menu__list
+        -
+          var menu = [
+            {
+              "title": "Služby",
+              "href": "index.html#services"
+            },
+            {
+              "title": "Reference",
+              "href": "index.html#work"
+            },
+            {
+              "title": "O nás",
+              "href": "index.html#about"
+            },
+            {
+              "title": "Kontakt",
+              "href": "index.html#contact"
+            }
+          ]
+        each instance in menu
+          li.c-menu__item
+            a.c-menu__link(href=instance.href)= instance.title
+
+    span.c-menu__frame(data-toggle="menu")
+      span.c-menu__overlay
