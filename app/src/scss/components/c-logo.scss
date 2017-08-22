@@ -2,7 +2,7 @@
 [class*=" c-logo--"] {
   display: inline-block;
 
-  font-size: 1.5em;
+  line-height: 1;
 
   svg {
     vertical-align: middle;
@@ -18,8 +18,20 @@
   &--white {
     @include a-link--white;
   }
+}
 
-  &__text {
-    font-weight: $font__sans--bold;
+[class^="c-logo__text"],
+[class*=" c-logo__text"] {
+  vertical-align: middle;
+  font-weight: $font__sans--bold;
+}
+
+.c-logo__text {
+  &--main {
+    font-size: 1.5em;
+  }
+
+  &--small {
+    font-size: 1.25em;
   }
 }

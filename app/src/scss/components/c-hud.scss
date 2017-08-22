@@ -1,24 +1,45 @@
-.c-hud {
-  position: absolute;
+[class^="c-hud--"],
+[class*=" c-hud--"] {
   top: 0;
   left: 0;
+  z-index: 500;
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  width: 50%;
   box-sizing: border-box;
+}
 
-  padding: 2em 3em;
+.c-hud {
+  &--top {
+    position: absolute;
 
-  background-color: white;
+    width: 50%;
+    padding: 2em 2.5em;
+  }
+
+  &--peek {
+    position: fixed;
+
+    width: 100%;
+    padding: 1em 2.5em;
+
+    background-color: white;
+    box-shadow: $shadow--1;
+  }
 
   &__toggle {
     @include reset-button;
 
     background-color: transparent;
     border: 0;
-    padding: 1em;
+    padding: .75em;
+    margin-right: -.75em;
+
+    svg {
+      display: block;
+    }
 
     &:focus {
       outline: 0;

@@ -1,7 +1,14 @@
 mixin hud
-  header.c-hud
+  header.c-hud--top
     a.c-logo--black(href="index.html")
       include ../../static/svg/logo-main.svg
-      strong.c-logo__text via electra
+      strong.c-logo__text--main via electra
+    button.c-hud__toggle(type="button")
+      include ../../static/svg/icon-menu.svg
+
+  #js-headroom.c-hud--peek
+    a.c-logo--black(href="index.html")
+      include ../../static/svg/logo-small.svg
+      strong.c-logo__text--small via electra
     button.c-hud__toggle(type="button")
       include ../../static/svg/icon-menu.svg

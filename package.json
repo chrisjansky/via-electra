@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
-    "headroom.js": "^0.9.3",
+    "headroom.js": "^0.9.4",
     "normalize.css": "^7.0.0",
     "smoothscroll-polyfill": "^0.3.5"
   }
