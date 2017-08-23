@@ -2,11 +2,17 @@
   font-size: 3.25em;
   font-weight: $font__sans--light;
   line-height: $leading--s;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 @mixin a-head--2($bold: true) {
   font-size: 2.5em;
   line-height: $leading--s;
+
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 
   @if $bold == true {
     font-weight: $font__sans--regular;
@@ -19,6 +25,17 @@
   font-weight: $font__sans--bold;
   font-size: 2em;
   line-height: $leading--s;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@mixin a-head--4 {
+  font-weight: $font__sans--regular;
+  font-size: 1em;
+
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 @mixin a-caps {

@@ -22,7 +22,7 @@
     background-position: center;
     background-size: cover;
 
-    .m-work__item:nth-child(2) & {
+    .m-work__item:nth-child(even) & {
       order: 1;
     }
   }

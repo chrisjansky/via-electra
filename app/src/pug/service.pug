@@ -1,0 +1,145 @@
+extends _templates/_site
+
+block template-body
+  +hud
+
+  +menu
+
+  .m-split--short
+    .m-split__image(style="background-image: url('src/static/img/img-3.jpg')")
+    .m-split__content--gradient
+      a.m-split__back(href="index.html#services") ← Služby
+      h1.m-split__title(data-grep) Projektování
+
+  .s-service__blurb.m-blurb--white
+    .m-blurb__wrap
+      strong.m-blurb__claim(data-grep) Připravíme pro Vás kompletní projekční dokumentaci elektro systému budovy.
+
+      p.m-blurb__text(data-grep) Jsme jedna z mála českých firem, které při navrhování používají metodiku BIM a DDS-CAD software — díky tomu se nám daří eliminovat nepředvídatelné události z důvodů konstrukčních změn a s tím spojené spontánní zásahy do specifikace elektromontážních prvků na úkor kvality použitých materiálů.
+
+      ul.m-facts
+        -
+          var facts = [
+            {
+              "digit": "100%",
+              "label": "kontrola zákazníka nad nabídkovém řízení"
+            },
+            {
+              "digit": "30&thinsp;%",
+              "label": "méně spotřebovaného montážního materiálu"
+            },
+            {
+              "digit": "25%",
+              "label": "úspora nákladů investora"
+            }
+          ]
+        each instance in facts
+          li.m-facts__item
+            strong.m-facts__digit!= instance.digit
+            span.m-facts__label(data-grep)= instance.label
+
+      .c-features
+        h4.c-features__title Proč projektovat s námi?
+        ul.c-features__list
+          -
+            var features = [
+              {
+                "title": "Flexibilita",
+                "text": "BIM umožnuje provádět změny v jakékoliv fázi projektu s okamžitým promítnutím změn do projektové dokumentace."
+              },
+              {
+                "title": "Bezpečnost",
+                "text": "Software automaticky kontroluje bezpečnostní prvky v projektu a vyhodnocuje okamžitě možné konfliktní oblasti."
+              },
+              {
+                "title": "Optimalizace nákladů",
+                "text": "Při použití softwaru DDS-CAD dosahujeme až 30% úspor montážního materiálu, přičemž má zákazník 100% kontrolu nad nabídkovém řízení."
+              }
+            ]
+          each instance, index in features
+            li.c-features__item
+              span.c-features__icon
+                case index
+                  when 0
+                    include ../static/svg/icon-temp-1.svg
+                  when 1
+                    include ../static/svg/icon-temp-2.svg
+                  when 2
+                    include ../static/svg/icon-temp-3.svg
+              h5.c-features__name= instance.title
+              p.c-features__text= instance.text
+
+  .m-infobox
+    .m-infobox__wrap
+      h1.m-infobox__title Co nás odděluje od konkurence?
+
+      -
+        var infobox = [
+          {
+            "image": "img-4.jpg",
+            "title": "Building Information Model",
+            "text": "Building Information Model (zkráceně BIM) je potřeba vnímat především jako proces a při přechodu na BIM je tedy zásadní si uvědomit, že se nejedná pouze o nainstalování nového softwarového řešení, ale o zásadnější změny v celkovém systému práce ať už se jedná o projektanta – jednotlivce, tím spíše celý projekční ateliér.",
+            "features": ["efektivnější komunikace mezi investorem, stavbou a projektantem", "odhalení chyb ještě v době přípravy projektu", "rychlá implementace změn a dodání dokumentace"]
+          },
+          {
+            "image": "img-5.jpg",
+            "title": "DDS-CAD",
+            "text": "DDS-CAD (nebo-li Data Design System Computer-aided Design) je software vyvinutý speciálně pro oblast stavebnictví.",
+            "features": ["snížení počtu chyb a nepřesností v dokumentaci", "vizualizace 3D v reálném čase a prostoru", "zvýšená produktivita díky jednoduššímu získávání informací z projektu", "rychlé a přesné tvorbě výkazů výměr"]
+          }
+        ]
+
+      .m-infobox__body
+        each instance in infobox
+          .m-infobox__block
+            .m-infobox__image(style="background-image: url('src/static/img/" + instance.image + "')")
+            h2.m-infobox__head= instance.title
+            .m-infobox__text
+              p= instance.text
+              h3 Hlavní výhody
+              ul
+                each item in instance.features
+                  li= item
+
+  .m-work
+    h3.m-work__title Související reference
+
+    .m-work__list
+      +workItem(works[0])
+
+  .m-reach
+    .m-reach__wrap
+      .m-reach__person--small
+        h4.m-reach__question Zajímá Vás více?
+        img.m-reach__thumbnail(src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
+        .m-reach__details
+          strong.m-reach__name Jaroslav Veselý
+          ul.m-reach__list
+            li.m-reach__item
+              a.m-reach__link(href="javascript:") jaroslav.vesely@via-electra.eu
+            li.m-reach__item
+              a.m-reach__link(href="javascript:") +420 733 666 106
+
+  .m-related
+    .m-related__top
+      h3.m-related__title Další nabízené služby
+
+    .m-related__list
+      -
+        var related = [
+          {
+            "title": "Realizace",
+            "image": "service-2.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "service-3.jpg"
+          }
+        ]
+
+      each instance in related
+        a.m-related__link(href="service.html")
+          img.m-related__image(src="src/static/img/" + instance.image, alt=instance.title)
+          strong.m-related__name= instance.title
+
+  +footer

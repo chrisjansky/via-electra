@@ -1,8 +1,15 @@
+[class^="m-split--"],
+[class*=" m-split--"] {
+  display: flex;
+}
+
 .m-split {
   &--full {
-    display: flex;
+    min-height: 100vh;
+  }
 
-    height: 100vh;
+  &--short {
+    min-height: 75vh;
   }
 
   &__image {
@@ -13,18 +20,37 @@
     background-size: cover;
   }
 
-  &__content {
-    flex: 1 50%;
-    box-sizing: border-box;
+  &__back {
+    display: inline-block;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+  }
+}
 
-    padding: 2em 3em;
+[class^="m-split__content--"],
+[class*=" m-split__content--"] {
+  flex: 1 50%;
+  box-sizing: border-box;
 
-    h1 {
-      @include a-head--1;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 3em;
+
+  @include reset-children;
+
+  h1 {
+    @include a-head--1;
+  }
+}
+
+.m-split__content--gradient {
+  color: white;
+  background-image: linear-gradient(-45deg, $c-color--170, $c-color--130);
+
+  a {
+    @include a-link--white;
   }
 }

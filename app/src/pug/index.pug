@@ -7,7 +7,7 @@ block template-body
 
   .m-split--full
     .m-split__image(style="background-image: url('src/static/img/img-1.jpg')")
-    .m-split__content
+    .m-split__content--white
       h1.m-split__title(data-grep) Projekce, realizace a servis elektrosystému budov a domů
 
       nav.c-anchors
@@ -101,41 +101,15 @@ block template-body
   #work.m-work
     h3.m-work__title Vybrané reference
 
-    -
-      var works = [
-        {
-          "name": "Optika Richter",
-          "category": "Projektování",
-          "image": "work-1.jpg"
-        },
-        {
-          "name": "Rodinný dům Kociánka",
-          "category": "Realizace",
-          "image": "work-2.jpg"
-        },
-        {
-          "name": "Polyfunkční dům Bratislavská",
-          "category": "Engineering",
-          "image": "work-3.jpg"
-        }
-      ]
-
     .m-work__list
       each instance in works
-        .m-work__item
-          a.m-work__image(style="background-image: url('src/static/img/" + instance.image + "')", href="javascript:")
-          .m-work__content
-            a.m-work__link(href="javascript:")
-              strong.m-work__cat= instance.category
-              h4.m-work__name= instance.name
-              span.m-work__arrow
-                include ../static/svg/arrow-right.svg
+        +workItem(instance)
 
-  #about.m-blurb
+  #about.m-blurb--light
     .m-blurb__wrap
       h3.m-blurb__title O nás
 
-      strong.m-blurb__text(data-grep) Působíme v největších městech České republiky i Slovenska a do roku 2020 se chceme stát dodavatelem číslo 1 na obou trzích.
+      strong.m-blurb__claim(data-grep) Působíme v největších městech České republiky i Slovenska a do roku 2020 se chceme stát dodavatelem číslo 1 na obou trzích.
 
       .c-partners
         h4.c-partners__title Partneři
@@ -162,7 +136,7 @@ block template-body
       h3.m-reach__title Kontakt
       p.m-reach__text(data-grep) Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
 
-      .m-reach__person
+      .m-reach__person--large
         img.m-reach__thumbnail(src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
         .m-reach__details
           strong.m-reach__name Jaroslav Veselý

@@ -1,0 +1,50 @@
+.m-infobox {
+  &__wrap {
+    @include a-wrap;
+    padding-bottom: 0;
+  }
+
+  &__title {
+    @include a-head--2;
+    text-align: center;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__block {
+    flex-grow: 1;
+    flex-basis: 10em;
+
+    &:nth-child(even) {
+      margin-top: 15vh;
+    }
+  }
+
+  &__image {
+    padding-bottom: 70%;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__head {
+    @include a-head--3;
+  }
+
+  &__text {
+    font-size: 1.25em;
+    color: $c-grey--300;
+
+    margin-right: 2em;
+
+    h3 {
+      @include a-head--4;
+    }
+
+    ul {
+      padding-left: 1.25em;
+    }
+  }
+}

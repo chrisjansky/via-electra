@@ -1,7 +1,13 @@
-.m-blurb {
+[class^="m-blurb--"],
+[class*=" m-blurb--"] {
   text-align: center;
-  background-color: $c-grey--900;
+}
 
+.m-blurb--light {
+  background-color: $c-grey--900;
+}
+
+.m-blurb {
   &__wrap {
     @include a-wrap;
   }
@@ -10,16 +16,28 @@
     @include a-caps;
   }
 
-  &__text {
+  &__claim {
     display: block;
 
-    @include a-head--2(false);
+    @include a-head--2;
 
     max-width: 25em;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
+  }
+
+  &__text {
+    font-size: 1.5em;
+    text-align: left;
+
+    max-width: 30em;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: $c-grey--300;
   }
 
   &__button {

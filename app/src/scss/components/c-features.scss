@@ -1,0 +1,37 @@
+.c-features {
+  margin-top: 7em;
+
+  &__title {
+    @include a-caps;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: -1.25em;
+    margin-right: -1.25em;
+
+    display: flex;
+    justify-content: space-around;
+
+    text-align: left;
+  }
+
+  &__item {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    padding: 1.25em;
+    
+    @include reset-children;
+  }
+
+  &__name {
+    @include a-head--3;
+  }
+
+  &__text {
+    font-size: 1.125em;
+    color: $c-grey--300;
+  }
+}
