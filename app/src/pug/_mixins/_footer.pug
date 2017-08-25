@@ -21,15 +21,18 @@ mixin footer
           var sitemap = [
             {
               "title": "Služby",
-              "pages": ["Projektování", "Realizace", "Engineering"]
+              "pages": ["Projektování", "Realizace", "Engineering"],
+              "href": "service.html"
             },
             {
               "title": "Vybrané reference",
-              "pages": ["Optika Richter", "Rodinný dům Kociánka", "Polyfunkční dům Bratislavská"]
+              "pages": ["Optika Richter", "Rodinný dům Kociánka", "Polyfunkční dům Bratislavská"],
+              "href": "javascript:"
             },
             {
               "title": "O nás",
-              "pages": ["Představení", "Náš tým", "Kariéra"]
+              "pages": ["Představení", "Náš tým", "Kariéra"],
+              "href": "javascript:"
             }
           ]
         each group in sitemap
@@ -37,6 +40,6 @@ mixin footer
             strong.m-footer__section= group.title
             ul.m-footer__list
               each page in group.pages
-                li.m-footer__item: a.m-footer__link(href="javascript:")= page
+                li.m-footer__item: a.m-footer__link(href=group.href)= page
 
       small.m-footer__copyright © 2017 via electra s.r.o.

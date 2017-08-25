@@ -1,0 +1,32 @@
+mixin reach(type)
+  if type == "small"
+    .m-reach
+      .m-reach__wrap
+        .m-reach__person--small
+          h4.m-reach__question Zajímá Vás více?
+          img.m-reach__thumbnail(src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
+          .m-reach__details
+            strong.m-reach__name Jaroslav Veselý
+            ul.m-reach__list
+              li.m-reach__item
+                a.m-reach__link(href="javascript:") jaroslav.vesely@via-electra.eu
+              li.m-reach__item
+                a.m-reach__link(href="javascript:") +420 733 666 106
+
+  else
+    #contact.m-reach
+      .m-reach__wrap
+        h3.m-reach__title Kontakt
+        p.m-reach__text(data-grep) Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
+
+        .m-reach__person--large
+          img.m-reach__thumbnail(src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
+          .m-reach__details
+            strong.m-reach__name Jaroslav Veselý
+            ul.m-reach__list
+              li.m-reach__item
+                a.m-reach__link(href="javascript:") jaroslav.vesely@via-electra.eu
+              li.m-reach__item
+                a.m-reach__link(href="javascript:") +420 733 666 106
+
+        a.m-reach__button(href="javascript:") Kontakt na všechny zaměstnance

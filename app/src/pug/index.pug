@@ -96,7 +96,7 @@ block template-body
             img.m-services__image(src="src/static/img/" + instance.image, alt=instance.name)
             h4.m-services__name= instance.name
             p.m-services__text= instance.text
-            a.m-services__button(href="javascript:")= instance.button
+            a.m-services__button(href="service.html")= instance.button
 
   #work.m-work
     h3.m-work__title Vybrané reference
@@ -131,22 +131,7 @@ block template-body
 
         a.m-hiring__button(href="javascript:") Kariéra
 
-  #contact.m-reach
-    .m-reach__wrap
-      h3.m-reach__title Kontakt
-      p.m-reach__text(data-grep) Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
-
-      .m-reach__person--large
-        img.m-reach__thumbnail(src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
-        .m-reach__details
-          strong.m-reach__name Jaroslav Veselý
-          ul.m-reach__list
-            li.m-reach__item
-              a.m-reach__link(href="javascript:") jaroslav.vesely@via-electra.eu
-            li.m-reach__item
-              a.m-reach__link(href="javascript:") +420 733 666 106
-
-      a.m-reach__button(href="javascript:") Kontakt na všechny zaměstnance
+  +reach
 
   .m-pins
     .m-pins__image(style="background-image: url('src/static/img/img-offices.jpg')")
