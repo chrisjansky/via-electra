@@ -1,0 +1,56 @@
+extends _templates/_site
+
+block template-body
+  +hud
+
+  +menu
+
+  .m-detail
+    .m-detail__top
+      .m-detail__splash(style="background-image: url('src/static/img/work/kocianka-1.jpg')")
+      .m-detail__scoop
+        a.m-detail__back(href="index.html#work") ← Reference
+        strong.m-detail__cat Realizace
+        h1.m-detail__title Rodinný dům Kociánka
+
+    .m-detail__wrap
+      strong.m-detail__claim(data-grep) Úvodní popis sahají až do sedmdesátých let, kdy se o principu informačního modelu poprvé.
+
+      .m-detail__info
+        .m-detail__group--description
+          h2 Popis projektu
+          .m-detail__editor
+            p BIM je potřeba vnímat především jako proces a při přechodu na BIM je tedy zásadní si uvědomit, že se nejedná pouze o nainstalování nového softwarového řešení, ale o zásadnější změny v celkovém systému práce ať už se jedná o projektanta – jednotlivce, tím spíše celý projekční ateliér.
+
+        .m-detail__group--services
+          h2 Poskytnuté služby
+          .m-detail__editor
+            ul
+              li Projektování BIM a DDS-CAD 
+                a(href="javascript:")  Co je to?
+              li Realizace
+              li Nasazení software
+              li Další služba
+
+        .m-detail__group--date
+          h2 Rok realizace
+          .m-detail__editor
+            p 2017
+
+      .m-detail__loop
+        img(src="src/static/img/work/kocianka-2.jpg", alt="Detail")
+        .m-detail__split
+          img(src="src/static/img/work/kocianka-5.jpg", alt="Detail")
+          img(src="src/static/img/work/kocianka-4.jpg", alt="Detail")
+        img(src="src/static/img/work/kocianka-3.jpg", alt="Detail")
+
+  +reach("small")
+
+  .m-work
+    h3.m-work__title Další vybrané reference
+
+    .m-work__list
+      +workItem(works[0])
+      +workItem(works[2])
+
+  +footer

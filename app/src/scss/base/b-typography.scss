@@ -1,10 +1,15 @@
-@mixin a-head--1 {
+@mixin a-head--1($fitted: false) {
   font-size: 3.25em;
   font-weight: $font__sans--light;
   line-height: $leading--s;
 
-  margin-top: 1em;
-  margin-bottom: 1em;
+  @if $fitted == true {
+    margin-top: .5em;
+    margin-bottom: .5em;
+  } @else {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 
 @mixin a-head--2($bold: true) {
