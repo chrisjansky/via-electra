@@ -38,36 +38,26 @@ block template-body
             strong.m-facts__digit!= instance.digit
             span.m-facts__label(data-grep)= instance.label
 
-      .c-features
-        h4.c-features__title Proč projektovat s námi?
-        ul.c-features__list
-          -
-            var features = [
-              {
-                "title": "Flexibilita",
-                "text": "BIM umožnuje provádět změny v jakékoliv fázi projektu s okamžitým promítnutím změn do projektové dokumentace."
-              },
-              {
-                "title": "Bezpečnost",
-                "text": "Software automaticky kontroluje bezpečnostní prvky v projektu a vyhodnocuje okamžitě možné konfliktní oblasti."
-              },
-              {
-                "title": "Optimalizace nákladů",
-                "text": "Při použití softwaru DDS-CAD dosahujeme až 30% úspor montážního materiálu, přičemž má zákazník 100% kontrolu nad nabídkovém řízení."
-              }
-            ]
-          each instance, index in features
-            li.c-features__item
-              span.c-features__icon
-                case index
-                  when 0
-                    include ../static/svg/icon-temp-1.svg
-                  when 1
-                    include ../static/svg/icon-temp-2.svg
-                  when 2
-                    include ../static/svg/icon-temp-3.svg
-              h5.c-features__name= instance.title
-              p.c-features__text= instance.text
+      -
+        var features = {
+          "title": "Proč projektovat s námi?",
+          "items" :[
+            {
+              "title": "Flexibilita",
+              "text": "BIM umožnuje provádět změny v jakékoliv fázi projektu s okamžitým promítnutím změn do projektové dokumentace."
+            },
+            {
+              "title": "Bezpečnost",
+              "text": "Software automaticky kontroluje bezpečnostní prvky v projektu a vyhodnocuje okamžitě možné konfliktní oblasti."
+            },
+            {
+              "title": "Optimalizace nákladů",
+              "text": "Při použití softwaru DDS-CAD dosahujeme až 30% úspor montážního materiálu, přičemž má zákazník 100% kontrolu nad nabídkovém řízení."
+            }
+          ]
+        }
+
+      +features(features)
 
   .m-infobox
     .m-infobox__wrap
