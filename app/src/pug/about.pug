@@ -71,13 +71,23 @@ block template-body
     .m-careers__list
       each instance, index in ["Obchodní zástupce", "Projektant"]
         .m-careers__item
-          .m-careers__image(style="background-image: url('src/static/img/careers-" + (index + 1) + ".jpg')")
-          .m-careers__content
-            .m-careers__wrap
-              mark.m-careers__strong Otevřená pozice
-              h3.m-careers__name= instance
+          .m-careers__short
+            .m-careers__image(style="background-image: url('src/static/img/careers-" + (index + 1) + ".jpg')")
+            .m-careers__content
+              .m-careers__wrap
+                mark.m-careers__strong Otevřená pozice
+                h3.m-careers__name= instance
 
-              span.m-work__arrow
-                include ../static/svg/arrow-right.svg
-
+          .m-careers__long
+            h4.m-careers__caps Více o této pozici
+            .m-careers__description
+              p
+                faker-lorem-paragraph/
+              ul
+                each instance in [1, 2, 3]
+                  li
+                    faker-lorem-sentence/
+              p
+                faker-lorem-paragraph/
+            a.m-careers__button(href="javascript:") Mám zájem o tuto pozici
   +footer

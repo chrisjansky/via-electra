@@ -11,6 +11,10 @@
   }
 
   &__item {
+    @include clearfix;
+  }
+
+  &__short {
     display: flex;
   }
 
@@ -23,10 +27,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    .m-careers__item:nth-child(even) & {
-      order: 1;
-    }
   }
 
   &__content {
@@ -50,5 +50,39 @@
 
     color: black;
     margin-top: .25em;
+  }
+
+  &__long {
+    position: relative;
+    z-index: 5;
+
+    float: right;
+
+    width: 62.5%;
+    box-sizing: border-box;
+
+    padding: 3em;
+    margin-top: -5em;
+    margin-bottom: 3em;
+
+    background-color: white;
+
+    @include reset-children;
+  }
+
+  &__caps {
+    @include a-caps--small;
+  }
+
+  &__description {
+    font-size: 1.25em;
+
+    color: $c-grey--500;
+  }
+
+  &__button {
+    @include button--outline;
+
+    margin-top: 2em;
   }
 }
