@@ -1,0 +1,15 @@
+mixin people(title)
+  .m-people
+    .m-people__wrap
+      h2.m-people__title= title
+
+      .m-people__list
+        each instance in [1, 2, 3, 4, 5, 6, 7]
+          .m-people__item
+            img.m-people__portrait(src="http://source.unsplash.com/random/480x480?sig=" + instance, alt="Placeholder")
+            strong.m-people__name
+              faker-name-findName/
+            span.m-people__position Pozice
+            ul.m-people__contact
+              li +420 777 123 456
+              li: a(href="javascript:") jmeno@via-electra.eu

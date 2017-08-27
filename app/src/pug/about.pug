@@ -49,20 +49,7 @@ block template-body
           li.c-partners__item: include ../static/svg/partner-jablotron.svg
           li.c-partners__item: include ../static/svg/partner-eissound.svg
 
-  .m-people
-    .m-people__wrap
-      h2.m-people__title Náš tým
-
-      .m-people__list
-        each instance in [1, 2, 3, 4, 5, 6, 7]
-          .m-people__item
-            img.m-people__portrait(src="http://source.unsplash.com/random/480x480?sig=" + instance, alt="Placeholder")
-            strong.m-people__name
-              faker-name-findName/
-            span.m-people__position Pozice
-            ul.m-people__contact
-              li +420 777 123 456
-              li: a(href="javascript:") jmeno@via-electra.eu
+  +people("Náš tým")
 
   .m-careers
     .m-careers__top
