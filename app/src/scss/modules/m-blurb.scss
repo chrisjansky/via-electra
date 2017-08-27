@@ -34,8 +34,7 @@
 
     max-width: 30em;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2.5em auto;
 
     color: $c-grey--300;
   }
@@ -43,7 +42,7 @@
   &__button {
     @include button--outline;
 
-    margin-top: 2em;
+    margin-top: 3em;
 
     &:before {
       /* Oops */

@@ -1,0 +1,59 @@
+.m-people {
+  &__wrap {
+    @include a-wrap;
+
+    text-align: center;
+  }
+
+  &__title {
+    @include a-head--3(true);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: -2em;
+  }
+
+  &__item {
+    flex-basis: 16.5em;
+
+    margin: 2em;
+  }
+
+  &__portrait {
+    border-radius: 50%;
+
+    width: 8em;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+  }
+
+  &__name {
+    @include a-head--5;
+    margin-bottom: 0;
+
+    display: block;
+  }
+
+  &__position {
+    font-size: .75em;
+
+    color: $c-grey--500;
+  }
+
+  &__contact {
+    list-style-type: none;
+    padding-left: 0;
+
+    color: $c-grey--500;
+
+    a {
+      @include a-link--dark;
+    }
+  }
+}

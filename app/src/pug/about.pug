@@ -1,0 +1,83 @@
+extends _templates/_site
+
+block template-body
+  +hud
+
+  +menu
+
+  .m-top--tall
+    .m-top__content
+      .m-top__wrap
+        h1.m-top__title O nás
+    .m-top__splash(style="background-image: url('src/static/img/img-5-big.jpg')")
+
+  .m-blurb--white
+    .m-blurb__wrap
+      strong.m-blurb__claim(data-grep) Jsme mladá projekční, realizační a servisní společnost pro komplexní elektrosystémy domů a budov.
+
+      p.m-blurb__text(data-grep) Přispějeme k Vašemu modernímu domu či budově kompetentním a komplexním přístupem k části elektroinstalace — od konzultace, přes projekt a realizaci až po servis.
+
+      -
+        var features = {
+          "title": "Proč s námi spolupracovat?",
+          "items" :[
+            {
+              "title": "Flexibilita",
+              "text": "BIM umožnuje provádět změny v jakékoliv fázi projektu s okamžitým promítnutím změn do projektové dokumentace."
+            },
+            {
+              "title": "Bezpečnost",
+              "text": "Software automaticky kontroluje bezpečnostní prvky v projektu a vyhodnocuje okamžitě možné konfliktní oblasti."
+            },
+            {
+              "title": "Optimalizace nákladů",
+              "text": "Při použití softwaru DDS-CAD dosahujeme až 30% úspor montážního materiálu, přičemž má zákazník 100% kontrolu nad nabídkovém řízení."
+            }
+          ]
+        }
+
+      +features(features)
+
+  .m-blurb--light
+    .m-blurb__wrap
+      p.s-about__text.m-blurb__text(data-grep) Uzavíráme strategická partnerství s vedoucími technologickými firmami v oboru.
+      .c-partners
+        ul.c-partners__list
+          li.c-partners__item: include ../static/svg/partner-abb.svg
+          li.c-partners__item: include ../static/svg/partner-cisco.svg
+          li.c-partners__item: include ../static/svg/partner-viasound.svg
+          li.c-partners__item: include ../static/svg/partner-jablotron.svg
+          li.c-partners__item: include ../static/svg/partner-eissound.svg
+
+  .m-people
+    .m-people__wrap
+      h2.m-people__title Náš tým
+
+      .m-people__list
+        each instance in [1, 2, 3, 4, 5, 6, 7]
+          .m-people__item
+            img.m-people__portrait(src="http://source.unsplash.com/random/480x480?sig=" + instance, alt="Placeholder")
+            strong.m-people__name
+              faker-name-findName/
+            span.m-people__position Pozice
+            ul.m-people__contact
+              li +420 777 123 456
+              li: a(href="javascript:") jmeno@via-electra.eu
+
+  .m-careers
+    .m-careers__top
+      h2.m-careers__title Právě k nám hledáme
+
+    .m-careers__list
+      each instance, index in ["Obchodní zástupce", "Projektant"]
+        .m-careers__item
+          .m-careers__image(style="background-image: url('src/static/img/careers-" + (index + 1) + ".jpg')")
+          .m-careers__content
+            .m-careers__wrap
+              mark.m-careers__strong Otevřená pozice
+              h3.m-careers__name= instance
+
+              span.m-work__arrow
+                include ../static/svg/arrow-right.svg
+
+  +footer

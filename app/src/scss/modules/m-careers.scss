@@ -1,0 +1,54 @@
+.m-careers {
+  &__top {
+    @include a-wrap;
+    padding-top: 0;
+
+    text-align: center;
+  }
+
+  &__title {
+    @include a-head--3(true);
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__image {
+    flex-grow: .625;
+    flex-basis: 0;
+
+    min-height: 50vmin;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .m-careers__item:nth-child(even) & {
+      order: 1;
+    }
+  }
+
+  &__content {
+    flex-grow: .375;
+    flex-basis: 0;
+  }
+
+  &__wrap {
+    padding: 4em;
+  }
+
+  &__strong {
+    font-weight: $font__sans--regular;
+
+    color: $c-link;
+    background-color: transparent;
+  }
+
+  &__name {
+    @include a-head--2;
+
+    color: black;
+    margin-top: .25em;
+  }
+}
