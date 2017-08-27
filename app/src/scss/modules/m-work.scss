@@ -2,7 +2,7 @@
   @include pad(top);
 
   &__title {
-    @include a-caps;
+    @include a-leader;
     margin-top: 0;
 
     text-align: center;

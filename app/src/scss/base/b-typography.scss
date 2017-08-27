@@ -56,27 +56,35 @@
   margin-bottom: 1em;
 }
 
-@mixin a-caps {
+@mixin a-caps($colourless: false) {
   font-weight: $font__sans--regular;
   font-size: 1.125em;
 
   text-transform: uppercase;
   letter-spacing: .25em;
 
-  margin-top: 4em;
-  margin-bottom: 4em;
-
-  color: $c-grey--500;
+  @if $colourless == false {
+    color: $c-grey--500;
+  }
 }
 
-@mixin a-caps--small {
+@mixin a-caps--small($colourless: false) {
   font-weight: $font__sans--regular;
   font-size: .75em;
 
   text-transform: uppercase;
   letter-spacing: .25em;
 
-  color: $c-grey--700;
+  @if $colourless == false {
+    color: $c-grey--700;
+  }
+}
+
+@mixin a-leader {
+  @include a-caps;
+
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 @mixin a-link--black {
