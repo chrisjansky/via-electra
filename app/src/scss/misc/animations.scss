@@ -9,9 +9,9 @@
 
 @keyframes dim {
   from {
-    background-color: transparent;
+    opacity: 0;
   }
   to {
-    background-color: rgba(black, .925);
+    opacity: .925;
   }
 }
