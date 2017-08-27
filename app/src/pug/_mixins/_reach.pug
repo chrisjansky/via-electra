@@ -16,7 +16,8 @@ mixin reach(type)
   else
     #contact.m-reach
       .m-reach__wrap
-        h3.m-reach__title Kontakt
+        if type == "homepage"
+          h3.m-reach__title Kontakt
         p.m-reach__text(data-grep) Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
 
         .m-reach__person--large
@@ -29,4 +30,5 @@ mixin reach(type)
               li.m-reach__item
                 a.m-reach__link(href="javascript:") +420 733 666 106
 
-        a.m-reach__button(href="javascript:") Kontakt na všechny zaměstnance
+        if type == "homepage"
+          a.m-reach__button(href="javascript:") Kontakt na všechny zaměstnance
