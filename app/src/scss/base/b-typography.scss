@@ -41,18 +41,18 @@
 }
 
 @mixin a-head--4 {
-  font-weight: $font__sans--regular;
-  font-size: 1em;
-
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-@mixin a-head--5 {
   font-weight: $font__sans--bold;
   font-size: 1.25em;
 
   margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@mixin a-head--5 {
+  font-weight: $font__sans--regular;
+  font-size: 1em;
+
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 
