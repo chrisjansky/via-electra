@@ -41,13 +41,14 @@
   }
 
   &__name {
+    font-weight: $font__sans--regular;
+    
     .m-reach__person--large & {
-      @include a-head--3;
+      font-size: 1.75em;
     }
 
     .m-reach__person--small & {
       font-size: 1.5em;
-      font-weight: $font__sans--regular;
     }
   }
 
@@ -58,7 +59,7 @@
     margin-bottom: 0;
 
     .m-reach__person--large & {
-      font-size: 1.5em;
+      font-size: 1.25em;
     }    
 
     .m-reach__person--small & {

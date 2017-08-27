@@ -1,0 +1,45 @@
+extends _templates/_site
+
+block template-body
+  +hud
+
+  +menu
+
+  .m-top--short
+    .m-top__content
+      .m-top__wrap
+        h1.m-top__title Kontakt
+
+  +reach
+
+  +people("Kontaktujte nás")
+
+  .m-offices
+    .m-offices__wrap
+      h2.m-offices__title(data-grep) Máme pobočky v Česku i na Slovensku
+
+      .m-offices__list
+        each instance, index in ["Praha", "Brno", "Ostrava", "Košice"]
+          .m-offices__item
+
+            .m-offices__embed 
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166843.18959960103!2d16.43787771669673!3d49.20198539702657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712943ac03f5111%3A0x400af0f6614b1b0!2sBrno!5e0!3m2!1sen!2scz!4v1503840804777" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+
+            .m-offices__info
+
+              .m-offices__description
+                h3.m-offices__city Pobočka #{instance}
+                ul.m-offices__address
+                  li Jezuitská 10
+                  li Praha 100 00
+
+              .m-offices__reach
+                .m-offices__person
+                  img.m-offices__portrait(src="http://source.unsplash.com/random/180x180?sig=" + index, alt="Placeholder")
+                  strong.m-offices__name
+                    faker-name-findName/
+                ul.m-offices__contact
+                  li +420 777 123 456
+                  li: a(href="javascript:") jmeno@via-electra.eu
+
+  +footer
