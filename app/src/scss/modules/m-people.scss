@@ -41,6 +41,8 @@
   }
 
   &__position {
+    display: block;
+
     font-size: .75em;
 
     color: $c-grey--500;
