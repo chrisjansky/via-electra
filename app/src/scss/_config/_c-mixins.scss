@@ -41,12 +41,17 @@
 
   display: inline-block;
 
-  font-size: 1.125em;
-
   background-image: linear-gradient(-45deg, $c-color--130, $c-color--170);
   border-radius: $radius--b;
   
-  padding: .625em 1.75em .75em;
+  padding: .625em 1.5em .75em;
+
+  @include breakpoint($bp__tablet) {
+    font-size: 1.125em;
+
+    padding-left: 1.75em;
+    padding-right: 1.75em;
+  }
 
   &:before {
     content: "";
