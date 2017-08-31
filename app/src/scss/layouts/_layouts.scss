@@ -1,16 +1,54 @@
+@mixin push($direction: top) {
+  margin-#{$direction}: 2em;
+
+  @include breakpoint($bp__laptop) {
+    margin-#{$direction}: 4em;
+  }
+}
+
 @mixin pad($direction: both) {
   @if $direction == horizontal {
-    @include padding(null 5em);
+    @include padding(null $spacing--s);
   }
   @else if $direction == vertical {
-    @include padding(5em null);
+    @include padding(2em null);
   }
   @else if ($direction == top or $direction == bottom) {
-    padding-#{$direction}: 5em;
+    padding-#{$direction}: 2em;
   }
   @else {
-    padding: 5em;
-  } 
+    padding: 2em $spacing--s;
+  }
+
+  @include breakpoint($bp__tablet) {
+    @if $direction == horizontal {
+      @include padding(null $spacing--b);
+    }
+    @else if $direction == vertical {
+      @include padding(3.5em null);
+    }
+    @else if ($direction == top or $direction == bottom) {
+      padding-#{$direction}: 3.5em;
+    }
+    @else {
+      padding: 3.5em $spacing--b;
+    }
+  }
+
+  @include breakpoint($bp__laptop) {
+    @if $direction == horizontal {
+      @include padding(null $spacing--m);
+    }
+    @else if $direction == vertical {
+      @include padding(5em null);
+    }
+    @else if ($direction == top or $direction == bottom) {
+      padding-#{$direction}: 5em;
+    }
+    @else {
+      padding: 5em $spacing--m;
+    }
+  }
 }
 
 @mixin a-wrap($direction: both) {
