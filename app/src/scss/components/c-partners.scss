@@ -2,19 +2,38 @@
   &__title {
     @include a-caps--small;
 
-    margin-bottom: 4em;
+    @include push(bottom);
   }
 
   &__list {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: -1em;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
     line-height: 1;
   }
+
+  &__item--abb         { width: 2.8em; }
+  &__item--cisco       { width: 2.625em; }
+  &__item--eissound    { width: 5.5em; }
+  &__item--jablotron   { width: 5.6em; }
+  &__item--viasound    { width: 5.25em; }
+
+  @include breakpoint($bp__laptop) {
+    &__item--abb       { width: 5.5625em; }
+    &__item--cisco     { width: 5.25em; }
+    &__item--eissound  { width: 10.9375em; }
+    &__item--jablotron { width: 11.1875em; }
+    &__item--viasound  { width: 10.625em; }
+  }
+}
+
+[class^="c-partners__item"],
+[class*=" c-partners__item"] {
+  margin: 1em;
 }
