@@ -1,6 +1,10 @@
 [class^="m-split--"],
 [class*=" m-split--"] {
   display: flex;
+
+  @include breakpoint(max-width $bp__tablet - 1) {
+    flex-direction: column;
+  }
 }
 
 .m-split {
@@ -13,8 +17,8 @@
   }
 
   &__image {
-    flex: 1 50%;
-    order: 1;
+    flex-grow: 1;
+    flex-basis: 10em;
 
     background-position: center;
     background-size: cover;
@@ -30,19 +34,31 @@
 
 [class^="m-split__content--"],
 [class*=" m-split__content--"] {
-  flex: 1 50%;
   box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
-  padding: 3em;
+  flex-grow: 1;
+  flex-basis: 10em;
 
   @include reset-children;
+  margin-top: 8em;
+
+  padding: $spacing--s;
+
+  @include breakpoint($bp__tablet) {
+    padding: $spacing--b;
+  }
+
+  @include breakpoint($bp__desktop) {
+    padding: $spacing--m;
+  }
 
   h1 {
     @include a-head--1;
+    margin-bottom: 0;
   }
 }
 

@@ -3,16 +3,22 @@
   background-color: $c-grey--100;
 
   &__wrap {
-    @include a-wrap;
+    @include pad;
   }
 
   &__flex {
-    display: flex;
-    justify-content: space-between;
+    margin: -$spacing--s;
+
+    @include breakpoint($bp__tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__card {
-    flex-basis: 20em;
+    flex-basis: 18em;
+
+    margin: $spacing--s;
   }
 
   &__logo {
@@ -24,8 +30,11 @@
     padding-left: 0;
     margin-left: 3.25rem;
 
-    font-size: 1.25em;
     line-height: 2;
+
+    @include breakpoint($bp__laptop) {
+      font-size: 1.25em;
+    }
 
     a {
       @include a-link--inverse;
@@ -49,13 +58,17 @@
         position: absolute;
         left: -1.75em;
 
-        content: "⟶";
+        content: "\2192";
       }
     }
   }
 
   &__group {
-    font-size: 1.25em;
+    margin: $spacing--s;
+
+    @include breakpoint($bp__laptop) {
+      font-size: 1.25em;
+    }
   }
 
   &__section {
@@ -64,7 +77,9 @@
     font-weight: $font__sans--regular;
     color: $c-grey--500;
 
-    min-height: 2.75rem;
+    @include breakpoint($bp__tablet) {
+      min-height: 2.75rem;
+    }
   }
 
   &__list {
@@ -72,6 +87,10 @@
     padding-left: 0;
 
     line-height: 2;
+
+    @include breakpoint(max-width $bp__tablet - 1) {
+      margin-left: 3.25rem;
+    }
   }
 
   &__link {

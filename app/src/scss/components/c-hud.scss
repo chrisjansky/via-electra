@@ -18,16 +18,25 @@
     position: absolute;
 
     width: 50%;
-    padding: 2em 2.5em;
+    padding: $spacing--b;
+
+    @include breakpoint(max-width $bp__tablet - 1) {
+      display: none;
+    }
   }
 
   &--peek {
     position: fixed;
 
     width: 100%;
-    padding: 1em 2.5em;
+    padding: 1em $spacing--s;
 
     box-shadow: $shadow--1;
+
+    @include breakpoint($bp__tablet) {
+      padding-left: $spacing--b;
+      padding-right: $spacing--b;
+    }
   }
 
   &__toggle {

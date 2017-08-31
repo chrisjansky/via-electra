@@ -9,12 +9,15 @@
   }
 
   &__item {
-    display: flex;
-
-    min-height: 70vmin;
+    @include breakpoint($bp__tablet) {
+      display: flex;
+    }
   }
 
   &__image {
+    display: block;
+    min-height: 60vmin;
+
     flex-grow: .625;
     flex-basis: 0;
 
@@ -34,7 +37,8 @@
 
   &__link {
     display: block;
-    padding: 4em;
+    
+    @include space;
   }
 
   &__cat {

@@ -10,10 +10,9 @@
   }
 
   &__text {
-    @include a-head--2(false);
+    @include a-head--2;
 
     max-width: 25em;
-
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
@@ -25,19 +24,35 @@
   }
 
   &__thumbnail {
-    margin-right: 3em;
     border-radius: 50%;
+    
+    margin-bottom: .5em;
 
     .m-reach__person--large & {
-      width: 8em;
+      width: 6em;
     }
     .m-reach__person--small & {
-      width: 6em;
+      width: 4em;
+    }
+
+    @include breakpoint($bp__phablet) {
+      margin-right: 2em;
+    }
+
+    @include breakpoint($bp__tablet) {
+      .m-reach__person--large & {
+        width: 8em;
+      }
+      .m-reach__person--small & {
+        width: 6em;
+      }
     }
   }
 
   &__details {
-    text-align: left;
+    @include breakpoint($bp__phablet) {
+      text-align: left;
+    }
   }
 
   &__name {
@@ -58,19 +73,19 @@
     margin-top: .5em;
     margin-bottom: 0;
 
-    .m-reach__person--large & {
-      font-size: 1.25em;
-    }    
-
     .m-reach__person--small & {
       font-size: 1.125em;
     }
+
+    .m-reach__person--large & {
+      font-size: 1.25em;
+    }    
   }
 
   &__button {
     @include button--outline;
 
-    margin-top: 4em;
+    @include push;
   }
 }
 
@@ -79,4 +94,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include breakpoint(max-width $bp__phablet - 1) {
+    flex-direction: column;
+  }
 }

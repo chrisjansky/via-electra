@@ -6,6 +6,8 @@
 
   &__wrap {
     @include a-wrap;
+
+    max-width: 90em;
   }
 
   &__title {

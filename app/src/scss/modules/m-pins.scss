@@ -1,9 +1,14 @@
 .m-pins {
-  display: flex;
-
-  min-height: 70vmin;
+  @include breakpoint(max-width $bp__tablet - 1) {
+    text-align: center;
+  }
+  @include breakpoint($bp__tablet) {
+    display: flex;
+  }
 
   &__image {
+    padding-bottom: 62.5%;
+
     flex-grow: .625;
     flex-basis: 0;
 
@@ -12,6 +17,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @include breakpoint($bp__tablet) {
+      padding-bottom: 40%;
+    }
   }
 
   &__content {
@@ -20,18 +29,23 @@
   }
 
   &__wrap {
-    padding: 4em;
+    @include space;
+    @include reset-children;
   }
 
   &__strong {
     font-weight: $font__sans--regular;
     color: $c-link;
+
+    margin-bottom: 1em;
   }
 
   &__text {
     font-size: 1.5em;
 
-    margin-bottom: 3em;
+    @include breakpoint($bp__laptop) {
+      margin-bottom: 3em;
+    }
   }
 
   &__button {

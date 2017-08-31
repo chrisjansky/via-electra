@@ -46,7 +46,7 @@
   
   padding: .625em 1.5em .75em;
 
-  @include breakpoint($bp__tablet) {
+  @include breakpoint($bp__laptop) {
     font-size: 1.125em;
 
     padding-left: 1.75em;

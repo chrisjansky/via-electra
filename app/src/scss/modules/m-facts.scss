@@ -1,31 +1,47 @@
 .m-facts {
   list-style-type: none;
   padding-left: 0;
-  margin-top: 4.5em;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 
+  margin-top: -.75em;
+  margin-left: -.5em;
+  margin-right: -.5em;
+
   &__item {
-    flex-basis: 13em;
+    flex-basis: 9em;
+    margin: .75em .5em;
+
+    @include breakpoint($bp__laptop) {
+      flex-basis: 11em;
+    }
   }
 
   &__digit {
-    font-size: 5em;
+    font-size: 3.5em;
     font-weight: $font__sans--light;
     line-height: 1;
 
     white-space: nowrap;
+
+    @include breakpoint($bp__laptop) {
+      font-size: 5em;
+    }
   }
 
   &__label {
     display: block;
 
-    font-size: 1.25em;
     line-height: $leading--s;
 
     opacity: .7;
 
     margin-top: 1em;
+
+    @include breakpoint($bp__laptop) {
+      font-size: 1.25em;
+    }
   }
 }

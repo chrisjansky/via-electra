@@ -16,29 +16,37 @@
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     height: 100%;
     box-sizing: border-box;
 
-    padding: 3.5em 4em;
-    margin-left: 50vw;
+    @include pad;
 
     background-color: white;
 
     animation: $duration--l $easeOutQuint forwards slideLeft;
+
+    @include breakpoint($bp__tablet) {
+      margin-left: 50vw;
+
+      justify-content: space-between;
+    }
   }
 
   &__close {
     position: absolute;
-    top: 1em;
-    right: 1.75em;
+    top: .875em;
+    right: .5em;
 
     @include reset-button;
 
     background-color: transparent;
     border: 0;
     padding: .75em;
+
+    @include breakpoint($bp__tablet) {
+      right: 1.25em;
+    }
 
     svg {
       display: block;
@@ -54,9 +62,18 @@
     padding-left: 0;
     margin-top: 0;
     
-    font-size: 3.25em;
-    font-weight: $font__sans--light;
-    line-height: 2;
+    font-size: 2em;
+
+    @include breakpoint($bp__laptop) {
+      font-size: 3.25em;
+      font-weight: $font__sans--light;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: .5em;
+    }
   }
 
   &__link {
@@ -83,5 +100,6 @@
     @include a-link--dark;
 
     @include a-caps(true);
+    margin-top: 1em;
   }
 }

@@ -42,7 +42,7 @@
   &__button {
     @include button--outline;
 
-    margin-top: 3em;
+    @include push;
 
     &:before {
       /* Oops */

@@ -1,9 +1,14 @@
 .m-hiring {
-  display: flex;
-
-  min-height: 70vmin;
+  @include breakpoint(max-width $bp__tablet - 1) {
+    text-align: center;
+  }
+  @include breakpoint($bp__tablet) {
+    display: flex;
+  }
 
   &__image {
+    min-height: 70vmin;
+
     flex-grow: .625;
     flex-basis: 0;
 
@@ -18,18 +23,27 @@
   }
 
   &__wrap {
-    padding: 4em;
+    @include space;
+    @include reset-children;
+    
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__strong {
     font-weight: $font__sans--regular;
     color: $c-link;
+
+    margin-bottom: 1em;
   }
 
   &__text {
     font-size: 1.5em;
 
-    margin-bottom: 3em;
+    @include breakpoint($bp__laptop) {
+      margin-bottom: 3em;
+    }
   }
 
   &__button {

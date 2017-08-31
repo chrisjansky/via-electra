@@ -6,7 +6,6 @@ block template-body
   +menu
 
   .m-split--full
-    .m-split__image(style="background-image: url('src/static/img/work/kocianka-6.jpg')")
     .m-split__content--white
       h1.m-split__title(data-grep) Projekce, realizace a servis elektrosystému budov a domů
 
@@ -36,6 +35,8 @@ block template-body
           each instance in anchors
             li.c-anchors__item
               a.c-anchors__link(href=instance.href)= instance.name
+
+    .m-split__image(style="background-image: url('src/static/img/work/kocianka-6.jpg')")
 
   #intro.m-hilite
     .m-hilite__wrap

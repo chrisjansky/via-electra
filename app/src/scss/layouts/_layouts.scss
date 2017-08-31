@@ -1,8 +1,20 @@
-@mixin push($direction: top) {
-  margin-#{$direction}: 2em;
+@mixin space {
+  padding: $spacing--s;
+
+  @include breakpoint($bp__tablet) {
+    padding: $spacing--b;
+  }
 
   @include breakpoint($bp__laptop) {
-    margin-#{$direction}: 4em;
+    padding: $spacing--m;
+  }
+}
+
+@mixin push($direction: top) {
+  margin-#{$direction}: 2rem;
+
+  @include breakpoint($bp__laptop) {
+    margin-#{$direction}: 4rem;
   }
 }
 
