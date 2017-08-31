@@ -3,22 +3,14 @@
     <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
     <title>Page 1</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="100%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-1">
-            <stop stop-color="#85CC3D" offset="0%"></stop>
-            <stop stop-color="#1F995C" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Logo/Main" transform="translate(0.000000, -3.000000)">
-            <g id="Group-11">
-                <g id="Page-1" transform="translate(0.000000, 4.000000)">
-                    <polyline id="Stroke-3" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="37.5 8.375 25.443 8.4 16.125 18.875 1.875 10.625 12 0.125 19.866 4.81"></polyline>
-                    <polyline id="Stroke-5" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="25.5 34.625 36 28.625 36 12.875 18.75 22.625 18.75 36.125 3 27.125 3 18.875"></polyline>
-                    <path d="M6,19.625 C6,21.282 4.657,22.625 3,22.625 C1.343,22.625 0,21.282 0,19.625 C0,17.968 1.343,16.625 3,16.625 C4.657,16.625 6,17.968 6,19.625" id="Fill-7" fill="#1F995C"></path>
-                    <path d="M22.5,4.625 C22.5,6.282 21.157,7.625 19.5,7.625 C17.843,7.625 16.5,6.282 16.5,4.625 C16.5,2.968 17.843,1.625 19.5,1.625 C21.157,1.625 22.5,2.968 22.5,4.625" id="Fill-9" fill="#49AE4F"></path>
-                    <path d="M29.25,33.875 C29.25,35.532 27.907,36.875 26.25,36.875 C24.593,36.875 23.25,35.532 23.25,33.875 C23.25,32.218 24.593,30.875 26.25,30.875 C27.907,30.875 29.25,32.218 29.25,33.875" id="Fill-1" fill="#70C143"></path>
-                </g>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -3.000000)">
+            <g transform="translate(0.000000, 4.000000)">
+                <polyline id="Stroke-3" stroke="url(#linearGradient-main)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="37.5 8.375 25.443 8.4 16.125 18.875 1.875 10.625 12 0.125 19.866 4.81"></polyline>
+                <polyline id="Stroke-5" stroke="url(#linearGradient-main)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="25.5 34.625 36 28.625 36 12.875 18.75 22.625 18.75 36.125 3 27.125 3 18.875"></polyline>
+                <path d="M6,19.625 C6,21.282 4.657,22.625 3,22.625 C1.343,22.625 0,21.282 0,19.625 C0,17.968 1.343,16.625 3,16.625 C4.657,16.625 6,17.968 6,19.625" id="Fill-7" fill="#1F995C"></path>
+                <path d="M22.5,4.625 C22.5,6.282 21.157,7.625 19.5,7.625 C17.843,7.625 16.5,6.282 16.5,4.625 C16.5,2.968 17.843,1.625 19.5,1.625 C21.157,1.625 22.5,2.968 22.5,4.625" id="Fill-9" fill="#49AE4F"></path>
+                <path d="M29.25,33.875 C29.25,35.532 27.907,36.875 26.25,36.875 C24.593,36.875 23.25,35.532 23.25,33.875 C23.25,32.218 24.593,30.875 26.25,30.875 C27.907,30.875 29.25,32.218 29.25,33.875" id="Fill-1" fill="#70C143"></path>
             </g>
         </g>
     </g>
