@@ -7,3 +7,10 @@
 .s-about__text {
   text-align: center;
 }
+
+.s-contact {
+  .m-reach__wrap,
+  .m-people__wrap {
+    padding-bottom: 0;
+  }
+}
