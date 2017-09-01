@@ -1,13 +1,39 @@
 .m-people {
   &__wrap {
     @include a-wrap;
-    max-width: 90em;
+    max-width: 80em;
 
     text-align: center;
   }
 
   &__title {
     @include a-head--3(true);
+  }
+
+  &__blurb {
+    @include reset-children;
+    text-align: left;
+
+    max-width: 40em;
+
+    margin-left: auto;
+    margin-right: auto;
+    @include push(bottom);
+
+    color: $c-grey--300;
+
+    @include breakpoint($bp__tablet) {
+      :first-child {
+        font-size: 1.25em;
+      }
+
+      padding-left: 1.5em;
+    }
+    @include breakpoint($bp__laptop) {
+      :first-child {
+        font-size: 1.5em;
+      }
+    }
   }
 
   &__list {
