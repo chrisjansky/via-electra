@@ -30,10 +30,12 @@
     padding-left: 0;
     margin-left: 3.25rem;
 
-    line-height: 2;
-
     @include breakpoint($bp__laptop) {
       font-size: 1.25em;
+    }
+
+    li {
+      margin-top: .75em;
     }
 
     a {
@@ -86,11 +88,13 @@
     list-style-type: none;
     padding-left: 0;
 
-    line-height: 2;
-
     @include breakpoint(max-width $bp__tablet - 1) {
       margin-left: 3.25rem;
     }
+  }
+
+  &__item {
+    margin-top: .75em;
   }
 
   &__link {
