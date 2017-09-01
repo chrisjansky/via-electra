@@ -20,6 +20,8 @@
     height: 100%;
     box-sizing: border-box;
 
+    overflow: auto;
+
     @include pad;
 
     background-color: white;

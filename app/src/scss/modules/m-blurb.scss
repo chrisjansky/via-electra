@@ -29,14 +29,21 @@
   }
 
   &__text {
-    font-size: 1.5em;
     text-align: left;
 
     max-width: 30em;
 
-    margin: 2.5em auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5em;
 
     color: $c-grey--300;
+
+    @include breakpoint($bp__tablet) {
+      font-size: 1.5em;
+
+      margin-top: 2.5em;
+    }
   }
 
   &__button {

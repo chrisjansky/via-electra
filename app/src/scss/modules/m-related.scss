@@ -19,9 +19,13 @@
     flex-grow: 1;
     flex-basis: 10em;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
+
+    @include breakpoint($bp__phablet) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
 
     padding: 2em;
 
@@ -34,8 +38,18 @@
   }
 
   &__image {
-    width: 8em;
+    width: 4em;
+
     border-radius: 50%;
+
+    @include breakpoint(max-width $bp__phablet - 1) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include breakpoint($bp__tablet) {
+      width: 8em;
+    }
 
     .m-related__link:last-child & {
       order: 1;
@@ -43,6 +57,17 @@
   }
 
   &__name {
+    display: block;
+
     @include a-head--3;
+
+    @include breakpoint(max-width $bp__phablet - 1) {
+      margin-bottom: 0;
+    }
+
+    @include breakpoint($bp__phablet) {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
   }
 }

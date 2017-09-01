@@ -1,7 +1,7 @@
 .m-infobox {
   &__wrap {
     @include a-wrap;
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
   }
 
   &__title {
@@ -10,15 +10,23 @@
   }
 
   &__body {
-    display: flex;
+    @include breakpoint($bp__tablet) {
+      display: flex;
+    }
   }
 
   &__block {
     flex-grow: 1;
     flex-basis: 10em;
 
-    &:nth-child(even) {
-      margin-top: 15vh;
+    &:last-child {
+      margin-top: 2em;
+    }
+
+    @include breakpoint($bp__tablet) {
+      &:last-child {
+        margin-top: 15vh;
+      }
     }
   }
 
@@ -34,7 +42,6 @@
   }
 
   &__text {
-    font-size: 1.25em;
     color: $c-grey--300;
 
     margin-right: 2em;
@@ -45,6 +52,10 @@
 
     ul {
       padding-left: 1.25em;
+    }
+
+    @include breakpoint($bp__laptop) {
+      font-size: 1.25em;
     }
   }
 }

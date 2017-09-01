@@ -20,7 +20,6 @@
 
   &__question {
     @include a-head--3;
-    margin-right: 1.5em;
   }
 
   &__thumbnail {
@@ -30,13 +29,19 @@
 
     .m-reach__person--large & {
       width: 6em;
+
+      @include breakpoint($bp__phablet) {
+        margin-right: 2em;
+      }
     }
     .m-reach__person--small & {
       width: 4em;
-    }
 
-    @include breakpoint($bp__phablet) {
-      margin-right: 2em;
+      @include breakpoint($bp__phablet) {
+        /* Question included */
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+      }
     }
 
     @include breakpoint($bp__tablet) {
@@ -74,7 +79,9 @@
     margin-bottom: 0;
 
     .m-reach__person--small & {
-      font-size: 1.125em;
+      @include breakpoint($bp__tablet) {
+        font-size: 1.125em;
+      }
     }
 
     .m-reach__person--large & {
