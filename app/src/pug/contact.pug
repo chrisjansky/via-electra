@@ -22,8 +22,16 @@ block template-body
         each instance, index in ["Praha", "Brno", "Ostrava", "Košice"]
           .m-offices__item
 
-            .m-offices__embed 
-              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166843.18959960103!2d16.43787771669673!3d49.20198539702657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712943ac03f5111%3A0x400af0f6614b1b0!2sBrno!5e0!3m2!1sen!2scz!4v1503840804777" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+            .m-offices__embed
+              case instance
+                when "Praha"
+                  iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.6164610197393!2d14.346247116322228!3d50.05601572358699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95eb81879279%3A0x35307387ffffa25f!2sOtopa%C5%A1sk%C3%A1+856%2C+158+00+Praha+5!5e0!3m2!1sen!2scz!4v1504281972149" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+                when "Brno"
+                  iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.2930994019384!2d16.570863716307628!3d49.23293198221428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129154aeb16fab%3A0xa4f0a0d87cebf8ca!2sPurky%C5%88ova+648%2F125%2C+621+00+Brno-Medl%C3%A1nky!5e0!3m2!1sen!2scz!4v1504282075667" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+                when "Ostrava"
+                  iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.3947092605863!2d18.286566516318157!3d49.83504063939537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e33088431a1f%3A0xf5b6b484d5961b8c!2zVHlyxaFvdmEgMTc2MS8xNCwgNzAyIDAwIE1vcmF2c2vDoSBPc3RyYXZhIGEgUMWZw612b3o!5e0!3m2!1sen!2scz!4v1504282121174" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+                when "Košice"
+                  iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.963943518606!2d21.242973316298425!3d48.70617011936545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee01187f82417%3A0xdb4efe62147cc8a9!2sWerferova+2321%2F1%2C+040+11+Ko%C5%A1ice%2C+Slovakia!5e0!3m2!1sen!2scz!4v1504282161348" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
 
             .m-offices__info
 
