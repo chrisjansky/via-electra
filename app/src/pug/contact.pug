@@ -19,11 +19,29 @@ block template-body
       h2.m-offices__title(data-grep) Máme pobočky v Česku i na Slovensku
 
       .m-offices__list
-        each instance, index in ["Praha", "Brno", "Ostrava", "Košice"]
+        -
+          var offices = [
+            {
+              "name": "Praha",
+              "address": ["Otopašská 856", "158 00 Praha 5"]
+            },
+            {
+              "name": "Brno",
+              "address": ["Purkyňova 648", "621 00 Brno"]
+            },
+            {
+              "name": "Ostrava",
+              "address": ["Tyršova 1761", "702 00 Ostrava"]
+            },
+            {
+              "name": "Košice",
+              "address": ["Werferova 2321", "040 11 Košice"]
+            }
+          ]
+        each instance, index in offices
           .m-offices__item
-
             .m-offices__embed
-              case instance
+              case instance.name
                 when "Praha"
                   iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.6164610197393!2d14.346247116322228!3d50.05601572358699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95eb81879279%3A0x35307387ffffa25f!2sOtopa%C5%A1sk%C3%A1+856%2C+158+00+Praha+5!5e0!3m2!1sen!2scz!4v1504281972149" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
                 when "Brno"
@@ -34,12 +52,11 @@ block template-body
                   iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.963943518606!2d21.242973316298425!3d48.70617011936545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee01187f82417%3A0xdb4efe62147cc8a9!2sWerferova+2321%2F1%2C+040+11+Ko%C5%A1ice%2C+Slovakia!5e0!3m2!1sen!2scz!4v1504282161348" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
 
             .m-offices__info
-
               .m-offices__description
-                h3.m-offices__city Pobočka #{instance}
+                h3.m-offices__city Pobočka #{instance.name}
                 ul.m-offices__address
-                  li Jezuitská 10
-                  li Praha 100 00
+                  each line in instance.address
+                    li= line
 
               .m-offices__reach
                 .m-offices__person
