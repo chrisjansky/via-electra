@@ -36,6 +36,9 @@
     max-width: 20em;
 
     @include breakpoint($bp__tablet) {
+      position: relative;
+      padding-bottom: 3.5em;
+
       flex-grow: 1;
     }
   }
@@ -71,7 +74,12 @@
     @include button--outline;
     
     @include breakpoint($bp__tablet) {
-      margin-top: 1em;
+      position: absolute;
+
+      bottom: 0;
+      left: 50%;
+      
+      transform: translateX(-50%);
     }
   }
 }
