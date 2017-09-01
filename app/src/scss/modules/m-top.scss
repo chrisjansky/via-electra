@@ -21,12 +21,12 @@
     background-position: center;
     background-size: cover;
 
-    margin-top: -20vh;
-
+    margin-top: -5em;
     margin-left: $spacing--s;
     margin-right: $spacing--s;
 
     @include breakpoint($bp__tablet) {
+      margin-top: -20vh;
       margin-left: $spacing--b;
       margin-right: $spacing--b;
     }
@@ -40,6 +40,10 @@
 
 .m-top--tall {
   .m-top__content {
-    padding-bottom: 20vh;
+    padding-bottom: 5em;
+
+    @include breakpoint($bp__tablet) {
+      padding-bottom: 20vh;
+    }
   }
 }
