@@ -14,23 +14,35 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    margin: -2em;
+    margin: -$spacing--s / 2;
   }
 
   &__item {
-    flex-basis: 16.5em;
+    flex-basis: 9em;
 
-    margin: 2em;
+    margin: $spacing--s / 2;
+
+    @include breakpoint($bp__laptop) {
+      flex-basis: 12em;
+    }
+
+    @include breakpoint($bp__desktop) {
+      flex-basis: 16em;
+    }
   }
 
   &__portrait {
-    border-radius: 50%;
+    width: 4em;
 
-    width: 8em;
+    border-radius: 50%;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
+
+    @include breakpoint($bp__tablet) {
+      width: 6em;
+    }
   }
 
   &__name {
@@ -44,6 +56,7 @@
     display: block;
 
     font-size: .75em;
+    margin-top: .5em;
 
     color: $c-grey--500;
   }

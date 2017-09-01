@@ -7,7 +7,7 @@
   }
 
   &__wrap {
-    @include a-wrap;
+    @include a-wrap(square);
   }
 
   &__title {
@@ -15,14 +15,26 @@
   }
 
   &__splash {
-    height: 70vh;
+    padding-bottom: 50%;
 
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     margin-top: -20vh;
-    margin-left: 5em;
-    margin-right: 5em;
+
+    margin-left: $spacing--s;
+    margin-right: $spacing--s;
+
+    @include breakpoint($bp__tablet) {
+      margin-left: $spacing--b;
+      margin-right: $spacing--b;
+    }
+
+    @include breakpoint($bp__laptop) {
+      margin-left: $spacing--m;
+      margin-right: $spacing--m;
+    }
   }
 }
 

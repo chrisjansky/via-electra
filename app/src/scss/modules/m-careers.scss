@@ -15,7 +15,9 @@
   }
 
   &__short {
-    display: flex;
+    @include breakpoint($bp__tablet) {
+      display: flex;
+    }
   }
 
   &__image {
@@ -35,7 +37,9 @@
   }
 
   &__wrap {
-    padding: 4em;
+    @include pad(square);
+
+    @include reset-children;
   }
 
   &__strong {
@@ -56,18 +60,21 @@
     position: relative;
     z-index: 5;
 
-    float: right;
+    max-width: 50em;
 
-    width: 62.5%;
     box-sizing: border-box;
-
-    padding: 3em;
-    margin-top: -5em;
-    margin-bottom: 3em;
+    @include space;
+    @include push(bottom);
 
     background-color: white;
 
     @include reset-children;
+
+    @include breakpoint($bp__laptop) {
+      margin-top: -5em;
+
+      margin-left: 37.5%;
+    }
   }
 
   &__caps {
@@ -75,14 +82,18 @@
   }
 
   &__description {
-    font-size: 1.25em;
-
     color: $c-grey--500;
+
+    @include breakpoint($bp__tablet) {
+      font-size: 1.25em;
+    }
   }
 
   &__button {
     @include button--outline;
 
-    margin-top: 2em;
+    @include breakpoint($bp__tablet) {
+      margin-top: 2em;
+    }
   }
 }

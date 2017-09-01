@@ -1,5 +1,9 @@
 .c-features {
-  margin-top: 7em;
+  margin-top: 3.5em;
+
+  @include breakpoint($bp__tablet) {
+    margin-top: 7em;
+  }
 
   &__title {
     @include a-leader;
@@ -11,11 +15,17 @@
 
     margin-left: -.5em;
     margin-right: -.5em;
+    margin-bottom: 0;
 
     text-align: left;
 
     @include breakpoint($bp__phablet) {
       display: flex;
+    }
+
+    @include breakpoint($bp__laptop) {
+      margin-left: -$spacing--s;
+      margin-right: -$spacing--s;
     }
   }
 
@@ -26,6 +36,11 @@
     padding: .5em;
     
     @include reset-children;
+
+    @include breakpoint($bp__laptop) {
+      padding-left: $spacing--s;
+      padding-right: $spacing--s;
+    }
   }
 
   &__icon {

@@ -10,6 +10,7 @@
 .m-blurb {
   &__wrap {
     @include a-wrap;
+    max-width: 70em;
   }
 
   &__title {
