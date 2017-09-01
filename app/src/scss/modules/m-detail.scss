@@ -2,30 +2,39 @@
   &__top {
     position: relative;
 
-    height: 100vh;
+    @include breakpoint($bp__tablet) {
+      min-height: 100vh;
+    }
   }
 
   &__splash {
-    height: 90vh;
+    height: 60vh;
+
+    @include breakpoint($bp__tablet) {
+      height: 90vh;
+    }
 
     background-position: center;
     background-size: cover;
   }
 
   &__scoop {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    width: 50%;
     box-sizing: border-box;
 
     color: white;
     background-image: linear-gradient(-45deg, $c-color--170, $c-color--130);
 
-    padding: 3em;
+    @include pad(square);
 
     @include reset-children;
+
+    @include breakpoint($bp__tablet) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      width: 50%;
+    }
   }
 
   &__back {
@@ -36,7 +45,11 @@
 
     @include a-link--white;
 
-    margin-bottom: 20vh;
+    margin-bottom: 2em;
+
+    @include breakpoint($bp__laptop) {
+      margin-bottom: 20vh;
+    }
   }
 
   &__cat {
@@ -62,14 +75,15 @@
   }
 
   &__info {
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: space-between;
-
     @include pad(bottom);
 
-    margin: -2em;
+    @include breakpoint($bp__tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      margin: -$spacing--b / 2;
+    }
   }
 
   &__group--description {
@@ -77,36 +91,64 @@
   }
 
   &__editor {
-    font-size: 1.25em;
     color: $c-grey--300;
 
-    ul {
-      padding-left: 1.25em;
+    @include breakpoint($bp__phablet) {
+      font-size: 1.25em;
+
+      ul {
+        padding-left: 1.25em;
+      }
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
     }
   }
 
   &__loop {
-    margin-left: -2em;
-    margin-right: -2em;
+    margin: -$spacing--s / 2;
 
     img {
-      padding: 2em;
+      padding: $spacing--s / 2;
 
       box-sizing: border-box;
+    }
+
+    @include breakpoint($bp__tablet) {
+      margin: -$spacing--b / 2;
+
+      img {
+        padding: $spacing--b / 2;
+      }
+    }
+
+    @include breakpoint($bp__laptop) {
+      margin: -$spacing--m / 2;
+
+      img {
+        padding: $spacing--m / 2;
+      }
     }
   }
 
   &__split {
-    @include clearfix;
+    @include breakpoint($bp__phablet) {
+      @include clearfix;
 
-    img {
-      float: left;
-      width: 50%;
+      img {
+        float: left;
+        width: 50%;
+      }
     }
   }
 }
 
 [class^="m-detail__group"],
 [class*=" m-detail__group"] {
-  margin: 2em;
+  @include breakpoint($bp__tablet) {
+    margin: $spacing--b / 2;
+
+    @include reset-children;
+  }
 }
