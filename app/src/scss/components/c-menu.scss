@@ -22,7 +22,7 @@
 
     overflow: auto;
 
-    @include pad;
+    @include pad(square);
 
     background-color: white;
 

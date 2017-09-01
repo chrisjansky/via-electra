@@ -28,6 +28,9 @@
   @else if ($direction == top or $direction == bottom) {
     padding-#{$direction}: 2em;
   }
+  @else if ($direction == square) {
+    padding: $spacing--s;
+  }
   @else {
     padding: 2em $spacing--s;
   }
@@ -41,6 +44,9 @@
     }
     @else if ($direction == top or $direction == bottom) {
       padding-#{$direction}: 3.5em;
+    }
+    @else if ($direction == square) {
+      padding: $spacing--b;
     }
     @else {
       padding: 3.5em $spacing--b;
@@ -56,6 +62,9 @@
     }
     @else if ($direction == top or $direction == bottom) {
       padding-#{$direction}: 5em;
+    }
+    @else if ($direction == square) {
+      padding: $spacing--m;
     }
     @else {
       padding: 5em $spacing--m;
