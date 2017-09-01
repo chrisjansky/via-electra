@@ -10,23 +10,27 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    margin: -$spacing--s;
 
-    margin: -1.5em;
+    @include clearfix;
   }
 
   &__item {
-    flex-basis: 30em;
-    flex-grow: 1;
+    padding: $spacing--b $spacing--s;
 
-    margin: 1.5em;
+    @include breakpoint($bp__laptop) {
+      float: left;
+
+      width: 50%;
+      box-sizing: border-box;
+    }
   }
 
   &__embed {
     position: relative;
 
     height: 40vmin;
+    min-height: 15em;
 
     background-color: $c-grey--900;
 
@@ -41,14 +45,23 @@
   }
 
   &__info {
-    display: flex;
+    @include breakpoint($bp__phablet) {
+      display: flex;
+      justify-content: space-between;
 
-    margin-top: 2em;
+      max-width: 25em;
+    }
   }
 
   &__description,
   &__reach {
     @include reset-children;
+
+    margin-top: $spacing--s;
+
+    @include breakpoint($bp__tablet) {
+      margin-top: $spacing--b;
+    }
   }
 
   &__city {
@@ -60,10 +73,6 @@
     padding-left: 0;
 
     color: $c-grey--300;
-  }
-
-  &__reach {
-    margin-left: 3em;
   }
 
   &__portrait {
