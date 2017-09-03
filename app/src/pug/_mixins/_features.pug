@@ -1,6 +1,6 @@
 mixin features(object)
   .c-features
-    h4.c-features__title= object.title
+    h2.c-features__title= object.title
     ul.c-features__list
       each instance, index in object.items
         li.c-features__item
@@ -12,5 +12,5 @@ mixin features(object)
                 include ../../static/svg/icon-temp-2.svg
               when 2
                 include ../../static/svg/icon-temp-3.svg
-          h5.c-features__name= instance.title
+          h3.c-features__name= instance.title
           p.c-features__text= instance.text

@@ -12,9 +12,9 @@ block template-body
 
     .m-split__image(style="background-image: url('src/static/img/img-3.jpg')")
 
-  .s-service__blurb.m-blurb--white
+  main(role="main").s-service__blurb.m-blurb--white
     .m-blurb__wrap
-      strong.m-blurb__claim(data-grep) Připravíme pro Vás kompletní projekční dokumentaci elektro systému budovy.
+      h2.m-blurb__claim(data-grep) Připravíme pro Vás kompletní projekční dokumentaci elektro systému budovy.
 
       .m-blurb__text(data-grep)
         p Jsme jedna z mála českých firem, které při navrhování používají metodiku BIM a DDS-CAD software — díky tomu se nám daří eliminovat nepředvídatelné události z důvodů konstrukčních změn a s tím spojené spontánní zásahy do specifikace elektromontážních prvků na úkor kvality použitých materiálů.
@@ -63,7 +63,7 @@ block template-body
 
   #info.m-infobox
     .m-infobox__wrap
-      h1.m-infobox__title Co nás odděluje od konkurence?
+      h2.m-infobox__title Co nás odděluje od konkurence?
 
       -
         var infobox = [
@@ -85,7 +85,7 @@ block template-body
         each instance in infobox
           .m-infobox__block
             .m-infobox__image(style="background-image: url('src/static/img/" + instance.image + "')")
-            h2.m-infobox__head= instance.title
+            h3.m-infobox__head= instance.title
             .m-infobox__text
               p= instance.text
               h3 Hlavní výhody
@@ -94,7 +94,7 @@ block template-body
                   li= item
 
   .m-work
-    h3.m-work__title Související reference
+    h2.m-work__title Související reference
 
     .m-work__list
       +workItem(works[0])
@@ -103,7 +103,7 @@ block template-body
 
   .m-related
     .m-related__top
-      h3.m-related__title Další nabízené služby
+      h2.m-related__title Další nabízené služby
 
     .m-related__list
       -
@@ -121,6 +121,6 @@ block template-body
       each instance in related
         a.m-related__link(href="service.html")
           img.m-related__image(src="src/static/img/" + instance.image, alt=instance.title)
-          strong.m-related__name= instance.title
+          h3.m-related__name= instance.title
 
   +footer

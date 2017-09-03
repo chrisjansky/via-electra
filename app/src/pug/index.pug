@@ -41,6 +41,7 @@ block template-body
   #intro.m-hilite
     .m-hilite__wrap
       h2.m-hilite__title(data-grep) Jsme profesionálové v oboru automatizace a elektro s více než dvacetiletými zkušenostmi.
+
       ul.m-facts
         -
           var facts = [
@@ -66,9 +67,9 @@ block template-body
             strong.m-facts__digit= instance.digit
             span.m-facts__label(data-grep)= instance.label
 
-  #services.m-services
+  main(role="main")#services.m-services
     .m-services__wrap
-      h3.m-services__title Naše specializace
+      h2.m-services__title Naše specializace
 
       .m-services__list
         -
@@ -95,12 +96,12 @@ block template-body
         each instance in services
           a(href="service.html").m-services__item
             img.m-services__image(src="src/static/img/" + instance.image, alt=instance.name)
-            h4.m-services__name= instance.name
+            h3.m-services__name= instance.name
             p.m-services__text= instance.text
             span.m-services__button= instance.button
 
   #work.m-work
-    h3.m-work__title Vybrané reference
+    h2.m-work__title Vybrané reference
 
     .m-work__list
       each instance in works
@@ -108,12 +109,12 @@ block template-body
 
   #about.m-blurb--light
     .m-blurb__wrap
-      h3.m-blurb__title O nás
+      h2.m-blurb__title O nás
 
       strong.m-blurb__claim(data-grep) Působíme v největších městech České republiky i Slovenska a do roku 2020 se chceme stát dodavatelem číslo 1 na obou trzích.
 
       .c-partners
-        h4.c-partners__title Partneři
+        h3.c-partners__title Partneři
         ul.c-partners__list
           li.c-partners__item--abb: include ../static/svg/partner-abb.svg
           li.c-partners__item--cisco: include ../static/svg/partner-cisco.svg
@@ -127,7 +128,7 @@ block template-body
     .m-hiring__image(style="background-image: url('src/static/img/img-2.jpg')")
     .m-hiring__content
       .m-hiring__wrap
-        h4.m-hiring__strong Pracujte u nás
+        h3.m-hiring__strong Pracujte u nás
         p.m-hiring__text Čas od času rozšiřujeme náš tým. Možná hledáme právě Vás.
 
         a.m-hiring__button(href="about.html#careers") Kariéra
@@ -138,7 +139,7 @@ block template-body
     .m-pins__image(style="background-image: url('src/static/img/img-offices.jpg')")
     .m-pins__content
       .m-pins__wrap
-        h4.m-pins__strong Navštivte nás
+        h3.m-pins__strong Navštivte nás
         p.m-pins__text(data-grep) Působíme na českém i slovenském trhu
 
         a.m-pins__button(href="contact.html#offices") Naše pobočky

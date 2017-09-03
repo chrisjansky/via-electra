@@ -13,7 +13,7 @@ block template-body
         strong.m-detail__cat Realizace
         h1.m-detail__title Rodinný dům Kociánka
 
-    .m-detail__wrap
+    main(role="main").m-detail__wrap
       strong.m-detail__claim(data-grep) Úvodní popis sahají až do sedmdesátých let, kdy se o principu informačního modelu poprvé.
 
       .m-detail__info
@@ -55,7 +55,7 @@ block template-body
   +reach("small")
 
   .m-work
-    h3.m-work__title Další vybrané reference
+    h2.m-work__title Další vybrané reference
 
     .m-work__list
       +workItem(works[0])
