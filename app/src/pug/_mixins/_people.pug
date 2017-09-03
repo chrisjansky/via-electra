@@ -57,7 +57,9 @@ mixin people(title, blurb)
       .m-people__list
         each instance, index in people
           .m-people__item
-            img.m-people__portrait(data-src="http://source.unsplash.com/random/480x480?sig=" + index, alt="Placeholder")
+            span.m-people__holder
+              span.m-people__ratio
+                img.m-people__portrait(data-src="http://source.unsplash.com/random/480x480?sig=" + index, alt="Placeholder")
             h3.m-people__name= instance.name
             span.m-people__position(data-grep)= instance.position
             ul.m-people__contact

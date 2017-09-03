@@ -99,7 +99,9 @@ block template-body
           ]
         each instance in services
           a(href="service.html").m-services__item
-            img.m-services__image(data-src="src/static/img/" + instance.image, alt=instance.name)
+            span.m-services__holder
+              span.m-services__ratio
+                img.m-services__image(data-src="src/static/img/" + instance.image, alt=instance.name)
             h3.m-services__name= instance.name
             p.m-services__text= instance.text
             span.m-services__button= instance.button

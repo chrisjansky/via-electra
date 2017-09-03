@@ -58,10 +58,9 @@
     }
   }
 
-  &__portrait {
+  &__holder {
+    display: block;
     width: 4em;
-
-    border-radius: 50%;
 
     margin-left: auto;
     margin-right: auto;
@@ -70,6 +69,19 @@
     @include breakpoint($bp__tablet) {
       width: 6em;
     }
+  }
+
+  &__ratio {
+    display: block;
+    position: relative;
+
+    padding-bottom: 100%;
+  }
+
+  &__portrait {
+    position: absolute;
+
+    border-radius: 50%;
   }
 
   &__name {
