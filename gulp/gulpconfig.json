@@ -43,6 +43,8 @@
       "app/src/temp/style.css",
 
       "node_modules/headroom.js/dist/headroom.js",
+      "node_modules/waypoints/lib/noframework.waypoints.js",
+      "node_modules/countup.js/dist/countUp.js",
 
       "app/src/temp/bundle.js"
     ],

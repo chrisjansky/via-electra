@@ -1,0 +1,13 @@
+[data-countup] {
+  animation: $duration--l both paused appear;
+
+  @for $i from 2 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * .0625s;
+    }
+  }
+
+  &.countup--is-active {
+    animation-play-state: running;
+  }
+}
