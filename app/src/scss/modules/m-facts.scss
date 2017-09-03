@@ -15,7 +15,7 @@
     padding-left: .25em;
     padding-right: .25em;
 
-    flex-basis: 11em;
+    flex-basis: 12.5em;
 
     @include breakpoint(max-width $bp__phablet - 1) {
       margin-top: 2em;
