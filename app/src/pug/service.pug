@@ -10,7 +10,7 @@ block template-body
       a.m-split__back(href="index.html#services") ← Služby
       h1.m-split__title(data-grep) Projekce
 
-    .m-split__image(style="background-image: url('src/static/img/img-3.jpg')")
+    .m-split__image(data-src="src/static/img/img-3.jpg")
 
   main(role="main").s-service__blurb.m-blurb--white
     .m-blurb__wrap
@@ -89,7 +89,7 @@ block template-body
       .m-infobox__body
         each instance in infobox
           .m-infobox__block
-            .m-infobox__image(style="background-image: url('src/static/img/" + instance.image + "')")
+            .m-infobox__image(data-src="src/static/img/" + instance.image)
             h3.m-infobox__head= instance.title
             .m-infobox__text
               p= instance.text
@@ -125,7 +125,7 @@ block template-body
 
       each instance in related
         a.m-related__link(href="service.html")
-          img.m-related__image(src="src/static/img/" + instance.image, alt=instance.title)
+          img.m-related__image(data-src="src/static/img/" + instance.image, alt=instance.title)
           h3.m-related__name= instance.title
 
   +footer

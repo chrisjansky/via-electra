@@ -36,7 +36,7 @@ block template-body
             li.c-anchors__item
               a.c-anchors__link(href=instance.href)= instance.name
 
-    .m-split__image(style="background-image: url('src/static/img/work/kocianka-6.jpg')")
+    .m-split__image(data-src="src/static/img/work/kocianka-6.jpg")
 
   #intro.m-hilite
     .m-hilite__wrap
@@ -99,7 +99,7 @@ block template-body
           ]
         each instance in services
           a(href="service.html").m-services__item
-            img.m-services__image(src="src/static/img/" + instance.image, alt=instance.name)
+            img.m-services__image(data-src="src/static/img/" + instance.image, alt=instance.name)
             h3.m-services__name= instance.name
             p.m-services__text= instance.text
             span.m-services__button= instance.button
@@ -129,7 +129,7 @@ block template-body
       a.m-blurb__button(href="about.html") Poznejte nás blíže
 
   .m-hiring
-    .m-hiring__image(style="background-image: url('src/static/img/img-2.jpg')")
+    .m-hiring__image(data-src="src/static/img/img-2.jpg")
     .m-hiring__content
       .m-hiring__wrap
         h3.m-hiring__strong Pracujte u nás
@@ -140,7 +140,7 @@ block template-body
   +reach("homepage")
 
   .m-pins
-    .m-pins__image(style="background-image: url('src/static/img/img-offices.jpg')")
+    .m-pins__image(data-src="src/static/img/img-offices.jpg")
     .m-pins__content
       .m-pins__wrap
         h3.m-pins__strong Navštivte nás

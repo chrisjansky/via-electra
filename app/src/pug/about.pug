@@ -9,7 +9,7 @@ block template-body
     .m-top__content
       .m-top__wrap
         h1.m-top__title O nás
-    .m-top__splash(style="background-image: url('src/static/img/img-5-big.jpg')")
+    .m-top__splash(data-src="src/static/img/img-5-big.jpg")
 
   main(role="main").m-blurb--white
     .m-blurb__wrap
@@ -62,7 +62,7 @@ block template-body
       each instance, index in ["Obchodní zástupce", "Projektant"]
         .m-careers__item
           .m-careers__short
-            .m-careers__image(style="background-image: url('src/static/img/careers-" + (index + 1) + ".jpg')")
+            .m-careers__image(data-src="src/static/img/careers-" + (index + 1) + ".jpg")
             .m-careers__content
               .m-careers__wrap
                 mark.m-careers__strong Otevřená pozice
