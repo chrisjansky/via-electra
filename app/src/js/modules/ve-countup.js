@@ -1,26 +1,32 @@
-module.exports = function() {
-  var
-    activeClass = "countup--is-active",
-    countObj = document.querySelectorAll("[data-countup]");
+var activeClass = "countup--is-active";
 
-  if (countObj !== null) {
-    for (var i = 0; i < countObj.length; i++) {
-      var
-        countWaypoint = new Waypoint({
-        element: countObj[i],
-        handler: function(direction) {
-          if (!this.element.classList.contains(activeClass)) {
-            var
-              countEl = this.element.querySelector("[data-value]"),
-              endVal = countEl.dataset.value,
-              countAnim = new CountUp(countEl, 0, endVal, null, 4);
+module.exports = {
+  init: (function instance() {
+    var countObj = document.querySelectorAll("[data-countup]");
 
-            this.element.classList.add(activeClass);
-            countAnim.start();
-          }
-        },
-        offset: "70%"
-      });
+    if (countObj !== null) {
+      for (var i = 0; i < countObj.length; i++) {
+        var
+          countWaypoint = new Waypoint({
+          element: countObj[i],
+          handler: function(direction) {
+            if (!this.element.classList.contains(activeClass)) {
+              var
+                countEl = this.element.querySelector("[data-value]"),
+                endVal = countEl.dataset.value,
+                countAnim = new CountUp(countEl, 0, endVal, null, 4);
+
+              this.element.classList.add(activeClass);
+              countAnim.start();
+            }
+          },
+          offset: "70%"
+        });
+      }
     }
-  }
+
+    /* Return to make later calls possible */
+    return instance;
+  /* Auto run */
+  })()
 }

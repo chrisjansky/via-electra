@@ -1,8 +1,31 @@
 require('smoothscroll-polyfill').polyfill();
 
-require('./modules/ve-countup')();
-require('./modules/ve-grep')();
+/* Store for later and initialize inside */
+var
+  veCountUp = require('./modules/ve-countup'),
+  veGrep = require('./modules/ve-grep'),
+  veLazy = require('./modules/ve-lazyload'),
+  veSmoothScroll = require('./modules/ve-smoothscroll'),
+  veToggle = require('./modules/ve-toggle');
+
+/* Auto initialize */
 require('./modules/ve-headroom')();
-require('./modules/ve-lazyload')();
-require('./modules/ve-smoothscroll')();
-require('./modules/ve-toggle')();
+
+Barba.Pjax.init();
+Barba.Prefetch.init();
+
+Barba.Dispatcher.on("linkClicked", function() {
+});
+
+/* Event based here */
+Barba.Dispatcher.on("newPageReady", function() {
+  veLazy.init();
+  veSmoothScroll.attach();
+  veToggle.attach();
+});
+
+/* Direct DOM manupulation here */
+Barba.Dispatcher.on("transitionCompleted", function() {
+  veCountUp.init();
+  veGrep.parse();
+});

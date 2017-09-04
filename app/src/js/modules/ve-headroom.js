@@ -1,10 +1,7 @@
 module.exports = function() {
-  var
-    jsHeadroom = document.getElementById("js-headroom");
-
-  var veHeadroom = new Headroom(jsHeadroom, {
+  new Headroom(document.getElementById("js-headroom"), {
     offset: 100,
-    "tolerance": {
+    tolerance: {
       down: 150,
       up: 100
     }

@@ -45,6 +45,7 @@
     "watchify": "^3.8.0"
   },
   "dependencies": {
+    "barba.js": "^1.0.0",
     "breakpoint-sass": "^2.7.1",
     "countup.js": "^1.9.1",
     "headroom.js": "^0.9.4",

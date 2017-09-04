@@ -47,6 +47,7 @@
       "node_modules/waypoints/lib/noframework.waypoints.js",
       "node_modules/countup.js/dist/countUp.js",
       "node_modules/vanilla-lazyload/dist/lazyload.js",
+      "node_modules/barba.js/dist/barba.js",
 
       "app/src/temp/bundle.js"
     ],

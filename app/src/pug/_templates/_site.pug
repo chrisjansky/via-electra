@@ -34,8 +34,13 @@ html.no-js(lang="cs")
     include ../_mixins/_reach
     include ../_mixins/_work-item
 
-    block template-body
-      p Basic template.
+    #barba-wrapper
+      +hud
+      +menu
+
+      .barba-container
+        block template-body
+          p Basic template.
 
     block template-foot
       <!-- build:js src/js/site-min.js -->
