@@ -9,13 +9,11 @@ mixin menu
           var menu = [
             {
               "title": "Služby",
-              "href": "index.html#services",
-              "toggle": "menu"
+              "href": "index.html#services"
             },
             {
               "title": "Reference",
-              "href": "index.html#work",
-              "toggle": "menu"
+              "href": "index.html#work"
             },
             {
               "title": "O nás",
@@ -28,7 +26,7 @@ mixin menu
           ]
         each instance in menu
           li.c-menu__item
-            a.c-menu__link(href=instance.href, data-toggle= instance.toggle || null)= instance.title
+            a.c-menu__link(href=instance.href, data-toggle="menu")= instance.title
 
       a.c-menu__switch(href="javascript:") English
 
