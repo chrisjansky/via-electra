@@ -4,6 +4,8 @@
 
     @include breakpoint($bp__tablet) {
       min-height: 100vh;
+
+      overflow: hidden;
     }
   }
 
@@ -34,6 +36,8 @@
       right: 0;
 
       width: 50%;
+
+      animation: $duration--l $easeOutQuint both 1s slideUp;
     }
   }
 
