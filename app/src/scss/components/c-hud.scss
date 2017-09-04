@@ -36,6 +36,8 @@
     @include breakpoint($bp__tablet) {
       padding-left: $spacing--b;
       padding-right: $spacing--b;
+
+      transform: translateY(-100%);
     }
   }
 

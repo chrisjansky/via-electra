@@ -1,8 +1,4 @@
 .headroom {
-  @include breakpoint($bp__tablet) {
-    transform: translateY(-100%);
-  }
-  
   transition: transform $duration--b;
 
   &.headroom--not-top {
