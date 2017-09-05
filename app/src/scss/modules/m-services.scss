@@ -2,11 +2,15 @@
   text-align: center;
 
   &__wrap {
-    @include a-wrap;
+    /* Exclude reset-children */
+    @include pad;
     max-width: 90em;
 
     /* Avoid peeking for Smoothscroll */
     padding-bottom: .125em !important;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {
