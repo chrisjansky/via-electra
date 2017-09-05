@@ -11,11 +11,9 @@ var
 /* Auto initialize */
 require('./modules/ve-headroom')();
 
+/* Barba.js */
 Barba.Pjax.init();
 Barba.Prefetch.init();
-
-Barba.Dispatcher.on("linkClicked", function() {
-});
 
 /* Event based here */
 Barba.Dispatcher.on("newPageReady", function() {
@@ -29,3 +27,39 @@ Barba.Dispatcher.on("transitionCompleted", function() {
   veCountUp.init();
   veGrep.parse();
 });
+
+var veTransition = Barba.BaseTransition.extend({
+  start: function() {
+    Promise
+      .all([this.newContainerLoading, this.exit()])
+      .then(this.enter.bind(this));
+  },
+  exit: function() {
+    var container = this.oldContainer;
+
+    this.oldContainer.classList.toggle("page--exit");
+
+    return new Promise(function(resolve, reject) {
+      container.addEventListener("transitionend", function() {
+        resolve();
+      })
+    });
+  },
+  enter: function() {
+    var instance = this;
+
+    document.body.scrollTop = 0;
+    instance.newContainer.classList.toggle("page--enter");
+
+    /* After $duration--l has passed */
+    setTimeout(function() {
+      instance.newContainer.classList.remove("page--enter");
+    }, 500);
+
+    this.done();
+  }
+});
+
+Barba.Pjax.getTransition = function() {
+  return veTransition;
+}

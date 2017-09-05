@@ -1,0 +1,9 @@
+.page--exit {
+  transition: opacity $duration--l;
+
+  opacity: 0;
+}
+
+.page--enter {
+  animation: $duration--l both appear;
+}
