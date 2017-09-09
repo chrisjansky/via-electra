@@ -15,15 +15,25 @@ require('./modules/ve-headroom')();
 Barba.Pjax.init();
 Barba.Prefetch.init();
 
+let barbaClicked = false;
+
+Barba.Dispatcher.on('linkClicked', function() {
+  barbaClicked = true;
+});
+
+addEventListener('popstate', function (event) {
+  barbaClicked = false;
+})
+
 /* Event based here */
-Barba.Dispatcher.on("newPageReady", function() {
+Barba.Dispatcher.on('newPageReady', function() {
   veLazy.init();
   veSmoothScroll.attach();
   veToggle.attach();
 });
 
 /* Direct DOM manupulation here */
-Barba.Dispatcher.on("transitionCompleted", function() {
+Barba.Dispatcher.on('transitionCompleted', function() {
   veCountUp.init();
   veGrep.parse();
 });
@@ -37,10 +47,10 @@ var veTransition = Barba.BaseTransition.extend({
   exit: function() {
     var container = this.oldContainer;
 
-    this.oldContainer.classList.toggle("page--exit");
+    this.oldContainer.classList.toggle('page--exit');
 
     return new Promise(function(resolve, reject) {
-      container.addEventListener("transitionend", function() {
+      container.addEventListener('transitionend', function() {
         resolve();
       })
     });
@@ -48,12 +58,18 @@ var veTransition = Barba.BaseTransition.extend({
   enter: function() {
     var instance = this;
 
-    document.body.scrollTop = 0;
-    instance.newContainer.classList.toggle("page--enter");
+    /* Don't change scroll position if back button pressed */
+    if (barbaClicked) {
+      window.scroll({
+        top: 0,
+        behaviour: 'smooth'
+      })
+    }
+    instance.newContainer.classList.toggle('page--enter');
 
     /* After $duration--l has passed */
     setTimeout(function() {
-      instance.newContainer.classList.remove("page--enter");
+      instance.newContainer.classList.remove('page--enter');
     }, 500);
 
     this.done();
