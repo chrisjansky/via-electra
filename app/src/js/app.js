@@ -36,6 +36,14 @@ Barba.Dispatcher.on('newPageReady', function() {
 Barba.Dispatcher.on('transitionCompleted', function() {
   veCountUp.init();
   veGrep.parse();
+
+  /* Don't change scroll position if back button pressed */
+  if (barbaClicked) {
+    window.scroll({
+      top: 0,
+      behaviour: 'smooth'
+    })
+  }
 });
 
 var veTransition = Barba.BaseTransition.extend({
@@ -58,13 +66,6 @@ var veTransition = Barba.BaseTransition.extend({
   enter: function() {
     var instance = this;
 
-    /* Don't change scroll position if back button pressed */
-    if (barbaClicked) {
-      window.scroll({
-        top: 0,
-        behaviour: 'smooth'
-      })
-    }
     instance.newContainer.classList.toggle('page--enter');
 
     /* After $duration--l has passed */
