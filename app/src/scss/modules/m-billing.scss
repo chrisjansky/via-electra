@@ -1,0 +1,87 @@
+.m-billing {
+  &__wrap {
+    @include a-wrap;
+    padding-top: 0 !important;
+  }
+
+  &__title {
+    @include a-head--3(true);
+
+    text-align: center;
+  }
+
+  &__content {
+    @include breakpoint($bp__tablet) {
+      display: flex;
+      justify-content: center;
+
+      margin-left: -1em;
+      margin-right: -1em;
+    }
+  }
+  
+  &__group {
+    @include clearfix;
+
+    @include breakpoint($bp__tablet) {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    &:not(:first-child) {
+      margin-top: .25em;
+
+      color: $c-grey--300;
+      
+      ul {
+        margin-top: 0;
+      }
+    }
+
+    &:first-child {
+      font-size: 1.25em;
+
+      margin-right: 4em;
+      
+      strong {
+        color: black;
+      }
+    }
+
+    em {
+      display: block;
+
+      color: $c-link;
+      background-color: transparent;
+
+      font-style: normal;
+
+      margin-bottom: .5em;
+    }
+
+    span {
+      color: $c-grey--500;
+
+      font-size: .75em;
+
+      margin-top: .25em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      overflow: auto;
+    }
+
+    @include breakpoint($bp__laptop) {
+      em,
+      span {
+        float: left;
+        clear: left;
+
+        min-width: 5rem;
+      }
+    }
+  }
+}
