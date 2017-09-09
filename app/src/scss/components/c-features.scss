@@ -44,7 +44,10 @@
   }
 
   &__icon {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+
+    min-height: 3em;
   }
 
   &__name {
