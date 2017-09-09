@@ -45,15 +45,11 @@
   }
 
   &__item {
-    flex-basis: 9em;
+    flex-basis: 13em;
 
     margin: $spacing--s / 2;
 
     @include breakpoint($bp__laptop) {
-      flex-basis: 12em;
-    }
-
-    @include breakpoint($bp__desktop) {
       flex-basis: 16em;
     }
   }
