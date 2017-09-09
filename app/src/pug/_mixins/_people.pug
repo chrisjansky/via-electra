@@ -1,21 +1,24 @@
-mixin people(title, blurb)
+mixin people(slug, title)
   #people.m-people
     .m-people__wrap
-      h2.m-people__title= title
+      if title
+        h2.m-people__title= title
 
-      if blurb
+      if slug == "about"
         .m-people__blurb(data-grep)
           p Naše společnost je založená a vedená profesionály v oboru automatizace a elektro s více než dvacetiletými zkušenostmi, získanými u globálního technologického lídra daného odvětví — společnosti ABB.
           p Náš nejzkušenější projektant, Ing. Jan Veselý, promoval na VUT v Brně v roce 1967 a již více než 50 let se věnuje projektování elektro.
 
       .m-people__list
         each instance, index in people
-          .m-people__item
-            span.m-people__holder
-              span.m-people__ratio
-                img.m-people__portrait(data-src="http://source.unsplash.com/random/480x480?sig=" + index, alt="Placeholder")
-            h3.m-people__name= instance.name
-            span.m-people__position(data-grep)= instance.position
-            ul.m-people__contact
-              li= instance.phone
-              li: a(href="mailto:" + instance.email)= instance.email
+          //- Skip first person if in contact page
+          unless slug == "contact" && index == 0
+            .m-people__item
+              span.m-people__holder
+                span.m-people__ratio
+                  img.m-people__portrait(data-src="http://source.unsplash.com/random/480x480?sig=" + index, alt="Placeholder")
+              h3.m-people__name= instance.name
+              span.m-people__position(data-grep)= instance.position
+              ul.m-people__contact
+                li= instance.phone
+                li: a(href="mailto:" + instance.email)= instance.email
