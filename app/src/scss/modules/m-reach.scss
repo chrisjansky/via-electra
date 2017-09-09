@@ -72,6 +72,14 @@
     }
   }
 
+  &__position {
+    display: block;
+
+    font-size: .875em;
+
+    color: $c-grey--500;
+  }
+
   &__list {
     list-style-type: none;
     padding-left: 0;

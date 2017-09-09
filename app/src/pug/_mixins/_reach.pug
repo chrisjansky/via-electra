@@ -9,6 +9,7 @@ mixin reach(type)
           img.m-reach__thumbnail(data-src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
           .m-reach__details
             strong.m-reach__name= primaryPerson.name
+            span.m-reach__position(data-grep)= primaryPerson.position
             ul.m-reach__list
               li.m-reach__item
                 a.m-reach__link(href="mailto:" + primaryPerson.email)= primaryPerson.email
@@ -26,6 +27,7 @@ mixin reach(type)
           img.m-reach__thumbnail(data-src="src/static/img/person-vesely.jpg", alt="Jaroslav Veselý")
           .m-reach__details
             strong.m-reach__name= primaryPerson.name
+            span.m-reach__position(data-grep)= primaryPerson.position
             ul.m-reach__list
               li.m-reach__item
                 a.m-reach__link(href="mailto:" + primaryPerson.email)= primaryPerson.email
