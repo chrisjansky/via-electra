@@ -5,12 +5,6 @@ mixin features(object)
       each instance, index in object.items
         li.c-features__item
           span.c-features__icon
-            case index
-              when 0
-                include ../../static/svg/icon-temp-1.svg
-              when 1
-                include ../../static/svg/icon-temp-2.svg
-              when 2
-                include ../../static/svg/icon-temp-3.svg
+            img(src="src/static/svg/icon-temp-" + (index + 1) + ".svg")
           h3.c-features__name= instance.title
           p.c-features__text= instance.text
