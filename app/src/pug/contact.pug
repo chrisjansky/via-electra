@@ -51,9 +51,10 @@ block template-body
             .m-offices__info
               .m-offices__description
                 h3.m-offices__city Pobočka #{instance.name}
-                ul.m-offices__address
-                  each line in instance.address
-                    li= line
+                .m-offices__address
+                  ul
+                    each line in instance.address
+                      li= line
 
               .m-offices__reach
                 .m-offices__person
