@@ -1,0 +1,6 @@
+mixin partners
+  .c-partners
+    ul.c-partners__list
+      each instance in ["abb", "cisco", "viasound", "jablotron", "eissound"]
+        li(class="c-partners__item--" + instance)
+          img(src="src/static/svg/partner-" + instance + ".svg", alt="Partner logo")
