@@ -1,0 +1,7 @@
+.partner {
+  &-abb       { @extend .c-partners__item--abb; }
+  &-cisco     { @extend .c-partners__item--cisco; }
+  &-eissound  { @extend .c-partners__item--eissound; }
+  &-jablotron { @extend .c-partners__item--jablotron; }
+  &-viasound  { @extend .c-partners__item--viasound; }
+}
