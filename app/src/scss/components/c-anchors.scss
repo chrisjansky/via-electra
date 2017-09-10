@@ -3,7 +3,7 @@
     display: none;
   }
 
-  margin-top: 1.5em;
+  @include push();
 
   &__arrow {
     display: inline-block;
@@ -29,6 +29,11 @@
 
     margin-left: .75em;
     margin-right: .75em;
+
+    @include breakpoint($bp__laptop) {
+      margin-left: 1.25em;
+      margin-right: 1.25em;
+    }
   }
 
   &__link {
