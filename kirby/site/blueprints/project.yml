@@ -1,0 +1,70 @@
+title: Project
+
+pages: false
+
+fields:
+  tab_1:
+    label: General
+    type: tabs
+  title:
+    label: Title
+    type: text
+  general_category:
+    label: Category
+    type: select
+    options:
+      design: Design Engineering
+      execution: Work Execution
+      site: Site Engineering
+  general_cover:
+    label: Cover Image
+    type: image
+
+  tab2:
+    label: Detail
+    type: tabs
+  detail_headline:
+    label: Headline
+    type: textarea
+    buttons: false
+  detail_text:
+    label: Description
+    type: textarea
+    buttons: false
+  detail_services:
+    label: Services
+    type: textarea
+    buttons:
+      - link
+      - ulist
+  detail_completed:
+    label: Year Completed
+    type: number
+  detail_media:
+    label: Media
+    type: builder
+    fieldsets:
+      full:
+        label: Full Image
+        fields:
+          image:
+            label: Image
+            type: image
+      split:
+        label: Split Images
+        fields:
+          image_1:
+            label: Image
+            type: image
+          image_2:
+            label: Image
+            type: image
+      video:
+        label: Image and Video
+        fields:
+          image:
+            label: Image
+            type: image
+          video:
+            label: Video URL
+            type: text

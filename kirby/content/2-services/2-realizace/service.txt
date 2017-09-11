@@ -1,0 +1,41 @@
+Tab1: 
+
+----
+
+Title: Realizace
+
+----
+
+General-text: BIM je potřeba vnímat především jako proces a při přechodu na BIM je tedy zásadní si uvědomit.
+
+----
+
+General-thumb: service-2.jpg
+
+----
+
+General-caption: Více o realizaci
+
+----
+
+General-related: villa-mia
+
+----
+
+Detail-image: 
+
+----
+
+Detail-headline: 
+
+----
+
+Detail-text: 
+
+----
+
+Detail-facts: 
+
+----
+
+Detail-features: 

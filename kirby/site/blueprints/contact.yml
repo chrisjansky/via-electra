@@ -1,0 +1,64 @@
+title: Contact
+
+pages:
+  template: contact-person
+
+options:
+  status: false
+  url: false
+  delete: false
+
+fields:
+  tab_1:
+    label: General
+    type: tabs
+  title:
+    label: Title
+    type: text
+  address:
+    label: Text
+    type: textarea
+    buttons:
+      - link
+      - ulist
+
+  tab_2:
+    label: People
+    type: tabs
+  people_title:
+    label: Title
+    type: text
+  people_primary:
+    label: Primary Contact
+    type: select
+    options: visibleChildren
+
+  tab_3:
+    label: Locations
+    type: tabs
+  locations_title:
+    label: Title
+    type: text
+  locations:
+    label: Offices
+    type: structure
+    style: table
+    fields:
+      locations_name:
+        label: Name
+        type: text
+      locations_address:
+        label: Address
+        type: textarea
+        buttons: false
+      locations_person:
+        label: Contact Person
+        type: select
+        options: visibleChildren
+      locations_map:
+        label: Location
+        type: map
+        center:
+          lat: 45.5230622
+          lng: -122.6764816
+          zoom: 9

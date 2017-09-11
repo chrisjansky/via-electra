@@ -1,0 +1,54 @@
+Title: About
+
+----
+
+Photo: img-5-big.jpg
+
+----
+
+Headline: Jsme mladá projekční, realizační a servisní společnost pro komplexní elektrosystémy domů a budov.
+
+----
+
+Text: 
+
+Přispějeme k Vašemu modernímu domu či budově kompetentním a komplexním přístupem k části elektroinstalace — od konzultace, přes projekt a realizaci až po servis. Pro návrh I realizaci používáme nejmodernější nástroje a procesy, zajišťující našim zákazníkům a partnerům kvalitu, spolehlivost, lhůty a ceny, které očekávají.
+
+Reagujeme na hlavní trendy, kterými jsou rychlý vývoj automatizace a internetu věcí, roustoucí tlak na produktivitu, kvalitu, zkracování lhůt a dodržování rozpočtu staveb. V projektování pak důraz kladený na přesnost, shodu s vyhláškami a technickými normami a dokumentací výrobců TZB zařízení a hlavně na koordinaci s ostatními profesemi návrhu stavby – stavební konstrukce, vzduchotechnika, topení, chlazení, zdravotechnika aj. Pro návrh I realizaci používáme nejmodernější nástroje a procesy, zajišťující našim zákazníkům a partnerům kvalitu, spolehlivost, lhůty a ceny, které očekávají.
+
+----
+
+Features: 
+
+- 
+  features_icon: icon-temp-1.svg
+  features_title: Flexibilita
+  features_text: >
+    BIM umožnuje provádět změny v
+    jakékoliv fázi projektu s okamžitým
+    promítnutím změn do projektové
+    dokumentace.
+- 
+  features_icon: icon-temp-2.svg
+  features_title: Bezpečnost
+  features_text: >
+    Software automaticky kontroluje
+    bezpečnostní prvky v projektu a
+    vyhodnocuje okamžitě možné
+    konfliktní oblasti.
+- 
+  features_icon: icon-temp-3.svg
+  features_title: Optimalizace nákladů
+  features_text: 'Při použití softwaru DDS-CAD dosahujeme až 30% úspor montážního materiálu, přičemž má zákazník 100% kontrolu nad nabídkovém řízení.'
+
+----
+
+Partners-text: Uzavíráme strategická partnerství s vedoucími technologickými firmami v oboru.
+
+----
+
+People-text: 
+
+Naše společnost je založená a vedená profesionály v oboru automatizace a elektro s více než dvacetiletými zkušenostmi, získanými u globálního technologického lídra daného odvětví — společnosti ABB.
+
+Náš nejzkušenější projektant, Ing. Jan Veselý, promoval na VUT v Brně v roce 1967 a již více než 50 let se věnuje projektování elektro.

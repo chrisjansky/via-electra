@@ -1,0 +1,78 @@
+Title: Home
+
+----
+
+Intro-headline: Moderní automatizace a elektroinstalace pro Váš domov i práci — komplexně a ve 3D
+
+----
+
+Intro-text: Jsme profesionálové v oboru automatizace a elektro s více než dvacetiletými zkušenostmi.
+
+----
+
+Intro-facts: 
+
+- 
+  facts_number: "7"
+  facts_caption: odborníků v našem týmu
+  facts_suffix: ""
+- 
+  facts_number: "20"
+  facts_caption: let působení v oboru
+  facts_suffix: +
+- 
+  facts_number: "3"
+  facts_caption: řešení celého projektu
+  facts_suffix: D
+- 
+  facts_number: "4"
+  facts_caption: české a slovenské pobočky
+  facts_suffix: ""
+
+----
+
+About-text: Působíme v největších městech České republiky i Slovenska a do roku 2020 se chceme stát dodavatelem číslo 1 na obou trzích.
+
+----
+
+About-caption: Poznejte nás blíže
+
+----
+
+Careers-image: img-2.jpg
+
+----
+
+Careers-title: Pracujte u nás
+
+----
+
+Careers-text: Čas od času rozšiřujeme náš tým. Možná hledáme právě Vás.
+
+----
+
+Careers-caption: Kariéra
+
+----
+
+Contact-caption: Kontakt na všechny zaměstnance
+
+----
+
+Locations-image: img-offices.jpg
+
+----
+
+Locations-title: Navštivte nás
+
+----
+
+Locations-text: Působíme na českém i slovenském trhu
+
+----
+
+Locations-caption: Naše pobočky
+
+----
+
+Intro-image: kocianka-6.jpg

@@ -1,0 +1,13 @@
+title: Services
+
+pages:
+  template: service
+  max: 3
+
+files: false
+
+options:
+  delete: false
+  url: false
+  status: false
+  preview: false

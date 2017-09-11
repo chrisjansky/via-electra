@@ -1,0 +1,13 @@
+title: Projects
+
+pages:
+  template: project
+  max: 3
+
+files: false
+
+options:
+  delete: false
+  url: false
+  status: fals
+  preview: false

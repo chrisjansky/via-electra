@@ -1,0 +1,16 @@
+Photo: img-4.jpg
+
+----
+
+Title: Building Information Model
+
+----
+
+Text: 
+
+Building Information Model (zkráceně BIM) je potřeba vnímat především jako proces a při přechodu na BIM je tedy zásadní si uvědomit, že se nejedná pouze o nainstalování nového softwarového řešení, ale o zásadnější změny v celkovém systému práce ať už se jedná o projektanta – jednotlivce, tím spíše celý projekční ateliér.
+
+### Hlavní výhody
+- efektivnější komunikace mezi investorem, stavbou a projektantem
+- odhalení chyb ještě v době přípravy projektu
+- rychlá implementace změn a dodání dokumentace

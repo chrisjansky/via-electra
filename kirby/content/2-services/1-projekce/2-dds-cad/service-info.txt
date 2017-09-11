@@ -1,0 +1,17 @@
+Photo: img-5.jpg
+
+----
+
+Title: DDS-CAD
+
+----
+
+Text: 
+
+DDS-CAD (nebo-li Data Design System Computer-aided Design) je software vyvinutý speciálně pro oblast stavebnictví.
+
+### Hlavní výhody
+- snížení počtu chyb a nepřesností v dokumentaci
+- vizualizace 3D v reálném čase a prostoru
+- zvýšená produktivita díky jednoduššímu získávání informací z projektu
+- rychlé a přesné tvorbě výkazů výměr

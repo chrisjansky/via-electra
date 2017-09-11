@@ -1,0 +1,21 @@
+title: Service Info
+
+pages: false
+
+options:
+  url: false
+  preview: false
+
+fields:
+  photo:
+    label: Photo
+    type: image
+  title:
+    label: Title
+    type: text
+  text:
+    label: Text
+    type: textarea
+    buttons:
+      - h3
+      - ulist

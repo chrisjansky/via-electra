@@ -1,0 +1,15 @@
+Title: via electra
+
+----
+
+Partners: 
+
+- partner-abb.svg
+- partner-cisco.svg
+- partner-eissound.svg
+- partner-jablotron.svg
+- partner-viasound.svg
+
+----
+
+Colophon: © 2017 via electra s.r.o.

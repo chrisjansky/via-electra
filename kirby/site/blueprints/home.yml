@@ -1,0 +1,91 @@
+title: Home
+
+pages: false
+
+options:
+  status: false
+
+fields:
+  tab_1:
+    label: Intro
+    type: tabs
+  title:
+    label: Title
+    type: text
+  intro_headline:
+    label: Headline
+    type: text
+  intro_image:
+    label: Image
+    type: image
+  intro_text:
+    label: Text
+    type: textarea
+    buttons: false
+  intro_facts:
+    label: Facts
+    type: structure
+    limit: 4
+    entry: >
+      {{facts_number}}{{facts_suffix}} {{facts_caption}}
+    fields:
+      facts_number:
+        label: Number
+        type: number
+      facts_suffix:
+        label: Suffix
+        type: text
+      facts_caption:
+        label: Caption
+        type: text
+
+  tab_2:
+    label: About
+    type: tabs
+  about_text:
+    label: Text
+    type: textarea
+    buttons: false
+  about_caption:
+    label: Button Caption
+    type: text
+
+  tab_3:
+    label: Careers
+    type: tabs
+  careers_image:
+    label: Image
+    type: image
+  careers_title:
+    label: Title
+    type: text
+  careers_text:
+    label: Text
+    type: textarea
+    buttons: false
+  careers_caption:
+    label: Button Caption
+    type: text
+
+  tab_4:
+    label: Contact
+    type: tabs
+  contact_caption:
+    label: Button Caption
+    type: text
+
+  tab_5:
+    label: Locations
+    type: tabs
+  locations_image:
+    label: Image
+    type: image
+  locations_title:
+    label: Title
+    type: text
+  locations_text:
+    label: Text
+    type: text
+  locations_caption:
+    label: Button Caption
+    type: text

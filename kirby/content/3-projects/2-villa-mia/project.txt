@@ -1,0 +1,49 @@
+Title: Villa Mia
+
+----
+
+General-category: execution
+
+----
+
+General-cover: kocianka-7.jpg
+
+----
+
+Detail-headline: Úvodní popis sahají až do sedmdesátých let, kdy se o principu informačního modelu poprvé.
+
+----
+
+Detail-text: BIM je potřeba vnímat především jako proces a při přechodu na BIM je tedy zásadní si uvědomit, že se nejedná pouze o nainstalování nového softwarového řešení, ale o zásadnější změny v celkovém systému práce ať už se jedná o projektanta – jednotlivce, tím spíše celý projekční ateliér.
+
+----
+
+Detail-services: 
+
+- Projektování BIM a DDS-CAD (link: services/projekce#info text: Co je to?)
+- Realizace
+- Nasazení software
+- Další služba
+
+----
+
+Detail-completed: 2017
+
+----
+
+Detail-media: 
+
+- 
+  image: kocianka-2.jpg
+  _fieldset: full
+- 
+  image_1: kocianka-5.jpg
+  image_2: kocianka-4.jpg
+  _fieldset: split
+- 
+  image: kocianka-3.jpg
+  _fieldset: full
+- 
+  image: kocianka-6.jpg
+  video: 'https://www.youtube.com/embed/suNadRnHy-U?rel=0&amp;showinfo=0'
+  _fieldset: video

@@ -1,0 +1,78 @@
+title: Service
+
+pages:
+  template: service-info
+  max: 2
+
+fields:
+  tab_1:
+    label: General
+    type: tabs
+  title:
+    label: Title
+    type: text
+  general_text:
+    label: Description
+    type: textarea
+    buttons: false
+  general_thumb:
+    label: Thumbnail
+    type: image
+  general_caption:
+    label: Button Caption
+    type: text
+  general_related:
+    label: Related Project
+    type: select
+    options: query
+    query:
+      page: projects
+
+  tab_2:
+    label: Detail
+    type: tabs
+  detail_image:
+    label: Image
+    type: image
+  detail_headline:
+    label: Headline
+    type: textarea
+    buttons: false
+  detail_text:
+    label: Text
+    type: textarea
+    buttons: false
+  detail_facts:
+    label: Facts
+    type: structure
+    limit: 3
+    entry: >
+      {{facts_number}}{{facts_suffix}} {{facts_caption}}
+    fields:
+      facts_number:
+        label: Number
+        type: number
+      facts_suffix:
+        label: Suffix
+        type: text
+      facts_caption:
+        label: Caption
+        type: text
+  detail_features:
+    label: Features
+    type: structure
+    limit: 3
+    entry: >
+      {{features_title}}<br>
+      {{features_text}}
+    fields:
+      features_icon:
+        label: Icon
+        type: image
+      features_title:
+        label: Title
+        type: text
+      features_text:
+        label: Text
+        type: textarea
+        buttons: false

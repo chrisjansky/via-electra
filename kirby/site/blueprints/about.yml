@@ -1,0 +1,61 @@
+title: About
+
+pages:
+  template: about-job
+
+options:
+  url: false
+  delete: false
+
+fields:
+  tab_1:
+    label: General
+    type: tabs
+  title:
+    label: Title
+    type: text
+  photo:
+    label: Cover Photo
+    type: image
+  headline:
+    label: Headline
+    type: textarea
+    buttons: false
+  text:
+    label: Description
+    type: textarea
+    buttons: false
+  features:
+    label: Features
+    type: structure
+    limit: 3
+    entry: >
+      {{features_title}}<br>
+      {{features_text}}
+    fields:
+      features_icon:
+        label: Icon
+        type: image
+      features_title:
+        label: Title
+        type: text
+      features_text:
+        label: Text
+        type: textarea
+        buttons: false
+
+  tab_2:
+    label: Partners
+    type: tabs
+  partners_text:
+    label: Text
+    type: textarea
+    buttons: false
+
+  tab_3:
+    label: People
+    type: tabs
+  people_text:
+    label: Text
+    type: textarea
+    buttons: false

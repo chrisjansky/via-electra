@@ -1,0 +1,23 @@
+title: Job
+
+pages: false
+
+options:
+  url: false
+  preview: false
+
+fields:
+  photo:
+    label: Photo
+    type: image
+
+  title:
+    label: Title
+    type: text
+
+  text:
+    label: Description
+    type: textarea
+    buttons:
+      - link
+      - ulist

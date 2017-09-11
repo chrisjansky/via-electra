@@ -1,0 +1,24 @@
+title: Person
+
+pages: false
+
+options:
+  url: false
+  preview: false
+
+fields:
+  photo:
+    label: Photo
+    type: image
+  name:
+    label: Name
+    type: text
+  job:
+    label: Job Title
+    type: text
+  tel:
+    label: Telephone
+    type: tel
+  email:
+    label: E-mail
+    type: email

@@ -1,0 +1,71 @@
+Title: Contact
+
+----
+
+People-title: Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
+
+----
+
+People-primary: jaroslav-vesely
+
+----
+
+Locations-title: Máme pobočky v Česku i na Slovensku
+
+----
+
+Locations: 
+
+- 
+  locations_name: Praha
+  locations_address: |
+    - Ostopašská 856
+    - 158 00 Praha 5
+  locations_person: marek-hladik
+  locations_map: |
+    address: Ostopašská 856, 158 00 Praha 5
+    lat: "50.0560123"
+    lng: "14.348435800000061"
+    zoom: "9"
+- 
+  locations_name: Brno
+  locations_address: |
+    - Purkyňova 648/125
+    - 612 00 Brno
+  locations_person: jaroslav-vesely
+  locations_map: |
+    address: Purkyňova 648/125, 612 00 Brno
+    lat: "49.23267"
+    lng: "16.572870999999964"
+    zoom: "9"
+- 
+  locations_name: Ostrava
+  locations_address: |
+    - Tyršova 1761/14
+    - 702 00 Ostrava
+  locations_person: david-hradil
+  locations_map: |
+    address: Tyršova 1761/14, 702 00 Ostrava
+    lat: "49.8350372"
+    lng: "18.28875519999997"
+    zoom: "9"
+- 
+  locations_name: Košice
+  locations_address: |
+    - Werferova 1/2582
+    - 040 11 Košice
+  locations_person: maros-sincak
+  locations_map: |
+    address: Werferova 1/2582, 040 11 Košice
+    lat: "48.7061666"
+    lng: "21.245161999999937"
+    zoom: "9"
+
+----
+
+Address: 
+
+- Purkyňova 648/125 
+- 612 00 Brno
+- (email: info@via-electra.eu)
+- (tel: +420733666106 text: +420 733 666 106)

@@ -1,0 +1,41 @@
+Tab1: 
+
+----
+
+Title: Stavební Engineering
+
+----
+
+General-text: Od konzultace a výběru dodavatelů až po technický i autorský dozor pro elektronickou část stavby.
+
+----
+
+General-thumb: service-3.jpg
+
+----
+
+General-caption: Více o engineeringu
+
+----
+
+General-related: polyfunkcni-dum-bratislavska
+
+----
+
+Detail-image: 
+
+----
+
+Detail-headline: 
+
+----
+
+Detail-text: 
+
+----
+
+Detail-facts: 
+
+----
+
+Detail-features: 
