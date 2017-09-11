@@ -5,3 +5,7 @@
   &-jablotron { @extend .c-partners__item--jablotron; }
   &-viasound  { @extend .c-partners__item--viasound; }
 }
+
+.s-detail__services a {
+  @extend .c-pill;
+}
