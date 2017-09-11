@@ -22,7 +22,7 @@ fields:
       execution: Work Execution
       site: Site Engineering
 
-  tab2:
+  tab_2:
     label: Detail
     type: tabs
   detail_headline:
@@ -44,18 +44,27 @@ fields:
     label: Year Completed
     type: number
     width: 1/2
+
+  tab_3:
+    label: Media
+    type: tabs
   detail_media:
     label: Media
     type: builder
     fieldsets:
       full:
         label: Full Image
+        entry: >
+          <img src="{{_fileUrl}}{{image}}" width="100%">
         fields:
           image:
             label: Image
             type: image
       split:
         label: Split Images
+        entry: >
+          <img src="{{_fileUrl}}{{image_1}}" width="49%" style="vertical-align: top">
+          <img src="{{_fileUrl}}{{image_2}}" width="49%" style="vertical-align: top">
         fields:
           image_1:
             label: Image
@@ -65,6 +74,9 @@ fields:
             type: image
       video:
         label: Image and Video
+        entry: >
+          <img src="{{_fileUrl}}{{image}}" width="49%" style="vertical-align: top">
+          <iframe src="{{video}}" width="49%" height="300px" frameborder="0">
         fields:
           image:
             label: Image
