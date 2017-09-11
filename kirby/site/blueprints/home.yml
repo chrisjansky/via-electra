@@ -12,12 +12,14 @@ fields:
   title:
     label: Title
     type: text
-  intro_headline:
-    label: Headline
-    type: text
+    width: 1/2
   intro_image:
     label: Image
     type: image
+    width: 1/2
+  intro_headline:
+    label: Headline
+    type: text
   intro_text:
     label: Text
     type: textarea
@@ -53,12 +55,14 @@ fields:
   tab_3:
     label: Careers
     type: tabs
-  careers_image:
-    label: Image
-    type: image
   careers_title:
     label: Title
     type: text
+    width: 1/2
+  careers_image:
+    label: Image
+    type: image
+    width: 1/2
   careers_text:
     label: Text
     type: textarea
@@ -77,12 +81,14 @@ fields:
   tab_5:
     label: Locations
     type: tabs
-  locations_image:
-    label: Image
-    type: image
   locations_title:
     label: Title
     type: text
+    width: 1/2
+  locations_image:
+    label: Image
+    type: image
+    width: 1/2
   locations_text:
     label: Text
     type: text

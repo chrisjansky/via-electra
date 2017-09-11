@@ -9,5 +9,5 @@ files: false
 options:
   delete: false
   url: false
-  status: fals
+  status: false
   preview: false

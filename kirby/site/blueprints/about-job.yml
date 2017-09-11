@@ -7,14 +7,14 @@ options:
   preview: false
 
 fields:
-  photo:
-    label: Photo
-    type: image
-
   title:
     label: Title
     type: text
-
+    width: 1/2
+  photo:
+    label: Photo
+    type: image
+    width: 1/2
   text:
     label: Description
     type: textarea

@@ -7,18 +7,22 @@ options:
   preview: false
 
 fields:
-  photo:
-    label: Photo
-    type: image
   name:
     label: Name
     type: text
+    width: 1/2
+  photo:
+    label: Photo
+    type: image
+    width: 1/2
   job:
     label: Job Title
     type: text
   tel:
     label: Telephone
     type: tel
+    width: 1/2
   email:
     label: E-mail
     type: email
+    width: 1/2

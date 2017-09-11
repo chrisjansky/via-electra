@@ -11,19 +11,23 @@ fields:
   title:
     label: Title
     type: text
+    width: 1/2
+  general_thumb:
+    label: Thumbnail
+    type: image
+    width: 1/2
   general_text:
     label: Description
     type: textarea
     buttons: false
-  general_thumb:
-    label: Thumbnail
-    type: image
   general_caption:
     label: Button Caption
     type: text
+    width: 1/2
   general_related:
     label: Related Project
     type: select
+    width: 1/2
     options: query
     query:
       page: projects
@@ -31,13 +35,15 @@ fields:
   tab_2:
     label: Detail
     type: tabs
-  detail_image:
-    label: Image
-    type: image
   detail_headline:
     label: Headline
     type: textarea
+    width: 1/2
     buttons: false
+  detail_image:
+    label: Image
+    type: image
+    width: 1/2
   detail_text:
     label: Text
     type: textarea

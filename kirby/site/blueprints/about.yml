@@ -14,9 +14,11 @@ fields:
   title:
     label: Title
     type: text
+    width: 1/2
   photo:
     label: Cover Photo
     type: image
+    width: 1/2
   headline:
     label: Headline
     type: textarea

@@ -9,6 +9,11 @@ fields:
   title:
     label: Title
     type: text
+    width: 1/2
+  general_cover:
+    label: Cover Image
+    type: image
+    width: 1/2
   general_category:
     label: Category
     type: select
@@ -16,9 +21,6 @@ fields:
       design: Design Engineering
       execution: Work Execution
       site: Site Engineering
-  general_cover:
-    label: Cover Image
-    type: image
 
   tab2:
     label: Detail
@@ -34,12 +36,14 @@ fields:
   detail_services:
     label: Services
     type: textarea
+    width: 1/2
     buttons:
       - link
       - ulist
   detail_completed:
     label: Year Completed
     type: number
+    width: 1/2
   detail_media:
     label: Media
     type: builder
