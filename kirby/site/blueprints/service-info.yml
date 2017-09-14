@@ -8,11 +8,15 @@ options:
 
 fields:
   title:
-    label: Title
+    label:
+      cs: Název
+      en: Title
     type: text
     width: 1/2
   photo:
-    label: Photo
+    label:
+      cs: Fotografie
+      en: Photo
     type: image
     width: 1/2
   text:

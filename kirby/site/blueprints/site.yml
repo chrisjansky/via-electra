@@ -4,13 +4,19 @@ pages: false
 
 fields:
   title:
-    label: Title
+    label:
+      cs: Název
+      en: Title
     type:  text
 
   partners:
-    label: Partners
+    label:
+      cs: Partneři
+      en: Partners
     type: gallery
 
   colophon:
-    label: Colophon
+    label:
+      cs: Tiráž
+      en: Colophon
     type: text

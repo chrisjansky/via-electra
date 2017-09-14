@@ -9,26 +9,38 @@ options:
 
 fields:
   tab_1:
-    label: General
+    label:
+      cs: Obecné
+      en: General
     type: tabs
   title:
-    label: Title
+    label:
+      cs: Název
+      en: Title
     type: text
     width: 1/2
   photo:
-    label: Cover Photo
+    label:
+      cs: Hlavní fotka
+      en: Cover Photo
     type: image
     width: 1/2
   headline:
-    label: Headline
+    label:
+      cs: Nadpis
+      en: Headline
     type: textarea
     buttons: false
   text:
-    label: Description
+    label:
+      cs: Popis
+      en: Description
     type: textarea
     buttons: false
   features:
-    label: Features
+    label:
+      cs: Výhody
+      en: Features
     type: structure
     limit: 3
     entry: >
@@ -36,10 +48,14 @@ fields:
       {{features_text}}
     fields:
       features_icon:
-        label: Icon
+        label:
+          cs: Ikona
+          en: Icon
         type: image
       features_title:
-        label: Title
+        label:
+          cs: Název
+          en: Title
         type: text
       features_text:
         label: Text
@@ -47,7 +63,9 @@ fields:
         buttons: false
 
   tab_2:
-    label: Partners
+    label:
+      cs: Partneři
+      en: Partners
     type: tabs
   partners_text:
     label: Text
@@ -55,7 +73,9 @@ fields:
     buttons: false
 
   tab_3:
-    label: People
+    label:
+      cs: Lidé
+      en: People
     type: tabs
   people_text:
     label: Text

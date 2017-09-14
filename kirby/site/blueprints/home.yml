@@ -10,22 +10,30 @@ fields:
     label: Intro
     type: tabs
   title:
-    label: Title
+    label:
+      cs: Název
+      en: Title
     type: text
     width: 1/2
   intro_image:
-    label: Image
+    label:
+      cs: Fotografie
+      en: Image
     type: image
     width: 1/2
   intro_headline:
-    label: Headline
+    label:
+      cs: Nadpis
+      en: Headline
     type: text
   intro_text:
     label: Text
     type: textarea
     buttons: false
   intro_facts:
-    label: Facts
+    label:
+      cs: Fakta
+      en: Facts
     type: structure
     limit: 4
     entry: >
@@ -42,25 +50,35 @@ fields:
         type: text
 
   tab_2:
-    label: About
+    label:
+      cs: O nás
+      en: About
     type: tabs
   about_text:
     label: Text
     type: textarea
     buttons: false
   about_caption:
-    label: Button Caption
+    label:
+      cs: Text tlačítka
+      en: Button Caption
     type: text
 
   tab_3:
-    label: Careers
+    label:
+      cs: Kariéra
+      en: Careers
     type: tabs
   careers_title:
-    label: Title
+    label:
+      cs: Nadpis
+      en: Title
     type: text
     width: 1/2
   careers_image:
-    label: Image
+    label:
+      cs: Fotografie
+      en: Image
     type: image
     width: 1/2
   careers_text:
@@ -68,30 +86,44 @@ fields:
     type: textarea
     buttons: false
   careers_caption:
-    label: Button Caption
+    label:
+      cs: Text tlačítka
+      en: Button Caption
     type: text
 
   tab_4:
-    label: Contact
+    label:
+      cs: Kontakt
+      en: Contact
     type: tabs
   contact_caption:
-    label: Button Caption
+    label:
+      cs: Text tlačítka
+      en: Button Caption
     type: text
 
   tab_5:
-    label: Locations
+    label:
+      cs: Pobočky
+      en: Locations
     type: tabs
   locations_title:
-    label: Title
+    label:
+      cs: Nadpis
+      en: Title
     type: text
     width: 1/2
   locations_image:
-    label: Image
+    label:
+      cs: Fotografie
+      en: Image
     type: image
     width: 1/2
   locations_text:
     label: Text
     type: text
   locations_caption:
-    label: Button Caption
+    label:
+      cs: Text tlačítka
+      en: Button Caption
     type: text

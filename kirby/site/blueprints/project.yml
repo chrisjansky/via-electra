@@ -4,44 +4,66 @@ pages: false
 
 fields:
   tab_1:
-    label: General
+    label:
+      cs: Obecné
+      en: General
     type: tabs
   title:
-    label: Title
+    label:
+      cs: Název
+      en: Title
     type: text
     width: 1/2
   general_cover:
-    label: Cover Image
+    label:
+      cs: Hlavní fotka
+      en: Cover Image
     type: image
     width: 1/2
   general_category:
-    label: Category
+    label:
+      cs: Kategorie
+      en: Category
     type: select
     options:
-      design: Design Engineering
-      execution: Work Execution
-      site: Site Engineering
+      design:
+        cs: Projekce
+        en: Design Engineering
+      execution:
+        cs: Realizace
+        en: Work Execution
+      site:
+        cs: Stavební Engineering
+        en: Site Engineering
 
   tab_2:
     label: Detail
     type: tabs
   detail_headline:
-    label: Headline
+    label:
+      cs: Nadpis
+      en: Headline
     type: textarea
     buttons: false
   detail_text:
-    label: Description
+    label:
+      cs: Popis
+      en: Description
     type: textarea
     buttons: false
   detail_services:
-    label: Services
+    label:
+      cs: Poskytnuté služby
+      en: Services
     type: textarea
     width: 1/2
     buttons:
       - link
       - ulist
   detail_completed:
-    label: Year Completed
+    label:
+      cs: Rok dokončení
+      en: Year Completed
     type: number
     width: 1/2
 
@@ -53,34 +75,34 @@ fields:
     type: builder
     fieldsets:
       full:
-        label: Full Image
+        label: Velká fotka
         entry: >
           <img src="{{_fileUrl}}{{image}}" width="100%">
         fields:
           image:
-            label: Image
+            label: Fotka
             type: image
       split:
-        label: Split Images
+        label: Fotky vedle sebe
         entry: >
           <img src="{{_fileUrl}}{{image_1}}" width="49%" style="vertical-align: top">
           <img src="{{_fileUrl}}{{image_2}}" width="49%" style="vertical-align: top">
         fields:
           image_1:
-            label: Image
+            label: Fotka nalevo
             type: image
           image_2:
-            label: Image
+            label: Fotka napravo
             type: image
       video:
-        label: Image and Video
+        label: Fotka a video
         entry: >
           <img src="{{_fileUrl}}{{image}}" width="49%" style="vertical-align: top">
           <iframe src="{{video}}" width="49%" height="300px" frameborder="0">
         fields:
           image:
-            label: Image
+            label: Fotka
             type: image
           video:
-            label: Video URL
+            label: Adresa videa
             type: text

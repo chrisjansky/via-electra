@@ -8,18 +8,26 @@ options:
 
 fields:
   name:
-    label: Name
+    label:
+      cs: Jméno
+      en: Name
     type: text
     width: 1/2
   photo:
-    label: Photo
+    label:
+      cs: Fotografie
+      en: Photo
     type: image
     width: 1/2
   job:
-    label: Job Title
+    label:
+      cs: Pozice
+      en: Job Title
     type: text
   tel:
-    label: Telephone
+    label:
+      cs: Telefon
+      en: Telephone
     type: tel
     width: 1/2
   email:

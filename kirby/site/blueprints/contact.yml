@@ -3,6 +3,8 @@ title: Contact
 pages:
   template: contact-person
 
+files: false
+
 options:
   status: false
   url: false
@@ -10,10 +12,14 @@ options:
 
 fields:
   tab_1:
-    label: General
+    label:
+      cs: Obecné
+      en: General
     type: tabs
   title:
-    label: Title
+    label:
+      cs: Název
+      en: Title
     type: text
   address:
     label: Text
@@ -23,40 +29,60 @@ fields:
       - ulist
 
   tab_2:
-    label: People
+    label:
+      cs: Lidé
+      en: People
     type: tabs
   people_title:
-    label: Title
+    label:
+      cs: Nadpis
+      en: Headline
     type: text
   people_primary:
-    label: Primary Contact
+    label:
+      cs: Hlavní kontakt
+      en: Primary Contact
     type: select
     options: visibleChildren
 
   tab_3:
-    label: Locations
+    label:
+      cs: Pobočky
+      en: Locations
     type: tabs
   locations_title:
-    label: Title
+    label:
+      cs: Nadpis
+      en: Headline
     type: text
   locations:
-    label: Offices
+    label:
+      cs: Pobočky
+      en: Offices
     type: structure
     style: table
     fields:
       locations_name:
-        label: Name
+        label:
+          cs: Název
+          en: Name
         type: text
       locations_address:
-        label: Address
+        label:
+          cs: Adresa
+          en: Address
         type: textarea
         buttons: false
       locations_person:
-        label: Contact Person
+        label:
+          cs: Kontaktní osoba
+          en: Contact Person
         type: select
         options: visibleChildren
       locations_map:
-        label: Location
+        label:
+          cs: Adresa
+          en: Location
         type: map
         center:
           lat: 45.5230622
