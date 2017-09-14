@@ -88,3 +88,40 @@ fields:
           lat: 45.5230622
           lng: -122.6764816
           zoom: 9
+
+  tab_4:
+    label:
+      cs: Údaje
+      en: Info
+    type: tabs
+  info_title:
+    label:
+      cs: Nadpis
+      en: Title
+    type: text
+  info_address:
+    label:
+      cs: Adresa
+      en: Address
+    type: textarea
+    buttons:
+      - ulist
+      - bold
+  info_czech:
+    label:
+      cs: Údaje pro Česko
+      en: Czech Info
+    type: textarea
+    buttons:
+      - ulist
+      - bold
+      - italic
+  info_slovak:
+    label:
+      cs: Údaje pro Slovensko
+      en: Slovak Info
+    type: textarea
+    buttons:
+      - ulist
+      - bold
+      - italic

@@ -19,7 +19,6 @@
     'careers-open' => 'Otevřená pozice',
     'careers-more' => 'Více o této pozici',
     'careers-apply' => 'Mám zájem o tuto pozici',
-    'contact-billing' => 'Obchodní údaje',
     'project-description' => 'Popis projektu',
     'project-services' => 'Poskytnuté služby',
     'project-completed' => 'Rok realizace',

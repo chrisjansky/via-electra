@@ -65,38 +65,20 @@
 
 <div class="m-billing">
   <div class="m-billing__wrap">
-    <h2 class="m-billing__title"><?= l::get('contact-billing') ?></h2>
+    <h2 class="m-billing__title"><?= $page->info_title()->html() ?></h2>
+
     <div class="m-billing__content">
-      <div class="m-billing__group"><strong>via electra s.r.o.</strong>
-        <ul>
-          <li>Purkyňová 648/125</li>
-          <li>612 00 Brno, CZ</li>
-        </ul>
+      <div class="m-billing__group">
+        <?= $page->info_address()->kirbytext() ?>
       </div>
-      <div class="m-billing__group"><em>CZ</em>
-        <ul>
-          <li>IČ 04877241</li>
-          <li>DIČ CZ04877241</li>
-        </ul><span>CZK účet</span>
-        <ul>
-          <li>2700966980/2010,</li>
-          <li>IBAN CZ6220100000002700966980</li>
-          <li>SWIFT FIOBCZPPXXX</li>
-        </ul><span>EUR účet</span>
-        <ul>
-          <li>2101083254/2010</li>
-          <li>IBAN CZ9620100000002101083254</li>
-          <li>SWIFT FIOBCZPPXXX</li>
-        </ul>
+      <div class="m-billing__group">
+        <?= $page->info_czech()->kirbytext() ?>
       </div>
-      <div class="m-billing__group"><em>SK</em>
-        <ul>
-          <li>IČ 04877241</li>
-          <li>DIČ 4120056732</li>
-          <li>IČ DPH SK4120056732</li>
-        </ul>
+      <div class="m-billing__group">
+        <?= $page->info_slovak()->kirbytext() ?>
       </div>
     </div>
+
   </div>
 </div>
 

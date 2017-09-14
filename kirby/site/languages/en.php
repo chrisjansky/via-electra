@@ -19,7 +19,6 @@
     'careers-open' => 'Available Position',
     'careers-more' => 'More Information',
     'careers-apply' => 'I am interested',
-    'contact-billing' => 'Company Info',
     'project-description' => 'Project Description',
     'project-services' => 'Services',
     'project-completed' => 'Completed',

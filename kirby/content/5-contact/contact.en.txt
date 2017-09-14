@@ -7,3 +7,106 @@ People-title: Looking for a quote, a project partner or just have some questions
 ----
 
 Locations-title: We have both Czech and Slovak offices
+
+----
+
+People-primary: jaroslav-vesely
+
+----
+
+Locations: 
+
+- 
+  locations_name: Praha
+  locations_address: |
+    - Ostopašská 856
+    - 158 00 Praha 5
+  locations_person: marek-hladik
+  locations_map: |
+    address: Ostopašská 856, 158 00 Praha 5
+    lat: "50.0560123"
+    lng: "14.348435800000061"
+    zoom: "9"
+- 
+  locations_name: Brno
+  locations_address: |
+    - Purkyňova 648/125
+    - 612 00 Brno
+  locations_person: jaroslav-vesely
+  locations_map: |
+    address: Purkyňova 648/125, 612 00 Brno
+    lat: "49.23267"
+    lng: "16.572870999999964"
+    zoom: "9"
+- 
+  locations_name: Ostrava
+  locations_address: |
+    - Tyršova 1761/14
+    - 702 00 Ostrava
+  locations_person: david-hradil
+  locations_map: |
+    address: Tyršova 1761/14, 702 00 Ostrava
+    lat: "49.8350372"
+    lng: "18.28875519999997"
+    zoom: "9"
+- 
+  locations_name: Košice
+  locations_address: |
+    - Werferova 1/2582
+    - 040 11 Košice
+  locations_person: maros-sincak
+  locations_map: |
+    address: Werferova 1/2582, 040 11 Košice
+    lat: "48.7061666"
+    lng: "21.245161999999937"
+    zoom: "9"
+
+----
+
+Address: 
+
+- Purkyňova 648/125 
+- 612 00 Brno
+- (email: info@via-electra.eu)
+- (tel: +420733666106 text: +420 733 666 106)
+
+----
+
+Info-title: Company Info
+
+----
+
+Info-address: 
+
+**via electra s.r.o.**
+- Purkyňová 648/125
+- 612 00 Brno, CZ
+
+----
+
+Info-czech: 
+
+**CZ**
+- IČ 04877241
+- DIČ CZ04877241
+
+*CZK Acc.*
+
+- 2700966980/2010
+- IBAN CZ6220100000002700966980
+- SWIFT FIOBCZPPXXX
+
+*EUR Acc.*
+
+- 2101083254/2010
+- IBAN CZ9620100000002101083254
+- SWIFT FIOBCZPPXXX
+
+----
+
+Info-slovak: 
+
+**SK**
+- IČ 04877241
+- DIČ 4120056732
+- IČ DPH SK4120056732
