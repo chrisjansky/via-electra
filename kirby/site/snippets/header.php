@@ -11,6 +11,11 @@
   <script src="https://use.typekit.net/pxl3znj.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+  <link rel="icon" href="<?= kirby()->urls()->assets() ?>/favicon.ico">
+  <link rel="icon" href="<?= kirby()->urls()->assets() ?>/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="<?= kirby()->urls()->assets() ?>/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon-precomposed" href="<?= kirby()->urls()->assets() ?>/apple-touch-icon-152x152.png">
+
   <?= css('assets/css/style-min.css') ?>
 
 </head>
