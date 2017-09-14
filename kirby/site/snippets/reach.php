@@ -2,7 +2,7 @@
   <div class="m-reach">
     <div class="m-reach__wrap">
       <div class="m-reach__person--small">
-        <h2 class="m-reach__question">Zajímá Vás více?</h2>
+        <h2 class="m-reach__question"><?= l::get('reach-question') ?></h2>
 
         <?php if (!$primary_person->photo()->empty()): ?>
           <img class="m-reach__thumbnail" data-src="<?= $primary_person->photo()->toFile()->url() ?>" alt="<?= $primary_person->name()->html() ?>">

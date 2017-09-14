@@ -18,7 +18,11 @@
         <a class="c-menu__link" href="<?= page('contact')->url() ?>" data-toggle="menu"><?= page('contact')->title() ?></a>
       </li>
     </ul>
-    <a class="c-menu__switch" href="javascript:">English</a>
+    <?php foreach ($site->languages() as $language): ?>
+      <?php if ($site->language() !== $language): ?>
+        <a class="c-menu__switch no-barba" href="<?= $language->url() ?>" data-toggle="menu"><?= html($language->name()) ?></a>
+      <?php endif ?>
+    <?php endforeach ?>
   </div>
   <span class="c-menu__frame" data-toggle="menu"></span>
 </nav>

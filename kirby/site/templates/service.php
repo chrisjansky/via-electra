@@ -2,7 +2,7 @@
 
 <div class="m-split--short">
   <div class="m-split__content--gradient">
-    <a class="m-split__back" href="<?= url() ?>#services">← Služby</a>
+    <a class="m-split__back" href="<?= url() ?>#services">← <?= l::get('services') ?></a>
     <h1 class="m-split__title" data-grep><?= $page->title()->html() ?></h1>
   </div>
   <?php if (!$page->detail_image()->empty()): ?>
@@ -27,7 +27,7 @@
       <?php endforeach ?>
     </ul>
         <div class="c-features">
-          <h2 class="c-features__title">Proč projektovat s námi?</h2>
+          <h2 class="c-features__title"><?= l::get('features-title') ?></h2>
           <ul class="c-features__list">
             <?php foreach($page->detail_features()->toStructure() as $feature): ?>
               <li class="c-features__item">
@@ -46,7 +46,7 @@
 <?php if ($page->hasVisibleChildren()): ?>
   <div class="m-infobox" id="info">
     <div class="m-infobox__wrap">
-      <h2 class="m-infobox__title">Co nás odděluje od konkurence?</h2>
+      <h2 class="m-infobox__title"><?= l::get('infobox-title') ?></h2>
       <div class="m-infobox__body">
         <?php foreach ($page->children()->visible() as $info): ?>
           <div class="m-infobox__block">
@@ -66,7 +66,7 @@
 
 <?php if (!$page->general_related()->empty()) : ?>
   <div class="m-work">
-    <h2 class="m-work__title">Související reference</h2>
+    <h2 class="m-work__title"><?= l::get('service-related-work') ?></h2>
     <div class="m-work__list">
       <?php snippet('project-preview', array('project' => page('projects')->find($page->general_related()))) ?>
     </div>
@@ -77,7 +77,7 @@
 
 <div class="m-related">
   <div class="m-related__top">
-    <h2 class="m-related__title">Další nabízené služby</h2>
+    <h2 class="m-related__title"><?= l::get('service-related') ?></h2>
   </div>
   <div class="m-related__list">
     <?php foreach($page->siblings(false) as $sibling): ?>

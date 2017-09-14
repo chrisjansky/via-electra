@@ -8,12 +8,12 @@
                 <?= page('contact')->address()->kirbytext() ?>
               </div>
               <ul class="m-footer__contextual">
-                <li><a href="<?= page('contact')->url() ?>#people">Zaměstnanci</a></li>
-                <li><a href="<?= page('contact')->url() ?>#offices">Pobočky</a></li>
+                <li><a href="<?= page('contact')->url() ?>#people"><?= l::get('employees') ?></a></li>
+                <li><a href="<?= page('contact')->url() ?>#offices"><?= l::get('offices') ?></a></li>
               </ul>
             </div>
             <div class="m-footer__group">
-              <strong class="m-footer__section">Služby</strong>
+              <strong class="m-footer__section"><?= l::get('services') ?></strong>
               <ul class="m-footer__list">
                 <?php foreach (page('services')->children()->visible() as $service): ?>
                   <li class="m-footer__item">
@@ -23,7 +23,7 @@
               </ul>
             </div>
             <div class="m-footer__group">
-              <strong class="m-footer__section">Vybrané reference</strong>
+              <strong class="m-footer__section"><?= l::get('work-title') ?></strong>
               <ul class="m-footer__list">
                 <?php foreach (page('projects')->children()->visible() as $project): ?>
                   <li class="m-footer__item">
@@ -32,16 +32,16 @@
                 <?php endforeach ?>
               </ul>
             </div>
-            <div class="m-footer__group"><strong class="m-footer__section">O nás</strong>
+            <div class="m-footer__group"><strong class="m-footer__section"><?= l::get('about') ?></strong>
               <ul class="m-footer__list">
                 <li class="m-footer__item">
-                  <a class="m-footer__link" href="<?= page('about')->url() ?>">Představení</a>
+                  <a class="m-footer__link" href="<?= page('about')->url() ?>"><?= l::get('about-intro') ?></a>
                 </li>
                 <li class="m-footer__item">
-                  <a class="m-footer__link" href="<?= page('about')->url() ?>#people">Náš tým</a>
+                  <a class="m-footer__link" href="<?= page('about')->url() ?>#people"><?= l::get('about-people') ?></a>
                 </li>
                 <li class="m-footer__item">
-                  <a class="m-footer__link" href="<?= page('about')->url() ?>#careers">Kariéra</a>
+                  <a class="m-footer__link" href="<?= page('about')->url() ?>#careers"><?= l::get('about-careers') ?></a>
                 </li>
               </ul>
             </div>

@@ -7,10 +7,18 @@
     </h1>
     <nav class="c-anchors"><a class="c-anchors__arrow" href="#intro"><svg width="18" height="24" viewBox="0 0 18 24" xmlns="http://www.w3.org/2000/svg"><title>Group 6</title><g id="Page-1" fill="none" fill-rule="evenodd"><g id="Homepage" transform="translate(-49 -614)" stroke="#000"><g id="Group-6" transform="translate(50 613)"><path id="Rectangle-6" transform="rotate(45 7.778 16.778)" d="M13.278 11.278v11h-11"/><path d="M7.667 1v23" id="Line"/></g></g></g></svg></a>
       <ul class="c-anchors__list">
-        <li class="c-anchors__item"><a class="c-anchors__link" href="#services">Služby</a></li>
-        <li class="c-anchors__item"><a class="c-anchors__link" href="#work">Reference</a></li>
-        <li class="c-anchors__item"><a class="c-anchors__link" href="#about">O nás</a></li>
-        <li class="c-anchors__item"><a class="c-anchors__link" href="#contact">Kontakt</a></li>
+        <li class="c-anchors__item"><a class="c-anchors__link" href="#services">
+          <?= l::get('services') ?>
+        </a></li>
+        <li class="c-anchors__item"><a class="c-anchors__link" href="#work">
+          <?= l::get('projects') ?>
+        </a></li>
+        <li class="c-anchors__item"><a class="c-anchors__link" href="#about">
+          <?= l::get('about') ?>
+        </a></li>
+        <li class="c-anchors__item"><a class="c-anchors__link" href="#contact">
+          <?= l::get('contact') ?>
+        </a></li>
       </ul>
     </nav>
   </div>
@@ -37,7 +45,7 @@
 
 <main class="m-services" role="main" id="services">
   <div class="m-services__wrap">
-    <h2 class="m-services__title">Naše specializace</h2>
+    <h2 class="m-services__title"><?= l::get('services-title') ?></h2>
     <div class="m-services__list">
 
       <?php foreach (page("services")->children()->visible() as $service): ?>
@@ -60,7 +68,7 @@
 </main>
 
 <div class="m-work" id="work">
-  <h2 class="m-work__title">Vybrané reference</h2>
+  <h2 class="m-work__title"><?= l::get('work-title') ?></h2>
   <div class="m-work__list">
 
     <?php foreach (page("projects")->children()->visible() as $project): ?>
@@ -72,7 +80,7 @@
 
 <div class="m-blurb--light" id="about">
   <div class="m-blurb__wrap">
-    <h2 class="m-blurb__title">O nás</h2>
+    <h2 class="m-blurb__title"><?= l::get('about') ?></h2>
     <strong class="m-blurb__claim" data-grep>
       <?= $page->about_text()->html() ?>
     </strong>

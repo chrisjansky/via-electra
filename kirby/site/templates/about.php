@@ -20,7 +20,7 @@
       <?= $page->text()->kirbytext() ?>
     </div>
     <div class="c-features">
-      <h2 class="c-features__title">Proč projektovat s námi?</h2>
+      <h2 class="c-features__title"><?= l::get('features-title') ?></h2>
       <ul class="c-features__list">
         <?php foreach($page->features()->toStructure() as $feature): ?>
           <li class="c-features__item">
@@ -50,7 +50,7 @@
 
 <div class="m-people" id="people">
   <div class="m-people__wrap">
-    <h2 class="m-people__title">Náš tým</h2>
+    <h2 class="m-people__title"><?= l::get('about-people') ?></h2>
     <div class="m-people__blurb" data-grep>
       <?= $page->people_text()->kirbytext() ?>
     </div>
@@ -65,7 +65,7 @@
 <?php if($page->hasVisibleChildren()): ?>
   <div class="m-careers" id="careers">
     <div class="m-careers__top">
-      <h2 class="m-careers__title">Právě k nám hledáme</h2>
+      <h2 class="m-careers__title"><?= l::get('careers-title') ?></h2>
     </div>
     <div class="m-careers__list">
       <?php foreach ($page->children()->visible() as $job): ?>
@@ -74,17 +74,17 @@
             <div class="m-careers__image" data-src="<?= $job->photo()->toFile()->url() ?>"></div>
             <div class="m-careers__content">
               <div class="m-careers__wrap">
-                <mark class="m-careers__strong">Otevřená pozice</mark>
+                <mark class="m-careers__strong"><?= l::get('careers-open') ?></mark>
                 <h3 class="m-careers__name"><?= $job->title()->html() ?></h3>
               </div>
             </div>
           </div>
           <div class="m-careers__long">
-            <h4 class="m-careers__caps">Více o této pozici</h4>
+            <h4 class="m-careers__caps"><?= l::get('careers-more') ?></h4>
             <div class="m-careers__description">
               <?= $job->text()->kirbytext() ?>
             </div>
-            <a class="m-careers__button" href="mailto:careers@via-electra.eu">Mám zájem o tuto pozici</a>
+            <a class="m-careers__button" href="mailto:careers@via-electra.eu"><?= l::get('careers-apply') ?></a>
           </div>
         </div>
       <?php endforeach ?>

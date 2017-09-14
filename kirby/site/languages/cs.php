@@ -1,0 +1,31 @@
+<?php
+  l::set(array(
+    'services' => 'Služby',
+    'projects' => 'Reference',
+    'about' => 'O nás',
+    'contact' => 'Kontakt',
+    'services-title' => 'Naše specializace',
+    'work-title' => 'Vybrané reference',
+    'partners' => 'Partneři',
+    'employees' => 'Zaměstnanci',
+    'office' => 'Pobočka',
+    'offices' => 'Pobočky',
+    'about-intro' => 'Představení',
+    'about-people' => 'Náš tým',
+    'about-careers' => 'Kariéra',
+    'reach-question' => 'Zajímá Vás více?',
+    'features-title' => 'Proč projektovat s námi?',
+    'careers-title' => 'Právě k nám hledáme',
+    'careers-open' => 'Otevřená pozice',
+    'careers-more' => 'Více o této pozici',
+    'careers-apply' => 'Mám zájem o tuto pozici',
+    'contact-billing' => 'Obchodní údaje',
+    'project-description' => 'Popis projektu',
+    'project-services' => 'Poskytnuté služby',
+    'project-completed' => 'Rok realizace',
+    'project-related' => 'Další vybrané reference',
+    'infobox-title' => 'Co nás odděluje od konkurence?',
+    'service-related-work' => 'Související reference',
+    'service-related' => 'Další nabízené služby'
+  ));
+?>

@@ -3,7 +3,7 @@
 <div class="m-top--short">
   <div class="m-top__content">
     <div class="m-top__wrap">
-      <h1 class="m-top__title">Kontakt</h1>
+      <h1 class="m-top__title"><?= l::get('contact') ?></h1>
     </div>
   </div>
 </div>
@@ -31,7 +31,7 @@
           </div>
           <div class="m-offices__info">
             <div class="m-offices__description">
-              <h3 class="m-offices__city">Pobočka <?= $location->locations_name()->html() ?></h3>
+              <h3 class="m-offices__city"><?= l::get('office') ?> <?= $location->locations_name()->html() ?></h3>
               <div class="m-offices__address">
                 <?= $location->locations_address->kirbytext() ?>
               </div>
@@ -65,7 +65,7 @@
 
 <div class="m-billing">
   <div class="m-billing__wrap">
-    <h2 class="m-billing__title">Obchodní údaje</h2>
+    <h2 class="m-billing__title"><?= l::get('contact-billing') ?></h2>
     <div class="m-billing__content">
       <div class="m-billing__group"><strong>via electra s.r.o.</strong>
         <ul>
