@@ -1,0 +1,29 @@
+Title: About
+
+----
+
+Headline: We are a fast-growing design, execution and service partner supplying the complete electrical systems of buildings.
+
+----
+
+Features: 
+
+-
+  features_icon: icon-temp-1.svg
+  features_title: Flexibility
+  features_text: >
+    BIM methodology allows us to make alterations to the design in any phase of the project.
+-
+  features_icon: icon-temp-2.svg
+  features_title: Safety
+  features_text: >
+    The software automatically examines all security aspects of the project and foresees all likely conflicts.
+-
+  features_icon: icon-temp-3.svg
+  features_title: Optimalizace nákladů
+  features_text: >
+    Thanks to DDS-CAD software we save up to 30% of the construction material needed with the client having 100% overview of the proposal process.
+
+----
+
+Partners-text: We strategically collaborate with leading technological companies.

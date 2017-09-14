@@ -1,7 +1,3 @@
-Tab1: 
-
-----
-
 Title: Stavební Engineering
 
 ----
@@ -19,23 +15,3 @@ General-caption: Více o engineeringu
 ----
 
 General-related: polyfunkcni-dum-bratislavska
-
-----
-
-Detail-image: 
-
-----
-
-Detail-headline: 
-
-----
-
-Detail-text: 
-
-----
-
-Detail-facts: 
-
-----
-
-Detail-features: 

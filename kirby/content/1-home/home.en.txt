@@ -1,0 +1,66 @@
+Title: Home
+
+----
+
+Intro-headline: Modern Home and Office Automation — Sophisticated and in 3D
+
+----
+
+Intro-text: We’re building automation & electrics professionals with 20+ years of experience in the field.
+
+----
+
+Intro-facts: 
+
+- 
+  facts_number: "7"
+  facts_caption: experts in our team
+  facts_suffix: ""
+- 
+  facts_number: "20"
+  facts_caption: years of experience
+  facts_suffix: +
+- 
+  facts_number: "3"
+  facts_caption: project-wide design
+  facts_suffix: D
+- 
+  facts_number: "4"
+  facts_caption: Czech and Slovak offices
+  facts_suffix: ""
+
+----
+
+About-text: We operate in the biggest cities of Czech and Slovak Republic with the vision of becoming No. 1 contractor in both markets by 2020.
+
+----
+
+About-caption: Get to Know Us
+
+----
+
+Careers-title: Work with Us
+
+----
+
+Careers-text: We are looking for new colleagues from time to time. You might be the perfect match!
+
+----
+
+Careers-caption: Careers
+
+----
+
+Contact-caption: Contact Our Employees
+
+----
+
+Locations-title: Come Visit Us
+
+----
+
+Locations-text: We operate within both the Czech and Slovak markets.
+
+----
+
+Locations-caption: Our Offices

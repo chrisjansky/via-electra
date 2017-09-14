@@ -1,7 +1,3 @@
-Tab1: 
-
-----
-
 Title: Realizace
 
 ----
@@ -19,23 +15,3 @@ General-caption: Více o realizaci
 ----
 
 General-related: villa-mia
-
-----
-
-Detail-image: 
-
-----
-
-Detail-headline: 
-
-----
-
-Detail-text: 
-
-----
-
-Detail-facts: 
-
-----
-
-Detail-features: 
