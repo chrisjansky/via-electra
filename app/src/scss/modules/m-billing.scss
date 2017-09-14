@@ -28,6 +28,31 @@
       margin-right: 1em;
     }
 
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    strong {
+      font-weight: $font__sans--bold;
+    }
+
+    em {
+      color: $c-grey--500;
+
+      font-size: .75em;
+      font-style: normal;
+
+      margin-top: .25em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      overflow: auto;
+    }
+
     &:not(:first-child) {
       margin-top: .25em;
 
@@ -35,6 +60,13 @@
       
       ul {
         margin-top: 0;
+      }
+
+      strong {
+        color: $c-link;
+        background-color: transparent;
+
+        margin-bottom: .5em;
       }
     }
 
@@ -48,35 +80,8 @@
       }
     }
 
-    em {
-      display: block;
-
-      color: $c-link;
-      background-color: transparent;
-
-      font-style: normal;
-
-      margin-bottom: .5em;
-    }
-
-    span {
-      color: $c-grey--500;
-
-      font-size: .75em;
-
-      margin-top: .25em;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-
-      overflow: auto;
-    }
-
     @include breakpoint($bp__laptop) {
-      em,
-      span {
+      &:not(:first-child) p {
         float: left;
         clear: left;
 
