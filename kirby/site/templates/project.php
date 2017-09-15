@@ -3,11 +3,13 @@
 <div class="m-detail">
   <div class="m-detail__top">
     <?php if (!$page->general_cover()->empty()): ?>
-      <div class="m-detail__splash" data-src="<?= $page->general_cover()->toFile()->url() ?>"></div>
+      <div class="m-detail__splash" data-src="<?= $page->general_cover()->toFile()->resize(2880, 1800)->url() ?>"></div>
     <?php endif ?>
     <div class="m-detail__scoop">
       <a class="m-detail__back" href="<?= url() ?>#work">← <?= l::get('projects') ?></a>
-      <strong class="m-detail__cat">Temp</strong>
+      <strong class="m-detail__cat">
+        <?= Architect::field_option_label('project', 'general_category', $page->general_category(), $site->language()->code()) ?>
+      </strong>
       <h1 class="m-detail__title"><?= $page->title()->html() ?></h1>
     </div>
   </div>

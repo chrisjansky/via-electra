@@ -2,7 +2,7 @@
   <span class="m-people__holder">
     <span class="m-people__ratio">
       <?php if (!$person->photo()->empty()): ?>
-        <img class="m-people__portrait" data-src="<?= $person->photo()->toFile()->url() ?>" alt="<?= $person->name()->html() ?> Photo">
+        <img class="m-people__portrait" data-src="<?= $person->photo()->toFile()->crop(192)->url() ?>" alt="<?= $person->name()->html() ?> Photo">
       <?php endif ?>
     </span>
   </span>

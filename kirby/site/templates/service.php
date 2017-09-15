@@ -6,7 +6,7 @@
     <h1 class="m-split__title" data-grep><?= $page->title()->html() ?></h1>
   </div>
   <?php if (!$page->detail_image()->empty()): ?>
-    <div class="m-split__image" data-src="<?= $page->detail_image()->toFile()->url() ?>"></div>
+    <div class="m-split__image" data-src="<?= $page->detail_image()->toFile()->resize(1680, 1680)->url() ?>"></div>
   <?php endif ?>
 </div>
 <main class="s-service__blurb m-blurb--white" role="main">
@@ -51,7 +51,7 @@
         <?php foreach ($page->children()->visible() as $info): ?>
           <div class="m-infobox__block">
             <?php if (!$info->photo()->empty()): ?>
-              <div class="m-infobox__image" data-src="<?= $info->photo()->toFile()->url() ?>"></div>
+              <div class="m-infobox__image" data-src="<?= $info->photo()->toFile()->resize(1600, 1200)->url() ?>"></div>
             <?php endif ?>
             <h3 class="m-infobox__head"><?= $info->title()->html() ?></h3>
             <div class="m-infobox__text">
@@ -82,7 +82,7 @@
   <div class="m-related__list">
     <?php foreach($page->siblings(false) as $sibling): ?>
       <a class="m-related__link" href="<?= $sibling->url() ?>">
-        <img class="m-related__image" data-src="<?= $sibling->general_thumb()->toFile()->url() ?>" alt="<?= $sibling->title()->html() ?>">
+        <img class="m-related__image" data-src="<?= $sibling->general_thumb()->toFile()->crop(256)->url() ?>" alt="<?= $sibling->title()->html() ?>">
         <h3 class="m-related__name"><?= $sibling->title()->html() ?></h3>
       </a>
     <?php endforeach ?>

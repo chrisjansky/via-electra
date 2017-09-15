@@ -1,6 +1,6 @@
 <div class="m-detail__split">
   <?php if ($data->image()->isNotEmpty()): ?>
-    <img data-src="<?= $page->image($data->image())->url() ?>" alt="<?= $page->title()->html() ?> Detail">
+    <img data-src="<?= $page->image($data->image())->resize(1440)->url() ?>" alt="<?= $page->title()->html() ?> Detail">
   <?php
     endif;
     if ($data->video()->isNotEmpty()):

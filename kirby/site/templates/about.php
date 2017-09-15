@@ -7,7 +7,7 @@
     </div>
   </div>
   <?php if (!$page->photo()->empty()): ?>
-    <div class="m-top__splash" data-src="<?= $page->photo()->toFile()->url() ?>"></div>
+    <div class="m-top__splash" data-src="<?= $page->photo()->toFile()->resize(2880, 1800)->url() ?>"></div>
   <?php endif ?>
 </div>
 
@@ -71,7 +71,7 @@
       <?php foreach ($page->children()->visible() as $job): ?>
         <div class="m-careers__item">
           <div class="m-careers__short">
-            <div class="m-careers__image" data-src="<?= $job->photo()->toFile()->url() ?>"></div>
+            <div class="m-careers__image" data-src="<?= $job->photo()->toFile()->resize(2100, 1000)->url() ?>"></div>
             <div class="m-careers__content">
               <div class="m-careers__wrap">
                 <mark class="m-careers__strong"><?= l::get('careers-open') ?></mark>

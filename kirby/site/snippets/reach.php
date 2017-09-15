@@ -5,7 +5,7 @@
         <h2 class="m-reach__question"><?= l::get('reach-question') ?></h2>
 
         <?php if (!$primary_person->photo()->empty()): ?>
-          <img class="m-reach__thumbnail" data-src="<?= $primary_person->photo()->toFile()->url() ?>" alt="<?= $primary_person->name()->html() ?>">
+          <img class="m-reach__thumbnail" data-src="<?= $primary_person->photo()->toFile()->crop(192)->url() ?>" alt="<?= $primary_person->name()->html() ?>">
         <?php endif ?>
 
         <div class="m-reach__details">
@@ -34,7 +34,7 @@
       </p>
       <div class="m-reach__person--large">
         <?php if (!$primary_person->photo()->empty()): ?>
-          <img class="m-reach__thumbnail" data-src="<?= $primary_person->photo()->toFile()->url() ?>" alt="<?= $primary_person->name()->html() ?>">
+          <img class="m-reach__thumbnail" data-src="<?= $primary_person->photo()->toFile()->crop(256)->url() ?>" alt="<?= $primary_person->name()->html() ?>">
         <?php endif ?>
         <div class="m-reach__details">
           <strong class="m-reach__name"><?= $primary_person->name()->html() ?></strong>

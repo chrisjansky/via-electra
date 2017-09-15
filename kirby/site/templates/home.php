@@ -22,7 +22,9 @@
       </ul>
     </nav>
   </div>
-  <div class="m-split__image" data-src="<?= $page->intro_image()->toFile()->url() ?>"></div>
+  <?php if (!$page->intro_image()->empty()): ?>
+    <div class="m-split__image" data-src="<?= $page->intro_image()->toFile()->resize(1440, 1800)->url() ?>"></div>
+  <?php endif ?>
 </div>
 
 <div class="m-hilite" id="intro">
@@ -53,7 +55,7 @@
           <span class="m-services__holder">
             <span class="m-services__ratio">
               <?php if (!$service->general_thumb()->empty()): ?>
-                <img class="m-services__image" data-src="<?= $service->general_thumb()->toFile()->url() ?>" alt="<?= $service->title()->html() ?>">
+                <img class="m-services__image" data-src="<?= $service->general_thumb()->toFile()->crop(512)->url() ?>" alt="<?= $service->title()->html() ?>">
               <?php endif ?>
             </span>
           </span>
@@ -91,7 +93,7 @@
   </div>
 </div>
 <div class="m-hiring">
-  <div class="m-hiring__image" data-src="<?= $page->careers_image()->toFile()->url() ?>"></div>
+  <div class="m-hiring__image" data-src="<?= $page->careers_image()->toFile()->resize(2100, 1400)->url() ?>"></div>
   <div class="m-hiring__content">
     <div class="m-hiring__wrap">
       <h3 class="m-hiring__strong"><?= $page->careers_title()->html() ?></h3>
@@ -108,7 +110,7 @@
 <?php snippet('reach', array('size' => 'large', 'type' => 'homepage', 'caption' => $page->contact_caption())) ?>
 
 <div class="m-pins">
-  <div class="m-pins__image" data-src="<?= $page->locations_image()->toFile()->url() ?>"></div>
+  <div class="m-pins__image" data-src="<?= $page->locations_image()->toFile()->resize(2100, 1400)->url() ?>"></div>
   <div class="m-pins__content">
     <div class="m-pins__wrap">
       <h3 class="m-pins__strong"><?= $page->locations_title()->html() ?></h3>
