@@ -63,13 +63,12 @@ Detail-features:
   features_icon: icon-temp-2.svg
 - 
   features_title: Optimalizace nákladů
-  features_text: >
-    Při použití softwaru DDS-CAD dosahujeme až 30% úspor montážního materiálu, přičemž má zákazník 100% kontrolu nad nabídkovém řízení.
+  features_text: 'Při použití softwaru DDS-CAD dosahujeme až 30% úspor montážního materiálu, přičemž má zákazník 100% kontrolu nad nabídkovém řízení.'
   features_icon: icon-temp-3.svg
 
 ----
 
-Detail-image: img-3.jpg
+Detail-image: service-1-1680.jpg
 
 ----
 

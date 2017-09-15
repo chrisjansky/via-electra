@@ -23,13 +23,11 @@ Detail-facts:
 - 
   facts_number: "100"
   facts_suffix: '%'
-  facts_caption: >
-    client overview of the proposal
+  facts_caption: client overview of the proposal
 - 
   facts_number: "30"
   facts_suffix: ' %'
-  facts_caption: >
-    less construction material used
+  facts_caption: less construction material used
 - 
   facts_number: "25"
   facts_suffix: '%'
@@ -42,15 +40,30 @@ Detail-features:
 - 
   features_title: Flexibility
   features_text: >
-    BIM methodology allows us to make alterations to the design in any phase of the project.
+    BIM methodology allows us to make
+    alterations to the design in any phase
+    of the project.
   features_icon: icon-temp-1.svg
 - 
   features_title: Safety
   features_text: >
-    The software automatically examines all security aspects of the project and foresees all likely conflicts.
+    The software automatically examines all
+    security aspects of the project and
+    foresees all likely conflicts.
   features_icon: icon-temp-2.svg
 - 
   features_title: Efficiency
-  features_text: >
-    Thanks to DDS-CAD software we save up to 30% of the construction material needed with the client having 100% overview of the proposal process.
+  features_text: 'Thanks to DDS-CAD software we save up to 30% of the construction material needed with the client having 100% overview of the proposal process.'
   features_icon: icon-temp-3.svg
+
+----
+
+General-thumb: service-1.jpg
+
+----
+
+Detail-image: service-1-1680.jpg
+
+----
+
+General-related: optika-richter

@@ -15,3 +15,23 @@ General-caption: Více o engineeringu
 ----
 
 General-related: polyfunkcni-dum-bratislavska
+
+----
+
+Detail-headline: 
+
+----
+
+Detail-image: service-3-1680.jpg
+
+----
+
+Detail-text: 
+
+----
+
+Detail-facts: 
+
+----
+
+Detail-features: 

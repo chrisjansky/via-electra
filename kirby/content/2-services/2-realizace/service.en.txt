@@ -3,3 +3,35 @@ Title: Work Execution
 ----
 
 General-caption: More Information
+
+----
+
+General-text: BIM je potřeba vnímat především jako proces a při přechodu na BIM je tedy zásadní si uvědomit.
+
+----
+
+General-thumb: service-2.jpg
+
+----
+
+General-related: villa-mia
+
+----
+
+Detail-headline: 
+
+----
+
+Detail-image: service-2-1680.jpg
+
+----
+
+Detail-text: 
+
+----
+
+Detail-facts: 
+
+----
+
+Detail-features: 

@@ -15,3 +15,23 @@ General-caption: Více o realizaci
 ----
 
 General-related: villa-mia
+
+----
+
+Detail-headline: 
+
+----
+
+Detail-image: service-2-1680.jpg
+
+----
+
+Detail-text: 
+
+----
+
+Detail-facts: 
+
+----
+
+Detail-features: 
