@@ -24,6 +24,7 @@ fields:
       cs: Hlavní fotka
       en: Cover Photo
     type: image
+    translate: false
     width: 1/2
   headline:
     label:
@@ -57,6 +58,7 @@ fields:
           cs: Ikona
           en: Icon
         type: image
+        translate: false
       features_title:
         label:
           cs: Název

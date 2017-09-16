@@ -19,6 +19,7 @@ fields:
       cs: Hlavní fotka
       en: Cover Image
     type: image
+    translate: false
     width: 1/2
   general_category:
     label:

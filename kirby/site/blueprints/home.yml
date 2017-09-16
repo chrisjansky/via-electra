@@ -20,6 +20,7 @@ fields:
       cs: Fotografie
       en: Image
     type: image
+    translate: false
     width: 1/2
   intro_headline:
     label:
@@ -102,6 +103,7 @@ fields:
       cs: Fotografie
       en: Image
     type: image
+    translate: false
     width: 1/2
   careers_text:
     label: Text
@@ -140,6 +142,7 @@ fields:
       cs: Fotografie
       en: Image
     type: image
+    translate: false
     width: 1/2
   locations_text:
     label: Text

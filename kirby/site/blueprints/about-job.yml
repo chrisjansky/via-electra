@@ -18,6 +18,7 @@ fields:
       cs: Fotografie
       en: Photo
     type: image
+    translate: false
     width: 1/2
   text:
     label:
