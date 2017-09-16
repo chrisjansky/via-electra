@@ -11,20 +11,24 @@
 
   &__body {
     @include breakpoint($bp__tablet) {
-      display: flex;
+      @include clearfix;
     }
   }
 
   &__block {
-    flex-grow: 1;
-    flex-basis: 10em;
-
     &:last-child {
       margin-top: 2em;
     }
 
     @include breakpoint($bp__tablet) {
-      &:last-child {
+      float: left;
+      width: 50%;
+
+      &:nth-child(odd) {
+        margin-top: 5vh;
+        clear: left;
+      }
+      &:nth-child(even) {
         margin-top: 15vh;
       }
     }
