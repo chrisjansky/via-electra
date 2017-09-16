@@ -2,7 +2,6 @@ title: Service
 
 pages:
   template: service-info
-  max: 2
 
 fields:
   tab_1:
