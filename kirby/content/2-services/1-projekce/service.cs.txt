@@ -6,7 +6,7 @@ General-text: Příprava kompletní projekční dokumentace elektro systému bud
 
 ----
 
-General-thumb: service-1.jpg
+General-thumb: service-1-b-1680.jpg
 
 ----
 
@@ -68,7 +68,7 @@ Detail-features:
 
 ----
 
-Detail-image: service-1-1680.jpg
+Detail-image: service-1-b-1680.jpg
 
 ----
 
