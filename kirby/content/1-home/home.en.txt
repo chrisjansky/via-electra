@@ -59,7 +59,7 @@ Locations-title: Come Visit Us
 
 ----
 
-Locations-text: We operate within both the Czech and Slovak markets.
+Locations-text: We operate within both the Czech and Slovak markets — we have offices in Prague, Brno, Ostrava and Košice.
 
 ----
 

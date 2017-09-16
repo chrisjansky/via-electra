@@ -67,7 +67,7 @@ Locations-title: Navštivte nás
 
 ----
 
-Locations-text: Působíme na českém i slovenském trhu.
+Locations-text: Působíme na českém i slovenském trhu — máme pobočky v Praze, Brně, Ostravě a Košicích.
 
 ----
 
