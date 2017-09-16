@@ -20,7 +20,7 @@ Detail-text: BIM je potřeba vnímat především jako proces a při přechodu n
 
 Detail-services: 
 
-- Projektování BIM a DDS-CAD (link: services/projekce#info text: Co je to?)
+- Projektování BIM a DDS-CAD (link: cs/services/projekce#info text: Co je to?)
 - Realizace
 - Nasazení software
 - Další služba
