@@ -37,6 +37,11 @@ fields:
       en: Description
     type: textarea
     buttons: false
+  features_title:
+    label:
+      cs: Nadpis výhod
+      en: Features Title
+    type: text
   features:
     label:
       cs: Výhody
@@ -81,3 +86,14 @@ fields:
     label: Text
     type: textarea
     buttons: false
+
+  tab_4:
+    label:
+      cs: Kariéra
+      en: Careers
+    type: tabs
+  careers_title:
+    label:
+      cs: Nadpis
+      en: Title
+    type: text

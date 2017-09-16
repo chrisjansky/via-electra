@@ -73,3 +73,11 @@ Detail-image: service-1-1680.jpg
 ----
 
 General-related: optika-richter
+
+----
+
+Detail-features-title: Proč projektovat s námi?
+
+----
+
+Detail-infobox-title: Co nás odděluje od konkurence?

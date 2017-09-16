@@ -2,10 +2,6 @@ Title: Kontakt
 
 ----
 
-People-title: Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
-
-----
-
 People-primary: jaroslav-vesely
 
 ----
@@ -110,3 +106,11 @@ Info-slovak:
 - IČ 04877241
 - DIČ 4120056732
 - IČ DPH SK4120056732
+
+----
+
+Long-question: Chcete zadat poptávku, znát cenovou kalkulaci nebo se jen na něco zeptat?
+
+----
+
+Short-question: Zajímá Vás více?

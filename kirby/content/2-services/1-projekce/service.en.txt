@@ -67,3 +67,11 @@ Detail-image: service-1-1680.jpg
 ----
 
 General-related: optika-richter
+
+----
+
+Detail-features-title: Why Choose Us?
+
+----
+
+Detail-infobox-title: What Makes Us Special?

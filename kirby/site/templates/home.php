@@ -47,7 +47,7 @@
 
 <main class="m-services" role="main" id="services">
   <div class="m-services__wrap">
-    <h2 class="m-services__title"><?= l::get('services-title') ?></h2>
+    <h2 class="m-services__title"><?= $page->services_title()->html() ?></h2>
     <div class="m-services__list">
 
       <?php foreach (page("services")->children()->visible() as $service): ?>
@@ -70,7 +70,7 @@
 </main>
 
 <div class="m-work" id="work">
-  <h2 class="m-work__title"><?= l::get('work-title') ?></h2>
+  <h2 class="m-work__title"><?= $page->projects_title()->html() ?></h2>
   <div class="m-work__list">
 
     <?php foreach (page("projects")->children()->visible() as $project): ?>

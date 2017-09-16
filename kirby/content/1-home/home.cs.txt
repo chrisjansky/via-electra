@@ -76,3 +76,11 @@ Locations-caption: Naše pobočky
 ----
 
 Intro-image: kocianka-6.jpg
+
+----
+
+Services-title: Naše specializace
+
+----
+
+Projects-title: Vybrané reference

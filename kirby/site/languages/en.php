@@ -4,8 +4,6 @@
     'projects' => 'Projects',
     'about' => 'About',
     'contact' => 'Contact',
-    'services-title' => 'Our Expertise',
-    'work-title' => 'Selected Work',
     'partners' => 'Partners',
     'employees' => 'Employees',
     'office' => 'Office',
@@ -13,9 +11,6 @@
     'about-intro' => 'Introduction',
     'about-people' => 'Our Team',
     'about-careers' => 'Careers',
-    'reach-question' => 'Want to Know More?',
-    'features-title' => 'Why Choose Us?',
-    'careers-title' => 'Want to Work With Us?',
     'careers-open' => 'Available Position',
     'careers-more' => 'More Information',
     'careers-apply' => 'I am interested',
@@ -23,7 +18,6 @@
     'project-services' => 'Services',
     'project-completed' => 'Completed',
     'project-related' => 'More Selected Work',
-    'infobox-title' => 'What Makes Us Special?',
     'service-related-work' => 'Related Project',
     'service-related' => 'More Services'
   ));

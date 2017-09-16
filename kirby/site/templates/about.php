@@ -20,7 +20,9 @@
       <?= $page->text()->kirbytext() ?>
     </div>
     <div class="c-features">
-      <h2 class="c-features__title"><?= l::get('features-title') ?></h2>
+      <h2 class="c-features__title">
+        <?= $page->features_title()->html() ?>
+      </h2>
       <ul class="c-features__list">
         <?php foreach($page->features()->toStructure() as $feature): ?>
           <li class="c-features__item">

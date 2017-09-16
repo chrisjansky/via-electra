@@ -52,3 +52,11 @@ People-text:
 Naše společnost je založená a vedená profesionály v oboru automatizace a elektro s více než dvacetiletými zkušenostmi, získanými u globálního technologického lídra daného odvětví — společnosti ABB.
 
 Náš nejzkušenější projektant, Ing. Jan Veselý, promoval na VUT v Brně v roce 1967 a již více než 50 let se věnuje projektování elektro.
+
+----
+
+Features-title: Proč projektovat s námi?
+
+----
+
+Careers-title: Právě k nám hledáme

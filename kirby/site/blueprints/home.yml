@@ -51,6 +51,28 @@ fields:
 
   tab_2:
     label:
+      cs: Služby
+      en: Services
+    type: tabs
+  services_title:
+    label:
+      cs: Nadpis
+      en: Title
+    type: text
+
+  tab_3:
+    label:
+      cs: Reference
+      en: Projects
+    type: tabs
+  projects_title:
+    label:
+      cs: Nadpis
+      en: Title
+    type: text
+
+  tab_4:
+    label:
       cs: O nás
       en: About
     type: tabs
@@ -64,7 +86,7 @@ fields:
       en: Button Caption
     type: text
 
-  tab_3:
+  tab_5:
     label:
       cs: Kariéra
       en: Careers
@@ -91,7 +113,7 @@ fields:
       en: Button Caption
     type: text
 
-  tab_4:
+  tab_6:
     label:
       cs: Kontakt
       en: Contact
@@ -102,7 +124,7 @@ fields:
       en: Button Caption
     type: text
 
-  tab_5:
+  tab_7 :
     label:
       cs: Pobočky
       en: Locations

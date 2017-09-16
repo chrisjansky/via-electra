@@ -27,7 +27,9 @@
       <?php endforeach ?>
     </ul>
         <div class="c-features">
-          <h2 class="c-features__title"><?= l::get('features-title') ?></h2>
+          <h2 class="c-features__title">
+            <?= $page->detail_features_title()->html() ?>
+          </h2>
           <ul class="c-features__list">
             <?php foreach($page->detail_features()->toStructure() as $feature): ?>
               <li class="c-features__item">
@@ -46,7 +48,9 @@
 <?php if ($page->hasVisibleChildren()): ?>
   <div class="m-infobox" id="info">
     <div class="m-infobox__wrap">
-      <h2 class="m-infobox__title"><?= l::get('infobox-title') ?></h2>
+      <h2 class="m-infobox__title">
+        <?= $page->detail_infobox_title()->html() ?>
+      </h2>
       <div class="m-infobox__body">
         <?php foreach ($page->children()->visible() as $info): ?>
           <div class="m-infobox__block">

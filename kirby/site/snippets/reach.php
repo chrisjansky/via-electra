@@ -2,7 +2,9 @@
   <div class="m-reach">
     <div class="m-reach__wrap">
       <div class="m-reach__person--small">
-        <h2 class="m-reach__question"><?= l::get('reach-question') ?></h2>
+        <h2 class="m-reach__question">
+          <?= $site->find('contact')->short_question()->html() ?>
+        </h2>
 
         <?php if (!$primary_person->photo()->empty()): ?>
           <img class="m-reach__thumbnail" data-src="<?= $primary_person->photo()->toFile()->crop(192)->url() ?>" alt="<?= $primary_person->name()->html() ?>">
@@ -30,7 +32,7 @@
   <div class="m-reach" id="contact">
     <div class="m-reach__wrap">
       <p class="m-reach__text" data-grep>
-        <?= $site->find('contact')->people_title()->html() ?>
+        <?= $site->find('contact')->long_question()->html() ?>
       </p>
       <div class="m-reach__person--large">
         <?php if (!$primary_person->photo()->empty()): ?>

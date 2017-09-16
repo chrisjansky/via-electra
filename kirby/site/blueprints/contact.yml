@@ -27,17 +27,22 @@ fields:
     buttons:
       - link
       - ulist
+  long_question:
+    label:
+      cs: Kontaktní otázka
+      en: Contact Question
+    type: text
+  short_question:
+    label:
+      cs: Krátká kontaktní otázka
+      en: Short Contact Question
+    type: text
 
   tab_2:
     label:
       cs: Lidé
       en: People
     type: tabs
-  people_title:
-    label:
-      cs: Nadpis
-      en: Headline
-    type: text
   people_primary:
     label:
       cs: Hlavní kontakt

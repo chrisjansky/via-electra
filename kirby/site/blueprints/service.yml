@@ -88,6 +88,11 @@ fields:
           cs: Popisek
           en: Caption
         type: text
+  detail_features_title:
+    label:
+      cs: Nadpis výhod
+      en: Features Title
+    type: text
   detail_features:
     label:
       cs: Výhody
@@ -112,3 +117,8 @@ fields:
         label: Text
         type: textarea
         buttons: false
+  detail_infobox_title:
+    label:
+      cs: Nadpis informačních bloků
+      en: Information Blocks Title
+    type: text

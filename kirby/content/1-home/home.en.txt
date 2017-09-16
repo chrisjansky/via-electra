@@ -64,3 +64,23 @@ Locations-text: We operate within both the Czech and Slovak markets.
 ----
 
 Locations-caption: Our Offices
+
+----
+
+Careers-image: img-2.jpg
+
+----
+
+Locations-image: img-offices.jpg
+
+----
+
+Intro-image: kocianka-6.jpg
+
+----
+
+Services-title: Our Expertise
+
+----
+
+Projects-title: Selected Work
