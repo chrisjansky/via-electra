@@ -1,21 +1,29 @@
 [data-countup] {
-  animation: $duration--l both paused appear;
+  opacity: 0;
+  transform: translateY(1em);
+
+  transition: opacity $duration--l, transform $duration--l;
 
   @for $i from 2 through 4 {
     &:nth-child(#{$i}) {
-      animation-delay: $i * .0625s;
+      transition-delay: $i * .0625s;
     }
   }
 
   &.countup--is-active {
-    animation-play-state: running;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 [data-src] {
-  animation: $duration--l both paused appear;
+  opacity: 0;
+  transform: translateY(1em);
+  
+  transition: opacity $duration--l, transform $duration--l;
 
   &[data-was-processed] {
-    animation-play-state: running;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
