@@ -17,7 +17,7 @@
   &--top {
     position: absolute;
 
-    width: 50vw;
+    width: 50%;
     padding: $spacing--b;
 
     @include breakpoint(max-width $bp__tablet - 1) {
