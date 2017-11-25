@@ -98,7 +98,10 @@
     color: $c-grey--300;
 
     @include breakpoint($bp__phablet) {
-      font-size: 1.25em;
+      p:first-child,
+      ul {
+        font-size: 1.25em;
+      }
 
       ul {
         padding-left: 1.25em;

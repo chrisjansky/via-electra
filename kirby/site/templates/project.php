@@ -20,7 +20,7 @@
       <div class="m-detail__group--description">
         <h2><?= l::get('project-description') ?></h2>
         <div class="m-detail__editor">
-          <p><?= $page->detail_text()->html() ?></p>
+          <?= $page->detail_text()->kirbytext() ?>
         </div>
       </div>
       <div class="m-detail__group--services">

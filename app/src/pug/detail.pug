@@ -16,7 +16,9 @@ block template-body
         .m-detail__group--description
           h2 Popis projektu
           .m-detail__editor
-            p BIM je potřeba vnímat především jako proces a při přechodu na BIM je tedy zásadní si uvědomit, že se nejedná pouze o nainstalování nového softwarového řešení, ale o zásadnější změny v celkovém systému práce ať už se jedná o projektanta – jednotlivce, tím spíše celý projekční ateliér.
+            each instance in [1, 2, 3]
+              p
+                faker-lorem-paragraph/
 
         .m-detail__group--services
           h2 Poskytnuté služby
