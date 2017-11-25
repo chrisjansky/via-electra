@@ -20,7 +20,7 @@
               <a class="m-reach__link" href="mailto:<?= $primary_person->email()->html() ?>"><?= $primary_person->email()->html() ?></a>
             </li>
             <li class="m-reach__item">
-              <a class="m-reach__link" href="tel:<?= $primary_person->phone()->html() ?>">  <?= $primary_person->phone()->html() ?>
+              <a class="m-reach__link" href="tel:<?= $primary_person->tel()->html() ?>">  <?= $primary_person->tel()->html() ?>
               </a>
             </li>
           </ul>
@@ -48,7 +48,7 @@
               <a class="m-reach__link" href="mailto:<?= $primary_person->email()->html() ?>"><?= $primary_person->email()->html() ?></a>
             </li>
             <li class="m-reach__item">
-              <a class="m-reach__link" href="tel:<?= $primary_person->phone()->html() ?>">  <?= $primary_person->phone()->html() ?>
+              <a class="m-reach__link" href="tel:<?= $primary_person->tel()->html() ?>">  <?= $primary_person->tel()->html() ?>
               </a>
             </li>
           </ul>
