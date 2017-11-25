@@ -20,5 +20,5 @@ mixin people(slug, title)
               h3.m-people__name= instance.name
               span.m-people__position(data-grep)= instance.position
               ul.m-people__contact
-                li= instance.phone
+                li: a(href="tel:" + instance.phone)= instance.phone
                 li: a(href="mailto:" + instance.email)= instance.email

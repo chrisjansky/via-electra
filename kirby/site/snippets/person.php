@@ -11,7 +11,11 @@
     <?= $person->job()->html() ?>
   </span>
   <ul class="m-people__contact">
-    <li><?= $person->tel()->html() ?></li>
+    <li>
+      <a href="tel:<?= str_replace(" ","",$person->tel()->html()) ?>">
+        <?= $person->tel()->html() ?>
+      </a>
+    </li>
     <li>
       <a href="mailto:<?= $person->email()->html() ?>">
         <?= $person->email()->html() ?>
