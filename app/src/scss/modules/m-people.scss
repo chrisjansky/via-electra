@@ -72,12 +72,15 @@
     position: relative;
 
     padding-bottom: 100%;
+
+    background-color: $c-grey--800;
+    border-radius: 50%;
+
+    overflow: hidden;
   }
 
   &__portrait {
     position: absolute;
-
-    border-radius: 50%;
   }
 
   &__name {
