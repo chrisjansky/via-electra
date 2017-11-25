@@ -14,11 +14,12 @@ mixin people(slug, title)
           //- Skip first person if in contact page
           unless slug == "contact" && index == 0
             .m-people__item
-              span.m-people__holder
-                span.m-people__ratio
-                  img.m-people__portrait(data-src="http://source.unsplash.com/random/480x480?sig=" + index, alt="Placeholder")
-              h3.m-people__name= instance.name
-              span.m-people__position(data-grep)= instance.position
+              .m-people__top
+                span.m-people__holder
+                  span.m-people__ratio
+                    img.m-people__portrait(data-src="http://source.unsplash.com/random/480x480?sig=" + index, alt="Placeholder")
+                h3.m-people__name= instance.name
+                span.m-people__position(data-grep)= instance.position
               ul.m-people__contact
                 li: a(href="tel:" + instance.phone)= instance.phone
                 li: a(href="mailto:" + instance.email)= instance.email

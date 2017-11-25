@@ -45,6 +45,10 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     flex-basis: 13em;
 
     margin: $spacing--s / 2;
