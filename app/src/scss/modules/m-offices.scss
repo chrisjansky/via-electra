@@ -76,13 +76,17 @@
   }
 
   &__portrait {
-    border-radius: 50%;
-    width: 2em;
-
     display: inline-block;
     vertical-align: middle;
 
+    width: 2em;
+    height: 2em;
     margin-right: .5em;
+    border-radius: 50%;
+
+    background-color: $c-grey--800;
+
+    overflow: hidden;
   }
 
   &__name {

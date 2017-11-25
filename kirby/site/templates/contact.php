@@ -42,7 +42,11 @@
                 $locations_person = $page->find($locations_uri);
               ?>
               <div class="m-offices__person">
-                <img class="m-offices__portrait" data-src="http://source.unsplash.com/random/180x180?sig=0" alt="Placeholder">
+                <span class="m-offices__portrait">
+                  <?php if (!$locations_person->photo()->empty()): ?>
+                    <img data-src="<?= $locations_person->photo()->toFile()->crop(64)->url() ?>" alt="<?= $locations_person->name()->html() ?> Photo">
+                  <?php endif ?>
+                </span>
                 <strong class="m-offices__name">
                   <?= $locations_person->name()->html() ?>
                 </strong>
