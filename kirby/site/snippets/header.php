@@ -11,6 +11,16 @@
   <script src="https://use.typekit.net/pxl3znj.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107000140-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107000140-2');
+  </script>
+
   <link rel="icon" href="<?= kirby()->urls()->assets() ?>/favicon.ico">
   <link rel="icon" href="<?= kirby()->urls()->assets() ?>/favicon-32x32.png" sizes="32x32">
   <link rel="icon" href="<?= kirby()->urls()->assets() ?>/favicon-16x16.png" sizes="16x16">
