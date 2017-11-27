@@ -86,7 +86,9 @@
 
     background-color: $c-grey--800;
 
-    overflow: hidden;
+    &, img {
+      overflow: hidden;
+    }
   }
 
   &__name {
