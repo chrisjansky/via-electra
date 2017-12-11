@@ -5,10 +5,14 @@ module.exports = {
     for(var i = 0; i < links.length; i++) {
       var link = links[i];
 
-      link.addEventListener("click", function() {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
         var target = this.getAttribute("href");
 
-        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        document.querySelector(target).scrollIntoView({
+          block: "start",
+          behavior: "smooth"
+        });
 
         return false;
       });
