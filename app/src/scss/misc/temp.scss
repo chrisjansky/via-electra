@@ -15,15 +15,3 @@
     transform: translateY(0);
   }
 }
-
-[data-src] {
-  opacity: 0;
-  transform: translateY(1em);
-  
-  transition: opacity $duration--l, transform $duration--l;
-
-  &[data-was-processed] {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

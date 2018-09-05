@@ -1,0 +1,17 @@
+[data-src] {
+  opacity: 0;
+  transition: opacity $duration--xl $easeOutQuint, transform $duration--xl $easeOutQuint;
+}
+
+img:not([src]),
+div[data-src]:not([data-was-processed]),
+a[data-src]:not([data-was-processed]) {
+  visibility: hidden;
+}
+
+img.loaded,
+div[data-was-processed],
+a[data-was-processed] {
+  opacity: 1;
+  transform: translateY(0);
+}

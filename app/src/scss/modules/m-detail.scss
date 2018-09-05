@@ -37,7 +37,7 @@
 
       width: 50%;
 
-      animation: $duration--l $easeOutQuint both 1s slideUp;
+      animation: $duration--l $easeOutQuint both $duration--xl slideUp;
     }
   }
 
