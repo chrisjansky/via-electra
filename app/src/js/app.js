@@ -27,13 +27,13 @@ addEventListener('popstate', function (event) {
 
 /* Event based here */
 Barba.Dispatcher.on('newPageReady', function() {
-  veLazy.init();
   veSmoothScroll.attach();
   veToggle.attach();
 });
 
 /* Direct DOM manupulation here */
 Barba.Dispatcher.on('transitionCompleted', function() {
+  veLazy.init();
   veCountUp.init();
   veGrep.parse();
 
