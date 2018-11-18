@@ -1,7 +1,8 @@
 module.exports = {
   init: (function instance() {
     var loadImages = new LazyLoad({
-      elements_selector: "[data-src]"
+      elements_selector: "[data-src]",
+      threshold: 0
     });
 
     /* Return to make later calls possible */
